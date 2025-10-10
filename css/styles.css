@@ -14,6 +14,23 @@ body {
 header {
     background-color: #1A474F;
     color: white;
+}
+
+.top-bar {
+    background-color: #005F61;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.contact-info span {
+    margin: 0 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
 }
 
@@ -24,8 +41,15 @@ nav {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 0.5rem;
 }
 
 nav ul {
@@ -62,20 +86,62 @@ main {
 }
 
 .hero {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #EEEEEE;
     padding: 4rem 2rem;
     margin-bottom: 2rem;
+    gap: 2rem;
 }
 
-.hero h1 {
+.hero-content {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.hero p {
+.hero-content .tagline {
+    font-style: italic;
+    color: #005F61;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn.secondary {
+    background-color: transparent;
+    color: #005F61;
+    border: 2px solid #005F61;
+}
+
+.btn.secondary:hover {
+    background-color: #005F61;
+    color: white;
 }
 
 .btn {
@@ -90,6 +156,23 @@ main {
     background-color: #5B8B83;
 }
 
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
 .about .team {
     display: flex;
     flex-wrap: wrap;
@@ -99,13 +182,18 @@ main {
 
 .member {
     text-align: center;
-    max-width: 200px;
+    max-width: 300px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
 }
 
 .member img {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 50%;
+    margin-bottom: 1rem;
 }
 
 .services .service-list {
@@ -115,14 +203,31 @@ main {
 }
 
 .service {
-    padding: 1rem;
+    padding: 1.5rem;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 .contact form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: none;
 }
 
 .contact label {
@@ -140,13 +245,56 @@ main {
 }
 
 .contact-info {
-    margin-top: 2rem;
-    text-align: center;
+    margin-top: 0;
+    text-align: left;
+}
+
+.contact-info h2 {
+    margin-bottom: 1rem;
+}
+
+.map-placeholder {
+    margin-top: 1rem;
+}
+
+.blog-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
 }
 
 .blog .posts {
     display: grid;
     gap: 2rem;
+}
+
+.sidebar {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.sidebar h3 {
+    margin-top: 1.5rem;
+    color: #1A474F;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 0.5rem 0;
+}
+
+.sidebar a {
+    color: #005F61;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
 }
 
 .post {
@@ -172,6 +320,10 @@ footer {
 
 /* Responsivo */
 @media (max-width: 768px) {
+    .top-bar {
+        display: none;
+    }
+
     #menu-toggle {
         display: block;
     }
@@ -196,11 +348,48 @@ footer {
         padding: 1rem;
     }
 
-    .hero h1 {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h1 {
         font-size: 2rem;
     }
 
-    .hero p {
+    .hero-content p {
         font-size: 1rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .member {
+        max-width: 100%;
+    }
+
+    .blog-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
     }
 }

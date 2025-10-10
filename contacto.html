@@ -10,9 +10,17 @@
 </head>
 <body>
     <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span>Tel: 302 356 7742</span> | <span>Email: info@abogadossar.com</span>
+            </div>
+        </div>
         <nav>
-            <div class="logo">SAR Abogados Especializados</div>
-            <button id="menu-toggle">Menu</button>
+            <div class="logo">
+                <img src="images/logo.png" alt="SAR Abogados Especializados Logo">
+                <span>SAR Abogados Especializados</span>
+            </div>
+            <button id="menu-toggle">☰</button>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="acerca.html">Acerca de</a></li>
@@ -25,20 +33,34 @@
     <main>
         <section class="contact">
             <h1>Contáctanos</h1>
-            <form id="contact-form">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-            <div class="contact-info">
-                <h2>Información de Contacto</h2>
-                <p>Dirección: Calle Ficticia 123, Ciudad</p>
-                <p>Teléfono / Celular: 302 356 7742</p>
-                <p>Email: info@abogadossar.com</p>
+            <p>Estamos aquí para ayudarte. Envíanos tu consulta y te responderemos lo antes posible.</p>
+            <div class="contact-content">
+                <form id="contact-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Teléfono (opcional):</label>
+                    <input type="tel" id="phone" name="phone">
+                    <label for="subject">Asunto:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+                <div class="contact-info">
+                    <h2>Información de Contacto</h2>
+                    <p><strong>Dirección:</strong> Calle Ficticia 123, Ciudad, Colombia</p>
+                    <p><strong>Teléfono / Celular:</strong> 302 356 7742</p>
+                    <p><strong>Email:</strong> info@abogadossar.com</p>
+                    <p><strong>Horarios:</strong> Lunes a Viernes, 8:00 AM - 6:00 PM</p>
+                    <div class="map-placeholder">
+                        <p>Mapa de ubicación</p>
+                        <div style="width: 100%; height: 200px; background: #eee; display: flex; align-items: center; justify-content: center; border-radius: 5px;">
+                            [Aquí irá el mapa integrado]
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
