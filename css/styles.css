@@ -24,9 +24,54 @@ header {
 
 .top-bar {
     background-color: rgba(0, 95, 97, 0.9);
-    padding: 0.5rem 1rem;
-    text-align: center;
+    padding: 0.5rem 0;
     font-size: 0.9rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.space-x-4 > * + * {
+    margin-left: 1rem;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.15s ease-in-out;
+}
+
+.top-bar a:hover {
+    color: #CFB27E;
+}
+
+.h-3 {
+    height: 0.75rem;
+}
+
+.w-3 {
+    width: 0.75rem;
+}
+
+.mr-1\.5 {
+    margin-right: 0.375rem;
 }
 
 .contact-info span {
