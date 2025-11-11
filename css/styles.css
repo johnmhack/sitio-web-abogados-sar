@@ -734,54 +734,148 @@ main {
     padding: 0 var(--spacing-md);
 }
 
-/* Grid de sobre nosotros */
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+/* LAYOUT VERTICAL REORGANIZADO PARA ACERCA.HTML */
+.about-sections-vertical {
+    display: flex;
+    flex-direction: column;
     gap: var(--spacing-lg);
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     margin-bottom: var(--spacing-lg);
 }
 
-/* Misión y Visión */
-.mission-vision {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-lg);
-}
-
-.mission, .vision {
-    padding: var(--spacing-lg);
+/* CUADROS INDIVIDUALES - MISIÓN, VISIÓN Y VALORES */
+.mission-box, .vision-box, .values-box {
     background: var(--color-white);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
+    padding: var(--spacing-lg);
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* ESTILOS ESPECÍFICOS PARA MISIÓN */
+.mission-box {
     border-left: 4px solid var(--color-secondary);
 }
 
-.mission h2, .vision h2 {
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-sm);
-    font-size: 1.5rem;
+/* ESTILOS ESPECÍFICOS PARA VISIÓN */
+.vision-box {
+    border-left: 4px solid var(--color-tertiary);
 }
 
-.mission p, .vision p {
-    color: var(--color-text-light);
-    line-height: 1.7;
-}
-
-/* Valores */
-.values {
-    padding: var(--spacing-lg);
-    background: var(--color-white);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-sm);
+/* ESTILOS ESPECÍFICOS PARA VALORES */
+.values-box {
     border-top: 4px solid var(--color-secondary);
 }
 
-.values h2 {
+/* TÍTULOS DE LOS CUADROS */
+.mission-box h2, .vision-box h2, .values-box h2 {
     color: var(--color-primary);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
     font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
     text-align: center;
+    word-wrap: break-word;
+}
+
+/* TEXTOS DE LOS CUADROS */
+.mission-box p, .vision-box p {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    text-align: center;
+    font-size: 1.1rem;
+    word-wrap: break-word;
+}
+
+/* Lista de valores */
+.values-list {
+    list-style: none;
+    padding: 0;
+}
+
+.values-list li {
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+    border-bottom: 1px solid #eee;
+    transition: all var(--transition-base);
+    display: flex;  /* Usar flexbox para separar checkmark del texto */
+    align-items: center;
+    justify-content: center;  /* Centrar elementos */
+}
+
+.values-list li::before {
+    content: '✓';
+    color: var(--color-secondary);
+    font-weight: bold;
+    margin-right: 0.75rem;  /* Espacio solo entre checkmark y texto */
+    font-size: 1rem;
+}
+
+.values-list li:hover {
+    background-color: rgba(207, 178, 126, 0.1);
+    transform: translateX(5px);
+}
+
+/* DESKTOP - Layout en dos columnas para misión y visión */
+@media (min-width: 769px) {
+    .about-sections-vertical {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .mission-box {
+        grid-column: 1;
+    }
+    
+    .vision-box {
+        grid-column: 2;
+    }
+    
+    .values-box {
+        grid-column: 1 / -1;  /* Ocupa toda la fila */
+    }
+}
+
+/* MÓVIL - Layout vertical completo sin overflow */
+@media (max-width: 768px) {
+    .about-sections-vertical {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        max-width: 100% !important;
+        gap: var(--spacing-md);
+        padding: 0;
+        margin: 0;
+    }
+    
+    .mission-box, .vision-box, .values-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: var(--spacing-md);
+        margin: 0;
+        font-size: 0.95rem;
+    }
+    
+    .mission-box h2, .vision-box h2, .values-box h2 {
+        font-size: 1.3rem !important;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .mission-box p, .vision-box p {
+        font-size: 1rem !important;
+        line-height: 1.6;
+    }
+    
+    .values-list li {
+        font-size: 0.95rem;
+        padding: var(--spacing-sm);
+    }
 }
 
 .values-list {
@@ -885,7 +979,7 @@ main {
     text-align: left;
 }
 
-/* Responsive para página acerca de - CORRECCIÓN COMPLETA OVERFLOW HORIZONTAL */
+/* Responsive para página acerca de - LAYOUT VERTICAL OPTIMIZADO */
 @media (max-width: 768px) {
     .about-page {
         padding: 4rem 0 2rem 0;
@@ -901,45 +995,6 @@ main {
         padding: 0 var(--spacing-sm) !important;
         overflow-x: hidden !important;
         margin: 0 auto !important;
-    }
-    
-    .about-grid,
-    .mission-vision {
-        grid-template-columns: 1fr !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        gap: var(--spacing-md) !important;
-        overflow-x: hidden !important;
-    }
-    
-    .about-grid > div,
-    .mission-vision > div {
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-    
-    .mission, .vision, .values {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: var(--spacing-md) !important;
-        box-sizing: border-box !important;
-        overflow-x: hidden !important;
-    }
-    
-    .mission h2, .vision h2, .values h2 {
-        font-size: 1.3rem !important;
-        word-wrap: break-word !important;
-    }
-    
-    .mission p, .vision p {
-        font-size: 0.95rem !important;
-        line-height: 1.6 !important;
-        word-wrap: break-word !important;
-    }
-    
-    .values-list li {
-        font-size: 0.95rem !important;
-        word-wrap: break-word !important;
     }
     
     .team-section {
