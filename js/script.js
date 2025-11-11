@@ -140,7 +140,7 @@ class MobileMenu {
 class BlogManager {
     constructor() {
         this.posts = blogPosts;
-        this.postsContainer = document.querySelector('.posts');
+        this.postsContainer = document.querySelector('.posts-container') || document.querySelector('.posts');
         this.init();
     }
 
