@@ -312,10 +312,53 @@ header.scrolled .main-nav {
     font-size: 1.5rem;
     cursor: pointer;
     transition: color var(--transition-base);
+    padding: 0.5rem;
+    position: relative;
+    z-index: 1001;
 }
 
 #menu-toggle:hover {
     color: var(--color-secondary);
+}
+
+/* Hamburger menu icon */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: 2px;
+    margin: 2px 0;
+    transition: all var(--transition-base);
+    transform-origin: center;
+}
+
+#menu-toggle:hover .hamburger span {
+    background-color: var(--color-secondary);
+}
+
+/* Transform hamburger to X when menu is open */
+.main-nav .nav-menu.show + #menu-toggle .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.main-nav .nav-menu.show + #menu-toggle .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.main-nav .nav-menu.show + #menu-toggle .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* ========================================
