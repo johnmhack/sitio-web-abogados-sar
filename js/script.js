@@ -84,7 +84,7 @@ class HeaderManager {
 class MobileMenu {
     constructor() {
         this.menuToggle = document.getElementById('menu-toggle');
-        this.navMenu = document.querySelector('nav ul');
+        this.navMenu = document.querySelector('.main-nav .nav-menu');
         this.init();
     }
 

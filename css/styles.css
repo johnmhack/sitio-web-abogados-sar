@@ -271,7 +271,7 @@ header.scrolled .main-nav {
 
 /* Responsivo para móviles - actualizar reglas existentes */
 @media (max-width: var(--breakpoint-mobile)) {
-    nav ul {
+    .main-nav .nav-menu {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -283,27 +283,24 @@ header.scrolled .main-nav {
         z-index: 1000;
     }
 
-    nav ul.show {
+    .main-nav .nav-menu.show {
         display: flex;
     }
 
-    nav ul li {
+    .main-nav .nav-menu li {
         margin: 0;
         text-align: center;
         padding: var(--spacing-sm);
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    nav ul li:last-child {
+    .main-nav .nav-menu li:last-child {
         border-bottom: none;
     }
 
-    .logo {
-        font-size: 1.2rem;
-    }
-
-    .logo img {
-        height: 30px;
+    .logo-main {
+        height: 45px;
+        max-width: 200px;
     }
 }
 
@@ -1546,7 +1543,7 @@ button:focus,
         display: block;
     }
 
-    nav ul {
+    .main-nav .nav-menu {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -1558,27 +1555,24 @@ button:focus,
         z-index: 1000;
     }
 
-    nav ul.show {
+    .main-nav .nav-menu.show {
         display: flex;
     }
 
-    nav ul li {
+    .main-nav .nav-menu li {
         margin: 0;
         text-align: center;
         padding: var(--spacing-sm);
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    nav ul li:last-child {
+    .main-nav .nav-menu li:last-child {
         border-bottom: none;
     }
 
-    .logo {
-        font-size: 1.2rem;
-    }
-
-    .logo img {
-        height: 30px;
+    .logo-main {
+        height: 45px;
+        max-width: 200px;
     }
 
     .hero {
@@ -1636,7 +1630,7 @@ button:focus,
         padding-top: 2rem;
     }
 
-    nav {
+    .main-nav {
         top: 0;
     }
 
@@ -1820,7 +1814,7 @@ button:focus,
     }
 
     /* Menú móvil - mejoras de accesibilidad */
-    nav ul.show {
+    .main-nav .nav-menu.show {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -1833,18 +1827,18 @@ button:focus,
         z-index: 1000;
     }
 
-    nav ul.show li {
+    .main-nav .nav-menu.show li {
         margin: var(--spacing-xs) 0;
     }
 
-    nav ul.show a {
+    .main-nav .nav-menu.show a {
         color: var(--color-white);
         padding: var(--spacing-sm);
         border-radius: var(--border-radius-sm);
         transition: background-color var(--transition-fast);
     }
 
-    nav ul.show a:hover {
+    .main-nav .nav-menu.show a:hover {
         background-color: rgba(255, 255, 255, 0.1);
     }
 
