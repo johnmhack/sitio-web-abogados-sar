@@ -851,7 +851,7 @@ main {
     object-position: center 30%;  /* Más cerca del rostro */
     border: 2px solid var(--color-secondary);
     box-shadow: var(--shadow-sm);
-    transform: scale(1.1);  /* Zoom adicional */
+    transform: scale(1.05);  /* Zoom reducido para evitar overflow */
 }
 
 .member-placeholder {
@@ -885,28 +885,157 @@ main {
     text-align: left;
 }
 
-/* Responsive para página acerca de */
+/* Responsive para página acerca de - CORRECCIÓN COMPLETA OVERFLOW HORIZONTAL */
 @media (max-width: 768px) {
     .about-page {
         padding: 4rem 0 2rem 0;
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+    
+    .about-page .container {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 var(--spacing-sm) !important;
+        overflow-x: hidden !important;
+        margin: 0 auto !important;
     }
     
     .about-grid,
     .mission-vision {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        gap: var(--spacing-md) !important;
+        overflow-x: hidden !important;
+    }
+    
+    .about-grid > div,
+    .mission-vision > div {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .mission, .vision, .values {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: var(--spacing-md) !important;
+        box-sizing: border-box !important;
+        overflow-x: hidden !important;
+    }
+    
+    .mission h2, .vision h2, .values h2 {
+        font-size: 1.3rem !important;
+        word-wrap: break-word !important;
+    }
+    
+    .mission p, .vision p {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        word-wrap: break-word !important;
+    }
+    
+    .values-list li {
+        font-size: 0.95rem !important;
+        word-wrap: break-word !important;
+    }
+    
+    .team-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
     }
     
     .team-member {
-        grid-template-columns: 1fr;
-        text-align: center;
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: var(--spacing-md) !important;
+        margin: 0 auto !important;
+        overflow-x: hidden !important;
+        box-sizing: border-box !important;
+    }
+    
+    .member-image {
+        width: 100% !important;
+        max-width: 110px !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+    
+    .member-image img {
+        transform: none !important;
+        width: 100px !important;
+        height: 130px !important;
+        max-width: 100px !important;
+        max-height: 130px !important;
+        object-fit: cover !important;
     }
     
     .member-info {
-        text-align: center;
+        text-align: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .member-info h3 {
+        font-size: 1.3rem !important;
+        word-wrap: break-word !important;
+    }
+    
+    .member-title {
+        font-size: 1rem !important;
+        word-wrap: break-word !important;
     }
     
     .member-description {
-        text-align: center;
+        text-align: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+        word-wrap: break-word !important;
+    }
+    
+    .page-header {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: var(--spacing-md) 0 !important;
+        overflow-x: hidden !important;
+    }
+    
+    .page-header h1 {
+        font-size: clamp(1.6rem, 5vw, 2rem) !important;
+        word-wrap: break-word !important;
+        line-height: 1.2 !important;
+        max-width: 100% !important;
+    }
+    
+    .page-intro {
+        font-size: 0.95rem !important;
+        padding: 0 var(--spacing-sm) !important;
+        max-width: 100% !important;
+        word-wrap: break-word !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* ASEGURAR QUE TODOS LOS ELEMENTOS SE CONTENGAN */
+    .about-page * {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        word-wrap: break-word !important;
+    }
+    
+    /* PREVENIR ELEMENTOS QUE PUEDAN CAUSAR OVERFLOW */
+    .about-page img,
+    .about-page video,
+    .about-page iframe {
+        max-width: 100% !important;
+        height: auto !important;
     }
 }
 
