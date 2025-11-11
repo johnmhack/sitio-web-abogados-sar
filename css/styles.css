@@ -269,24 +269,32 @@ header.scrolled .main-nav {
     color: var(--color-secondary);
 }
 
-/* Responsivo para móviles - actualizar reglas existentes */
-@media (max-width: var(--breakpoint-mobile)) {
+/* Responsivo para móviles - FORZADO */
+@media (max-width: 768px) {
     .main-nav .nav-menu {
-        display: none;
-        flex-direction: column;
+        display: none; /* Oculto por defecto */
         position: absolute;
         top: 100%;
         left: 0;
+        right: 0;
+        background: rgba(26, 71, 79, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
         width: 100%;
-        background-color: var(--color-primary);
-        box-shadow: var(--shadow-md);
-        z-index: 1000;
+        padding: 20px 0;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0 8px 32px 0 rgba(0,0,0,0.3);
+        z-index: 101;
+        border: 1px solid rgba(207, 178, 126, 0.2);
+        border-top: none;
     }
-
-    .main-nav .nav-menu.show {
-        display: flex;
+    
+    .main-nav .nav-menu.active {
+        display: flex; /* Se muestra cuando tiene clase 'active' */
     }
-
+    
     .main-nav .nav-menu li {
         margin: 0;
         text-align: center;
@@ -303,13 +311,61 @@ header.scrolled .main-nav {
         max-width: 200px;
     }
 
+    /* BOTÓN HAMBURGUESA VISIBLE EN MÓVIL - CONTRASTE MEJORADO */
     #menu-toggle {
+        display: block !important; /* FORZADO */
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+        border: 2px solid rgba(255, 255, 255, 0.3); /* Borde visible */
+        border-radius: 6px;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para definición */
+    }
+    
+    #menu-toggle:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: var(--color-secondary);
+        box-shadow: 0 4px 15px rgba(207, 178, 126, 0.3);
+    }
+    
+    /* LÍNEAS DEL HAMBURGUESA - MÁXIMO CONTRASTE FORZADO */
+    .hamburger span {
         display: block;
+        height: 4px; /* MÁS GRUESO */
+        width: 28px; /* MÁS ANCHO */
+        background: #ffffff !important; /* BLANCO PURO FORZADO */
+        border-radius: 2px;
+        margin: 3px 0; /* MÁS ESPACIO */
+        transition: all var(--transition-base);
+        transform-origin: center;
+        /* SOMBRA FUERTE PARA MÁXIMA VISIBILIDAD */
+        box-shadow:
+            0 2px 4px rgba(0, 0, 0, 0.8),
+            0 0 8px rgba(255, 255, 255, 0.3);
+    }
+    
+    #menu-toggle:hover .hamburger span {
+        background: var(--color-secondary) !important; /* DORADO EN HOVER */
+        box-shadow:
+            0 2px 4px rgba(207, 178, 126, 0.6),
+            0 0 8px rgba(207, 178, 126, 0.4);
+    }
+    
+    /* MOSTRAR MENÚ ACTIVADO */
+    .main-nav .nav-menu.active {
+        display: flex !important;
     }
 }
 
+/* Desktop - ocultar botón hamburguesa */
+@media (min-width: 769px) {
+    #menu-toggle {
+        display: none;
+    }
+}
+
+/* Propiedades generales del botón */
 #menu-toggle {
-    display: none;
     background: none;
     border: none;
     color: var(--color-white);
@@ -352,16 +408,16 @@ header.scrolled .main-nav {
     background-color: var(--color-secondary);
 }
 
-/* Transform hamburger to X when menu is open */
-.main-nav .nav-menu.show + #menu-toggle .hamburger span:nth-child(1) {
+/* Transform hamburger to X when menu is active */
+#menu-toggle.active .hamburger span:nth-child(1) {
     transform: rotate(45deg) translate(6px, 6px);
 }
 
-.main-nav .nav-menu.show + #menu-toggle .hamburger span:nth-child(2) {
+#menu-toggle.active .hamburger span:nth-child(2) {
     opacity: 0;
 }
 
-.main-nav .nav-menu.show + #menu-toggle .hamburger span:nth-child(3) {
+#menu-toggle.active .hamburger span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 

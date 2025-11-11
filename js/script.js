@@ -78,60 +78,46 @@ class HeaderManager {
 }
 
 // ==============================================
-// CLASE: MOBILE MENU
-// Maneja el menú móvil
+// MENÚ HAMBURGUESA SIMPLE
+// Basado en el ejemplo exitoso del usuario
 // ==============================================
-class MobileMenu {
-    constructor() {
-        this.menuToggle = document.getElementById('menu-toggle');
-        this.navMenu = document.querySelector('.main-nav .nav-menu');
-        this.init();
-    }
+document.addEventListener('DOMContentLoaded', function() {
+    // Menú hamburguesa
+    const menuToggle = document.querySelector('#menu-toggle'); // ✅ CORREGIDO: ID correcto
+    const menu = document.querySelector('.nav-menu');
 
-    init() {
-        if (!this.menuToggle || !this.navMenu) return;
-        
-        this.menuToggle.addEventListener('click', this.toggleMenu.bind(this));
-        
-        // Cerrar menú al hacer click en enlaces
-        const navLinks = this.navMenu.querySelectorAll('a');
-        navLinks.forEach(link => {
+    if (menuToggle && menu) {
+        console.log('✅ Menú hamburguesa inicializado');
+
+        menuToggle.addEventListener('click', () => {
+            const isActive = menu.classList.toggle('active');
+            menuToggle.classList.toggle('active', isActive);
+            menuToggle.setAttribute('aria-expanded', isActive);
+            console.log('Toggle ejecutado:', { isActive });
+        });
+
+        // Cerrar menú al hacer clic en un enlace
+        const menuLinks = menu.querySelectorAll('li a');
+        menuLinks.forEach(link => {
             link.addEventListener('click', () => {
-                if (window.innerWidth <= 768) {
-                    this.closeMenu();
-                }
+                menu.classList.remove('active');
+                menuToggle.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
             });
         });
-        
+
         // Cerrar menú al redimensionar ventana
         window.addEventListener('resize', () => {
             if (window.innerWidth > 768) {
-                this.closeMenu();
+                menu.classList.remove('active');
+                menuToggle.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
             }
         });
+    } else {
+        console.log('❌ Elementos del menú no encontrados');
     }
-
-    toggleMenu() {
-        this.navMenu.classList.toggle('show');
-        
-        // Actualizar aria-expanded para accesibilidad
-        const isExpanded = this.navMenu.classList.contains('show');
-        this.menuToggle.setAttribute('aria-expanded', isExpanded);
-        
-        // Prevenir scroll del body cuando el menú está abierto
-        if (isExpanded) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
-        }
-    }
-
-    closeMenu() {
-        this.navMenu.classList.remove('show');
-        this.menuToggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-    }
-}
+});
 
 // ==============================================
 // CLASE: BLOG MANAGER
@@ -517,7 +503,7 @@ class SARApp {
         try {
             // Inicializar módulos
             this.modules.header = new HeaderManager();
-            this.modules.mobileMenu = new MobileMenu();
+            // MobileMenu integrado arriba en DOMContentLoaded
             this.modules.blog = new BlogManager();
             this.modules.form = new FormValidator('contact-form');
             this.modules.scrollAnimations = new ScrollAnimations();
@@ -543,5 +529,5 @@ window.SARApp = new SARApp();
 
 // Exportar para uso en módulos externos
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { HeaderManager, MobileMenu, BlogManager, FormValidator, ScrollAnimations, SARApp };
+    module.exports = { HeaderManager, BlogManager, FormValidator, ScrollAnimations, SARApp };
 }
