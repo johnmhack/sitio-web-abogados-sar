@@ -305,7 +305,6 @@ header.scrolled .main-nav {
 }
 
 #menu-toggle {
-    display: none;
     background: none;
     border: none;
     color: var(--color-white);
