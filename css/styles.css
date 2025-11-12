@@ -216,7 +216,7 @@ header.scrolled .main-nav {
 /* Logo principal */
 .logo-main {
     height: 65px;
-    max-width: 260px;
+    max-width: 350px;
     margin-left: 1px;
 }
 
@@ -314,8 +314,8 @@ header.scrolled .main-nav {
     }
 
     .logo-main {
-        height: 45px;
-        max-width: 60px;
+        height: 55px;
+        max-width: 200px;
     }
 
     /* Logo en hero - MÓVIL */
