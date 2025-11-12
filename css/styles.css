@@ -1444,8 +1444,8 @@ main {
 /* Grid del equipo de abogados */
 .lawyers-team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    gap: var(--spacing-xl);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
     margin-bottom: var(--spacing-2xl);
 }
 
@@ -1454,7 +1454,7 @@ main {
     background: var(--color-white);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     transition: all var(--transition-base);
     position: relative;
     overflow: hidden;
@@ -2774,4 +2774,278 @@ button:focus,
         font-size: 0.85rem;
         padding: 0.4rem 0.8rem;
     }
+/* ========================================
+   MEJORAS RESPONSIVE DESIGN MÓVIL
+   ======================================== */
+
+/* PÁGINA DE ABOGADOS - MÓVIL OPTIMIZADA */
+@media (max-width: 768px) {
+    .lawyers-team-grid {
+        grid-template-columns: 1fr !important;
+        gap: var(--spacing-md) !important;
+        margin-bottom: var(--spacing-lg) !important;
+    }
+    
+    .lawyer-member {
+        padding: var(--spacing-sm) !important;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    
+    .lawyer-image img {
+        width: 120px !important;
+        height: 120px !important;
+        margin: 0 auto;
+    }
+    
+    .lawyer-info h3 {
+        font-size: 1.2rem !important;
+        text-align: center;
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .lawyer-title {
+        font-size: 1rem !important;
+        text-align: center;
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .lawyer-specialty {
+        font-size: 0.9rem !important;
+        text-align: center;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .lawyer-description {
+        font-size: 0.85rem !important;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .lawyer-contact {
+        background: rgba(207, 178, 126, 0.1);
+        padding: var(--spacing-xs);
+        border-radius: var(--border-radius-sm);
+        margin-top: var(--spacing-sm);
+    }
+    
+    .lawyer-contact p {
+        font-size: 0.8rem !important;
+        text-align: center;
+        margin-bottom: 0.25rem;
+    }
+    
+    .profile-cta {
+        margin-top: var(--spacing-sm);
+    }
+    
+    .btn-profile {
+        font-size: 0.8rem !important;
+        padding: 0.35rem 0.7rem !important;
+    }
+}
+
+/* PÁGINA INDIVIDUAL DE HAROLD - MÓVIL OPTIMIZADA */
+@media (max-width: 768px) {
+    .lawyer-profile-page {
+        padding: 4rem 0 2rem 0 !important;
+    }
+    
+    .breadcrumb {
+        margin: 4rem 0 1rem 0 !important;
+        padding: 0 var(--spacing-xs) !important;
+    }
+    
+    .breadcrumb a {
+        font-size: 0.9rem !important;
+    }
+    
+    .profile-header {
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+        gap: var(--spacing-md) !important;
+        padding: var(--spacing-lg) !important;
+        margin-bottom: var(--spacing-lg) !important;
+    }
+    
+    .profile-image {
+        width: 140px !important;
+        height: 140px !important;
+        margin: 0 auto;
+    }
+    
+    .profile-info-section h1 {
+        font-size: 1.8rem !important;
+        margin-bottom: var(--spacing-xs) !important;
+    }
+    
+    .profile-title {
+        font-size: 1.1rem !important;
+        margin-bottom: var(--spacing-xs) !important;
+    }
+    
+    .profile-specialty {
+        font-size: 1rem !important;
+        margin-bottom: var(--spacing-sm) !important;
+    }
+    
+    .profile-contact {
+        background: rgba(207, 178, 126, 0.1);
+        padding: var(--spacing-xs);
+        border-radius: var(--border-radius-sm);
+        margin-top: var(--spacing-sm);
+    }
+    
+    .profile-contact p {
+        font-size: 0.9rem !important;
+        margin-bottom: 0.25rem;
+    }
+    
+    .profile-section {
+        padding: var(--spacing-md) !important;
+        margin-bottom: var(--spacing-md) !important;
+    }
+    
+    .profile-section h2 {
+        font-size: 1.4rem !important;
+        margin-bottom: var(--spacing-sm) !important;
+        text-align: center;
+    }
+    
+    .profile-content {
+        font-size: 0.9rem !important;
+        line-height: 1.6;
+    }
+    
+    .profile-content p {
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    /* Timeline de experiencia - MÓVIL */
+    .experience-timeline {
+        gap: var(--spacing-sm) !important;
+    }
+    
+    .experience-item {
+        padding: var(--spacing-sm) !important;
+        border-radius: var(--border-radius-sm);
+    }
+    
+    .experience-item::before {
+        display: none;
+    }
+    
+    .experience-item h3 {
+        font-size: 1.1rem !important;
+        margin-bottom: var(--spacing-xs) !important;
+        text-align: center;
+    }
+    
+    .experience-item p {
+        font-size: 0.85rem !important;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 0.25rem;
+    }
+    
+    /* Sección de educación - MÓVIL */
+    .education-item {
+        padding: var(--spacing-sm) !important;
+        margin-bottom: var(--spacing-md) !important;
+    }
+    
+    .education-item h3 {
+        font-size: 1.1rem !important;
+        text-align: center;
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .education-item p {
+        font-size: 0.85rem !important;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 0.25rem;
+    }
+    
+    .studies-list li {
+        font-size: 0.8rem !important;
+        padding: var(--spacing-xs);
+        text-align: center;
+    }
+    
+    /* Sección de idiomas - MÓVIL */
+    .languages-section {
+        grid-template-columns: 1fr !important;
+        gap: var(--spacing-sm) !important;
+    }
+    
+    .language-item {
+        padding: var(--spacing-sm) !important;
+        text-align: center;
+    }
+    
+    .language-item h3 {
+        font-size: 1.1rem !important;
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .language-item p {
+        font-size: 0.85rem !important;
+        margin-bottom: 0.25rem;
+    }
+    
+    /* Call to Action del perfil - MÓVIL */
+    .profile-contact-cta {
+        padding: var(--spacing-lg) !important;
+        margin: var(--spacing-md) 0;
+    }
+    
+    .profile-contact-cta h2 {
+        font-size: 1.6rem !important;
+        margin-bottom: var(--spacing-sm) !important;
+    }
+    
+    .profile-contact-cta p {
+        font-size: 1rem !important;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .cta-buttons {
+        flex-direction: column !important;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .profile-contact-cta .btn {
+        width: 100% !important;
+        max-width: 250px !important;
+        padding: 0.8rem 1.5rem !important;
+        font-size: 1rem !important;
+    }
+}
+
+/* MEJORAS ADICIONALES PARA PANTALLAS MUY PEQUEÑAS */
+@media (max-width: 480px) {
+    .lawyer-member {
+        padding: var(--spacing-xs) !important;
+    }
+    
+    .lawyer-info h3 {
+        font-size: 1.1rem !important;
+    }
+    
+    .profile-info-section h1 {
+        font-size: 1.6rem !important;
+    }
+    
+    .profile-section h2 {
+        font-size: 1.3rem !important;
+    }
+    
+    .profile-image {
+        width: 120px !important;
+        height: 120px !important;
+    }
+}
 }
