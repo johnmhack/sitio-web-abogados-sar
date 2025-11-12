@@ -217,7 +217,14 @@ header.scrolled .main-nav {
 .logo-main {
     height: 65px;
     max-width: 260px;
-    margin-left: 10px;
+    margin-left: 1px;
+}
+
+/* Logo símbolo - AL LADO IZQUIERDO */
+.logo-symbol {
+    height: 65px;
+    max-width: 80px;
+    margin-right: 1px;
 }
 
 /* Contenedor de navegación principal */
@@ -308,7 +315,12 @@ header.scrolled .main-nav {
 
     .logo-main {
         height: 45px;
-        max-width: 200px;
+        max-width: 60px;
+    }
+
+    /* Logo en hero - MÓVIL */
+    .hero-logo {
+        width: 150px;
     }
 
     /* BOTÓN HAMBURGUESA VISIBLE EN MÓVIL - CONTRASTE MEJORADO */
@@ -449,6 +461,14 @@ main {
     max-width: 1000px;
     text-align: center;
     z-index: 1;
+}
+
+/* Logo en el hero */
+.hero-logo {
+    height: auto;
+    max-width: 100%;
+    width: 250px;
+    margin: 0 auto;
 }
 
 .hero-content h1 {
@@ -1808,6 +1828,10 @@ button:focus,
         padding: 8rem var(--spacing-sm) 6rem;
         background-attachment: scroll;
         /* Mejor para móviles */
+    }
+
+    .hero-logo {
+        width: 200px;
     }
 
     .intro h2::before,
