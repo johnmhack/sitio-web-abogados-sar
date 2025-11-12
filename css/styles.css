@@ -216,7 +216,7 @@ header.scrolled .main-nav {
 /* Logo principal */
 .logo-main {
     height: 65px;
-    max-width: 350px;
+    max-width: 400px;
     margin-left: 1px;
 }
 
@@ -1435,6 +1435,179 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 var(--spacing-md);
+}
+
+/* ========================================
+   PÁGINA ABOGADOS - EQUIPO COMPLETO
+   ======================================== */
+
+/* Grid del equipo de abogados */
+.lawyers-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+/* Miembro individual del equipo */
+.lawyer-member {
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-lg);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(207, 178, 126, 0.1);
+}
+
+.lawyer-member::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
+    transform: scaleX(0);
+    transition: transform var(--transition-base);
+    transform-origin: left;
+}
+
+.lawyer-member:hover::before {
+    transform: scaleX(1);
+}
+
+.lawyer-member:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-secondary);
+}
+
+/* Imagen del abogado */
+.lawyer-image {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.lawyer-image img {
+    width: 140px;
+    height: 140px;
+    border-radius: var(--border-radius-full);
+    object-fit: cover;
+    object-position: center 30%;
+    border: 3px solid var(--color-secondary);
+    box-shadow: var(--shadow-sm);
+    margin: 0 auto;
+    transition: transform var(--transition-base);
+}
+
+.lawyer-member:hover .lawyer-image img {
+    transform: scale(1.05);
+}
+
+/* Información del abogado */
+.lawyer-info {
+    text-align: center;
+}
+
+.lawyer-info h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-semibold);
+}
+
+.lawyer-title {
+    color: var(--color-secondary);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.1rem;
+}
+
+.lawyer-specialty {
+    color: var(--color-primary-light);
+    font-style: italic;
+    margin-bottom: var(--spacing-sm);
+    font-size: 1rem;
+}
+
+.lawyer-description {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.lawyer-contact {
+    background: rgba(207, 178, 126, 0.1);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    text-align: left;
+}
+
+.lawyer-contact p {
+    margin-bottom: var(--spacing-xs);
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+.lawyer-contact strong {
+    color: var(--color-primary);
+}
+
+/* Call to Action del equipo */
+.team-contact-cta {
+    text-align: center;
+    padding: var(--spacing-2xl);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    border-radius: var(--border-radius);
+    color: var(--color-white);
+    position: relative;
+}
+
+.team-contact-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--color-secondary), transparent);
+}
+
+.team-contact-cta h2 {
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    font-weight: var(--font-weight-light);
+}
+
+.team-contact-cta p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.15rem;
+    opacity: 0.95;
+}
+
+.team-contact-cta .btn {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-semibold);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.team-contact-cta .btn:hover {
+    background-color: var(--color-secondary-light);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
 }
 
 /* Responsive para todas las páginas restantes */
