@@ -1441,6 +1441,34 @@ main {
    PÁGINA ABOGADOS - EQUIPO COMPLETO
    ======================================== */
 
+/* Sección del líder del equipo (encabezada sin banner) */
+.team-leader-section {
+    margin-bottom: var(--spacing-2xl);
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leader-member {
+    background: linear-gradient(135deg, rgba(207, 178, 126, 0.08) 0%, rgba(207, 178, 126, 0.15) 100%);
+    border: 2px solid var(--color-secondary);
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.leader-member::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-secondary-light), var(--color-secondary));
+    transform: scaleX(1);
+}
+
 /* Grid del equipo de abogados */
 .lawyers-team-grid {
     display: grid;
@@ -2780,10 +2808,58 @@ button:focus,
 
 /* PÁGINA DE ABOGADOS - MÓVIL OPTIMIZADA */
 @media (max-width: 768px) {
+    /* Sección de Ruby (encabezado) - Móvil */
+    .team-leader-section {
+        max-width: 100% !important;
+        margin: 0 auto var(--spacing-lg) auto !important;
+        padding: 0 var(--spacing-xs);
+    }
+    
+    .leader-member {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: var(--spacing-sm) !important;
+        margin: 0;
+    }
+    
+    .leader-member .lawyer-image img {
+        width: 100px !important;
+        height: 100px !important;
+        margin: 0 auto;
+    }
+    
+    .leader-member .lawyer-info h3 {
+        font-size: 1.1rem !important;
+        text-align: center;
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .leader-member .lawyer-title {
+        font-size: 0.95rem !important;
+        text-align: center;
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .leader-member .lawyer-specialty {
+        font-size: 0.85rem !important;
+        text-align: center;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .leader-member .lawyer-description {
+        font-size: 0.8rem !important;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    /* Grid de abogados restantes - Móvil */
     .lawyers-team-grid {
         grid-template-columns: 1fr !important;
         gap: var(--spacing-md) !important;
         margin-bottom: var(--spacing-lg) !important;
+        max-width: 100% !important;
+        padding: 0 var(--spacing-xs);
     }
     
     .lawyer-member {
