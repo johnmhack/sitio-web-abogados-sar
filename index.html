@@ -93,42 +93,88 @@
         </div>
     </section>
 
-    <main>
-        <!-- Sección introductoria -->
-        <section class="intro">
-            <div class="container">
-                <div class="intro-content">
-                    <h2>Sobre SAR Abogados Especializados</h2>
-                    <p class="intro-text">Somos una firma comprometida con brindar asesoría legal integral, transparente
-                        y efectiva, trabajando de la mano con nuestros clientes para encontrar las mejores soluciones
-                        jurídicas en cada caso.</p>
+    <!-- Sección de Ruby - Fuera del contenedor principal -->
+    <section class="ruby-profile-section" style="background: var(--color-white); padding: 4rem 0; margin: 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 2fr 3fr; gap: var(--spacing-xl); align-items: center;">
+                <div style="display: flex; justify-content: center;">
+                    <div style="position: relative; width: 300px; height: 400px;">
+                        <img src="images/abogados/ruby_ramos.jpeg" alt="Abogada Ruby Ramos" 
+                             style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--border-radius); box-shadow: var(--shadow-md);">
+                        <div style="position: absolute; bottom: 1rem; right: 1rem; background: var(--color-secondary); color: var(--color-white); padding: 0.75rem 1.25rem; border-radius: var(--border-radius); box-shadow: var(--shadow-lg); text-align: center;">
+                            <h3 style="margin: 0; font-size: 1.25rem; font-weight: var(--font-weight-semibold); color: var(--color-white);">Ruby Ramos</h3>
+                            <p style="margin: 0; font-size: 0.875rem; opacity: 0.9;">Abogada & Fundadora</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: var(--spacing-md) 0;">
+                    <h2 style="font-size: 2.5rem; font-weight: var(--font-weight-bold); color: var(--color-primary); margin-bottom: var(--spacing-lg); position: relative;">Abogada</h2>
+                    <div style="position: absolute; bottom: -0.5rem; left: 0; width: 60px; height: 3px; background: var(--color-secondary); border-radius: 2px;"></div>
+                    <p style="color: var(--color-text-light); line-height: 1.7; margin-bottom: var(--spacing-md); font-size: 1.1rem;">Con más de 15 años de experiencia en derecho civil y familiar, lidero nuestro equipo con un enfoque personalizado y ético para cada caso.</p>
+                    <p style="color: var(--color-text-light); line-height: 1.7; margin-bottom: var(--spacing-md); font-size: 1.1rem;">Mi compromiso es brindar asesoría legal integral, transparente y efectiva, trabajando de la mano con nuestros clientes para encontrar las mejores soluciones jurídicas en cada situación.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Servicios destacados -->
-        <section class="services-overview">
+    <main>
+        <!-- Layout principal en dos columnas -->
+        <section class="main-layout">
             <div class="container">
-                <h2 class="section-title">Áreas de Especialización</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">⚖️</div>
-                        <h3>Derecho Civil y Familiar</h3>
-                        <p>Asesoría en contratos, sucesiones, divorcios y custodia.</p>
+                <div class="layout-grid">
+                    <!-- Columna izquierda: Sobre nosotros -->
+                    <div class="layout-column">
+                        <div class="intro-compact">
+                            <h2>Sobre SAR Abogados Especializados</h2>
+                            <p>Somos una firma comprometida con brindar asesoría legal integral, transparente
+                                y efectiva, trabajando de la mano con nuestros clientes para encontrar las mejores
+                                soluciones jurídicas en cada caso.</p>
+                        </div>
+                        
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">🏛️</div>
-                        <h3>Derecho Administrativo</h3>
-                        <p>Nulidad y restablecimiento del derecho, reparación directa.</p>
+
+                    <!-- Columna derecha: Servicios -->
+                    <div class="layout-column">
+                        <div class="services-preview">
+                            <h2 class="section-title">Áreas de Especialización</h2>
+                            <div class="services-grid-compact">
+                                <div class="service-card">
+                                    <div class="service-icon">⚖️</div>
+                                    <h3>Derecho Civil y Familiar</h3>
+                                    <p>Asesoría en contratos, sucesiones, divorcios y custodia.</p>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon">🏛️</div>
+                                    <h3>Derecho Administrativo</h3>
+                                    <p>Nulidad y restablecimiento del derecho, reparación directa.</p>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon">👷</div>
+                                    <h3>Derecho Laboral</h3>
+                                    <p>Protección en despidos, pensiones y derechos laborales.</p>
+                                </div>
+                            </div>
+                            <div class="services-cta">
+                                <a href="servicios.html" class="btn btn-primary">Ver Todos los Servicios</a>
+                            </div>
+
+                            <!-- Preview del Blog -->
+                            <div class="blog-preview">
+                                <h3>Últimas Publicaciones</h3>
+                                <div class="blog-post">
+                                    <h4><a href="posts/post1.html">Nuevas reformas al código civil</a></h4>
+                                    <p class="post-excerpt">Análisis de las últimas modificaciones legislativas que afectan el derecho civil...</p>
+                                </div>
+                                <div class="blog-post">
+                                    <h4><a href="posts/post2.html">Aspectos clave del derecho laboral</a></h4>
+                                    <p class="post-excerpt">Todo lo que necesitas saber sobre los cambios en la legislación laboral...</p>
+                                </div>
+                                <div class="blog-cta">
+                                    <a href="blog.html" class="btn btn-secondary">Ver Todos los Artículos</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">👷</div>
-                        <h3>Derecho Laboral</h3>
-                        <p>Protección en despidos, pensiones y derechos laborales.</p>
-                    </div>
-                </div>
-                <div class="services-cta">
-                    <a href="servicios.html" class="btn btn-primary">Ver Todos los Servicios</a>
                 </div>
             </div>
         </section>
