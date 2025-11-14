@@ -688,7 +688,7 @@ main {
 
 /* Call to Action Section */
 .contact-cta {
-    padding: var(--spacing-2xl) 0;
+    padding: 2.5rem 0;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
     color: var(--color-white);
     text-align: center;
@@ -3267,5 +3267,174 @@ button:focus,
 }
 
 /* ========================================
-   FIN DE ESTILOS PARA POSTS
+}
+
+/* ========================================
+   NUEVAS SECCIONES PARA QUIÉNES SOMOS
    ======================================== */
+
+/* NUEVA SECCIÓN DETALLADA - QUIÉNES SOMOS EXPANDIDO */
+.about-detailed-box {
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    border-left: 4px solid var(--color-secondary);
+}
+
+.about-detailed-box h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.about-detailed-box p {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+/* NUEVA SECCIÓN HISTORIA */
+.history-box {
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    border-left: 4px solid var(--color-tertiary);
+}
+
+.history-box h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.history-box p {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+/* RESPONSIVE PARA LAS NUEVAS SECCIONES */
+@media (max-width: 768px) {
+    .about-detailed-box, .history-box {
+        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .about-detailed-box h2, .history-box h2 {
+        font-size: 1.3rem !important;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .about-detailed-box p, .history-box p {
+        font-size: 1rem !important;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-detailed-box, .history-box {
+        padding: var(--spacing-sm);
+        margin-bottom: var(--spacing-sm);
+    }
+}
+   FIN DE ESTILOS PARA POSTS
+/* ========================================
+   NUEVAS SECCIONES PARA QUIÉNES SOMOS
+   ======================================== */
+
+/* NUEVA SECCIÓN DETALLADA - QUIÉNES SOMOS EXPANDIDO */
+.about-detailed-box {
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    border-left: 4px solid var(--color-secondary);
+}
+
+.about-detailed-box h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.about-detailed-box p {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+/* NUEVA SECCIÓN HISTORIA */
+.history-box {
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    border-left: 4px solid var(--color-tertiary);
+}
+
+.history-box h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.history-box p {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+/* RESPONSIVE PARA LAS NUEVAS SECCIONES */
+@media (max-width: 768px) {
+    .about-detailed-box, .history-box {
+        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .about-detailed-box h2, .history-box h2 {
+        font-size: 1.3rem !important;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .about-detailed-box p, .history-box p {
+        font-size: 1rem !important;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-detailed-box, .history-box {
+        padding: var(--spacing-sm);
+        margin-bottom: var(--spacing-sm);
+    }
+}
+
+/* ========================================
+    FIN DE ESTILOS CSS
+    ======================================== */
