@@ -794,6 +794,35 @@ main {
     .blog-preview h3 {
         font-size: 1.4rem;
     }
+/* Responsive design para sección de Ruby en móvil - específico */
+@media (max-width: 768px) {
+    .ruby-profile-section[style*="padding: 4rem 0"] {
+        padding: 2rem 0 !important;
+    }
+    
+    .ruby-profile-section div[style*="grid-template-columns: 2fr 3fr"] {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: var(--spacing-lg) !important;
+        text-align: center !important;
+    }
+    
+    .ruby-profile-section div[style*="width: 300px"][style*="height: 400px"] {
+        width: 250px !important;
+        height: 320px !important;
+        margin: 0 auto;
+    }
+    
+    .ruby-profile-section h2[style*="font-size: 2.5rem"] {
+        font-size: 2rem !important;
+        margin-bottom: var(--spacing-md) !important;
+    }
+    
+    .ruby-profile-section p[style*="font-size: 1.1rem"] {
+        font-size: 1rem !important;
+        text-align: center;
+    }
+}
 }
 
 .services-overview {
