@@ -605,6 +605,196 @@ main {
     margin: 0 auto;
     color: var(--color-text-light);
 }
+/* ========================================
+   CONTENEDORES ORGANIZADOS PARA LAYOUT INDEX
+   ======================================== */
+
+/* Layout de contenedores organizados */
+.content-containers {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, var(--color-gray-light) 0%, var(--color-white) 100%);
+    margin: 0;
+}
+
+.content-box {
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+    border-left: 4px solid var(--color-secondary);
+    transition: all var(--transition-base);
+}
+
+.content-box:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Secciones específicas dentro de los containers */
+.intro-section h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+    position: relative;
+}
+
+.intro-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--color-secondary);
+    border-radius: 2px;
+}
+
+.intro-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: center;
+    color: var(--color-text-light);
+    margin-bottom: 0;
+}
+
+/* Grid de servicios compactos */
+.services-grid-compact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.service-card {
+    background: rgba(207, 178, 126, 0.05);
+    border-radius: var(--border-radius-sm);
+    padding: var(--spacing-md);
+    text-align: center;
+    transition: all var(--transition-base);
+    border: 1px solid rgba(207, 178, 126, 0.1);
+}
+
+.service-card:hover {
+    background: rgba(207, 178, 126, 0.1);
+    transform: translateY(-2px);
+    border-color: var(--color-secondary);
+}
+
+.service-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-semibold);
+}
+
+.service-card p {
+    color: var(--color-text-light);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* Blog preview */
+.blog-preview {
+    margin-top: var(--spacing-lg);
+}
+
+.blog-preview h3 {
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+    position: relative;
+}
+
+.blog-preview h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: var(--color-secondary);
+    border-radius: 2px;
+}
+
+.blog-post {
+    background: rgba(207, 178, 126, 0.05);
+    border-radius: var(--border-radius-sm);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    border-left: 3px solid var(--color-tertiary);
+    transition: all var(--transition-base);
+}
+
+.blog-post:hover {
+    background: rgba(207, 178, 126, 0.1);
+    border-left-color: var(--color-secondary);
+}
+
+.blog-post h4 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.blog-post h4 a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+    transition: color var(--transition-fast);
+}
+
+.blog-post h4 a:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+.post-excerpt {
+    color: var(--color-text-light);
+    line-height: 1.6;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* Call to actions */
+.services-cta, .blog-cta {
+    text-align: center;
+    margin-top: var(--spacing-md);
+}
+
+/* Móvil - todos en una columna */
+@media (max-width: 768px) {
+    .content-containers {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .content-box {
+        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .services-grid-compact {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        padding: var(--spacing-sm);
+    }
+    
+    .blog-post {
+        padding: var(--spacing-sm);
+    }
+    
+    .intro-section h2,
+    .blog-preview h3 {
+        font-size: 1.4rem;
+    }
+}
 
 .services-overview {
     padding: var(--spacing-3xl) var(--spacing-sm);
