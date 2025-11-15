@@ -1409,8 +1409,8 @@ main {
 }
 
 .service-icon {
-    width: 220px;
-    height: 220px;
+    width: 180px !important;
+    height: 180px !important;
     margin: 0 auto var(--spacing-md);
     background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
     border-radius: var(--border-radius-full);
@@ -1422,8 +1422,8 @@ main {
 }
 
 .service-icon img {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     object-fit: contain;
     border-radius: var(--border-radius-full);
 }
