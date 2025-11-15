@@ -1409,17 +1409,23 @@ main {
 }
 
 .service-icon {
-    width: 80px;
-    height: 80px;
+    width: 220px;
+    height: 220px;
     margin: 0 auto var(--spacing-md);
     background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
     border-radius: var(--border-radius-full);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
-    color: var(--color-white);
+    overflow: hidden;
     transition: all var(--transition-base);
+}
+
+.service-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: var(--border-radius-full);
 }
 
 .service-item:hover .service-icon {
