@@ -940,6 +940,28 @@ main {
     font-size: 1.15rem;
     opacity: 0.95;
 }
+/* ========================================
+   RESPONSIVE FIX - CONTACT CTA MÓVIL
+   ======================================== */
+
+/* Fix para background-attachment en móviles */
+@media (max-width: 768px) {
+    .contact-cta {
+        background-attachment: scroll; /* Cambiar de fixed a scroll en móviles */
+        background-position: center center; /* Asegurar centrado */
+        padding: 2rem 0; /* Ajustar padding para móvil */
+    }
+    
+    .contact-cta h2 {
+        font-size: clamp(1.5rem, 6vw, 2rem); /* Mejor responsive para títulos */
+    }
+    
+    .contact-cta p {
+        font-size: 1rem; /* Reducir tamaño de texto en móvil */
+    }
+}
+
+/* ========================================
 
 /* ========================================
    PÁGINAS ESPECÍFICAS
