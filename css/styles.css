@@ -446,7 +446,7 @@ main {
 /* Hero Section optimizada */
 .hero {
     background: linear-gradient(135deg, var(--color-overlay-dark) 0%, var(--color-overlay-light) 100%),
-        url('../images/fondo/fondo_diseño.jpg') center/cover no-repeat;
+        url('../images/fondo/fondo_diseño.webp') center/cover no-repeat;
     padding: 12rem var(--spacing-sm) 10rem;
     margin: 0;
     width: 100%;
