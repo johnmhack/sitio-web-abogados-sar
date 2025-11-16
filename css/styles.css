@@ -115,21 +115,30 @@ header {
     color: var(--color-white);
     z-index: 1000;
     transition: all var(--transition-base);
+    background-color: rgba(0, 95, 97, 0.95);
+}
+
+header.scrolled {
+    min-height: 60px;
+    background-color: rgba(26, 71, 79, 0.98);
 }
 
 .top-bar {
     background-color: rgba(0, 95, 97, 0.95);
     padding: 0.15rem 0;
     font-size: 0.8rem;
-    transition: all var(--transition-base);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     overflow: hidden;
+    will-change: max-height, opacity, transform;
 }
 
 header.scrolled .top-bar {
-    max-height: 1rem;
-    padding: 0.08rem 0;
-    opacity: 0.3;
-    transform: translateY(-5px);
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .container {
@@ -231,6 +240,8 @@ header.scrolled .main-nav {
     background-color: rgba(26, 71, 79, 0.98);
     box-shadow: var(--shadow-md);
     padding: 0.75rem var(--spacing-sm);
+    min-height: 60px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 /* Contenedor del logo */
