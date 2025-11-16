@@ -177,6 +177,32 @@ header.scrolled .top-bar {
     width: 100%;
 }
 
+/* Separación entre el ícono del teléfono y el número */
+.top-bar .contact-link.phone-number {
+    gap: 0.25rem;
+}
+
+.top-bar .contact-link.phone-number svg {
+    flex-shrink: 0;
+}
+
+.top-bar .contact-link .phone-text {
+    margin-left: 0.25rem;
+}
+
+/* Separación entre el ícono del email y el texto */
+.top-bar .contact-link.email-address {
+    gap: 0.25rem;
+}
+
+.top-bar .contact-link.email-address svg {
+    flex-shrink: 0;
+}
+
+.top-bar .contact-link .email-text {
+    margin-left: 0.25rem;
+}
+
 /* Iconos */
 .h-3 {
     height: 0.75rem;
