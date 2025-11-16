@@ -119,15 +119,15 @@ header {
 
 .top-bar {
     background-color: rgba(0, 95, 97, 0.95);
-    padding: var(--spacing-xs) 0;
-    font-size: 0.9rem;
+    padding: 0.15rem 0;
+    font-size: 0.8rem;
     transition: all var(--transition-base);
     overflow: hidden;
 }
 
 header.scrolled .top-bar {
-    max-height: 1.5rem;
-    padding: 0.25rem 0;
+    max-height: 1rem;
+    padding: 0.08rem 0;
     opacity: 0.3;
     transform: translateY(-5px);
 }
