@@ -2018,17 +2018,58 @@ main {
         padding-bottom: var(--spacing-sm) !important;
     }
     
-    /* Elementos de contacto más compactos */
+    /* ELEMENTOS DE CONTACTO - FORZAR VERTICAL */
     .contact-details {
+        display: flex !important;
+        flex-direction: column !important; /* FORZAR columnas una debajo de otra */
+        gap: var(--spacing-md) !important;
         margin-bottom: var(--spacing-lg) !important;
     }
     
     .contact-item {
+        display: flex !important;
+        flex-direction: column !important; /* FORZAR vertical dentro de cada item */
+        align-items: flex-start !important; /* Alinear al inicio */
+        gap: var(--spacing-sm) !important; /* Espacio entre icono y texto */
         padding: var(--spacing-sm) !important;
         margin-bottom: var(--spacing-sm) !important;
         border-radius: var(--border-radius-sm) !important;
         background: var(--color-gray-lightest) !important;
         border-left: 3px solid var(--color-secondary) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        overflow-wrap: break-word !important; /* Evitar desbordamiento de texto */
+    }
+    
+    .contact-item svg {
+        width: 30px !important;
+        height: 30px !important;
+        flex-shrink: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: var(--spacing-xs) !important; /* Espacio debajo del icono */
+    }
+    
+    .contact-item div {
+        width: 100% !important;
+        max-width: 100% !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+    
+    .contact-item strong {
+        display: block !important;
+        margin-bottom: var(--spacing-xs) !important;
+        color: var(--color-primary) !important;
+        font-size: 1rem !important;
+    }
+    
+    .contact-item p {
+        margin: 0 !important;
+        color: var(--color-text-light) !important;
+        line-height: 1.5 !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
     }
     
     /* Formulario más compacto */
@@ -2040,6 +2081,9 @@ main {
     .form-textarea {
         padding: var(--spacing-sm) !important;
         font-size: 0.95rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
     
     .form-textarea {
@@ -2049,11 +2093,24 @@ main {
     .btn-submit {
         padding: 0.8rem 1.5rem !important;
         font-size: 1rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
     }
     
     /* Mapa más compacto */
     .map-container {
         height: 120px !important;
+    }
+    
+    /* PREVENIR CUALQUIER DISPLAY INLINE O GRID QUE CAUSE PROBLEMAS */
+    .contact-form-section * {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    .contact-info-section * {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
 }
 
