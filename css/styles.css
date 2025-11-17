@@ -1970,7 +1970,8 @@ main {
 /* Responsive design para móvil - Widgets separados */
 @media (max-width: 768px) {
     .contact-content {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column; /* Un widget debajo del otro */
         gap: var(--spacing-2xl); /* Más espacio entre widgets */
         padding: 0 var(--spacing-sm);
         margin-bottom: var(--spacing-xl); /* Espacio adicional al final */
