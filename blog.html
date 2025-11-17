@@ -82,64 +82,167 @@
                 </div>
 
                 <div class="blog-content">
-                    <!-- Posts principales -->
+                    <!-- Contenido Principal del Blog -->
                     <div class="main-content">
                         <div class="posts-container" id="posts-container">
-                            <!-- Los posts se cargarán dinámicamente desde JavaScript -->
-                            <div class="loading-posts">
-                                <p>Cargando artículos...</p>
-                            </div>
+                            <!-- Artículos de ejemplo para mostrar el diseño -->
+                            <article class="post">
+                                <div class="post-meta">
+                                    <span class="post-category">Derecho Civil</span>
+                                    <span class="post-date">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        15 Octubre, 2024
+                                    </span>
+                                </div>
+                                <h2><a href="posts/post1.html">Cambios Importantes en la Ley de Contratos Colombianos</a></h2>
+                                <p class="post-excerpt">Descubre las nuevas modificaciones legislativas que afectan los contratos comerciales y civiles en Colombia, y cómo pueden impactar tus acuerdos legales...</p>
+                                <a href="posts/post1.html" class="read-more">Leer más</a>
+                            </article>
+
+                            <article class="post">
+                                <div class="post-meta">
+                                    <span class="post-category">Derecho Empresarial</span>
+                                    <span class="post-date">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        28 Septiembre, 2024
+                                    </span>
+                                </div>
+                                <h2><a href="posts/post2.html">Consejos Esenciales para Evitar Problemas Legales en tu Empresa</a></h2>
+                                <p class="post-excerpt">Guía práctica para empresarios: cómo estructurar correctamente tu negocio, proteger tus activos y evitar conflictos legales comunes...</p>
+                                <a href="posts/post2.html" class="read-more">Leer más</a>
+                            </article>
+
+                            <article class="post">
+                                <div class="post-meta">
+                                    <span class="post-category">Derecho Laboral</span>
+                                    <span class="post-date">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        10 Septiembre, 2024
+                                    </span>
+                                </div>
+                                <h2><a href="posts/post3.html">Entendiendo tus Derechos Laborales: Guía Completa 2024</a></h2>
+                                <p class="post-excerpt">Todo lo que necesitas saber sobre tus derechos como trabajador en Colombia: prestaciones, vacaciones, protección contra el despido injustificado...</p>
+                                <a href="posts/post3.html" class="read-more">Leer más</a>
+                            </article>
                         </div>
 
                         <!-- Paginación -->
-                        <div class="pagination" id="pagination" style="display: none;">
-                            <button class="pagination-btn" id="prev-page">Anterior</button>
-                            <span class="pagination-info" id="pagination-info"></span>
+                        <div class="pagination" id="pagination">
+                            <button class="pagination-btn" id="prev-page" disabled>Anterior</button>
+                            <span class="pagination-info">Página 1 de 3</span>
                             <button class="pagination-btn" id="next-page">Siguiente</button>
                         </div>
                     </div>
 
-                    <!-- Sidebar -->
+                    <!-- Sidebar Moderno -->
                     <aside class="blog-sidebar">
+                        <!-- Categorías -->
                         <div class="sidebar-widget">
                             <h3>Categorías</h3>
                             <ul class="category-list">
-                                <li><a href="#" data-category="civil">Derecho Civil</a></li>
-                                <li><a href="#" data-category="penal">Derecho Penal</a></li>
-                                <li><a href="#" data-category="laboral">Derecho Laboral</a></li>
-                                <li><a href="#" data-category="actualizaciones">Actualizaciones Legales</a></li>
+                                <li><a href="#" data-category="civil">
+                                    Derecho Civil
+                                    <span class="category-count">12</span>
+                                </a></li>
+                                <li><a href="#" data-category="penal">
+                                    Derecho Penal
+                                    <span class="category-count">8</span>
+                                </a></li>
+                                <li><a href="#" data-category="laboral">
+                                    Derecho Laboral
+                                    <span class="category-count">15</span>
+                                </a></li>
+                                <li><a href="#" data-category="empresarial">
+                                    Derecho Empresarial
+                                    <span class="category-count">10</span>
+                                </a></li>
+                                <li><a href="#" data-category="actualizaciones">
+                                    Actualizaciones Legales
+                                    <span class="category-count">6</span>
+                                </a></li>
+                                <li><a href="#" data-category="noticias">
+                                    Noticias Jurídicas
+                                    <span class="category-count">20</span>
+                                </a></li>
                             </ul>
                         </div>
 
+                        <!-- Artículos Recientes -->
                         <div class="sidebar-widget">
                             <h3>Artículos Recientes</h3>
                             <ul class="recent-posts">
                                 <li>
                                     <a href="posts/post1.html">
                                         <h4>Cambios en la Ley de Contratos</h4>
-                                        <span class="post-date">15 Octubre, 2024</span>
+                                        <span class="post-date">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                            15 Octubre, 2024
+                                        </span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="posts/post2.html">
                                         <h4>Consejos para Evitar Problemas Legales en tu Empresa</h4>
-                                        <span class="post-date">28 Septiembre, 2024</span>
+                                        <span class="post-date">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                            28 Septiembre, 2024
+                                        </span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="posts/post3.html">
                                         <h4>Entendiendo tus Derechos Laborales</h4>
-                                        <span class="post-date">10 Septiembre, 2024</span>
+                                        <span class="post-date">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                            10 Septiembre, 2024
+                                        </span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
 
+                        <!-- Contacto -->
                         <div class="sidebar-widget">
-                            <h3>Contacto</h3>
+                            <h3>¿Necesitas Asesoría Legal?</h3>
                             <div class="sidebar-contact">
-                                <p>¿Tienes alguna consulta legal?</p>
-                                <a href="Contáctanos.html" class="btn btn-secondary btn-small">Contáctanos</a>
+                                <p>Nuestro equipo de abogados especialistas está listo para ayudarte con tu consulta legal.</p>
+                                <a href="Contáctanos.html" class="btn btn-primary">Contáctanos Ahora</a>
+                                <div style="margin-top: 1rem; text-align: center;">
+                                    <small style="color: var(--color-text-light);">
+                                        📞 302 356 7742<br>
+                                        ✉️ info@abogadossar.com
+                                    </small>
+                                </div>
                             </div>
                         </div>
                     </aside>
