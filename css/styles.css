@@ -2788,14 +2788,22 @@ main {
     color: var(--color-text-light);
 }
 
-/* Responsive Design */
+/* Responsive Design - Móvil Optimizado */
 @media (max-width: 768px) {
     .blog-content {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: var(--spacing-lg);
+        /* Orden: Sidebar primero, luego Main Content */
+    }
+    
+    /* Mantener sidebar primero en móvil */
+    .blog-sidebar {
+        order: 1;
     }
     
     .main-content {
+        order: 2;
         padding: var(--spacing-md);
     }
     
@@ -2809,6 +2817,43 @@ main {
     
     .post h2 {
         font-size: 1.2rem;
+    }
+    
+    /* Optimizaciones adicionales para móvil */
+    .category-list a {
+        padding: var(--spacing-sm);
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .recent-posts li {
+        padding: var(--spacing-sm);
+    }
+    
+    .pagination {
+        flex-wrap: wrap;
+        gap: var(--spacing-xs);
+    }
+    
+    .pagination-btn {
+        padding: var(--spacing-xs);
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet y Desktop - Mantener diseño original */
+@media (min-width: 769px) {
+    .blog-content {
+        display: grid;
+        grid-template-columns: 1fr 320px;
+        gap: var(--spacing-2xl);
+    }
+    
+    .blog-sidebar {
+        order: 2; /* Sidebar a la derecha en desktop */
+    }
+    
+    .main-content {
+        order: 1; /* Contenido principal a la izquierda en desktop */
     }
 }
 
