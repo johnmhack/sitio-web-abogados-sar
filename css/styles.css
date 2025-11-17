@@ -1967,29 +1967,82 @@ main {
     transform: translateY(-1px);
 }
 
-/* Responsive design para móvil */
+/* Responsive design para móvil - Widgets separados */
 @media (max-width: 768px) {
     .contact-content {
         grid-template-columns: 1fr;
-        gap: var(--spacing-lg);
+        gap: var(--spacing-2xl); /* Más espacio entre widgets */
         padding: 0 var(--spacing-sm);
+        margin-bottom: var(--spacing-xl); /* Espacio adicional al final */
     }
     
     .contact-form-section,
     .contact-info-section {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-xl); /* Más padding interno */
+        margin-bottom: var(--spacing-md); /* Separación visual entre secciones */
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-sm);
+        border: 1px solid rgba(207, 178, 126, 0.1);
+    }
+    
+    .contact-form-section {
+        background: linear-gradient(135deg, var(--color-white) 0%, rgba(207, 178, 126, 0.02) 100%);
+        order: 1; /* Formulario primero */
+    }
+    
+    .contact-info-section {
+        background: var(--color-white);
+        order: 2; /* Información después */
     }
     
     .contact-form-section h2,
     .contact-info-section h2 {
         font-size: 1.5rem;
+        margin-bottom: var(--spacing-lg);
+        text-align: center;
     }
     
     .contact-item {
-        padding: var(--spacing-sm);
-        gap: var(--spacing-sm);
+        padding: var(--spacing-md); /* Más padding para mejor legibilidad */
+        margin-bottom: var(--spacing-sm);
+        border-radius: var(--border-radius-sm);
+        background: var(--color-gray-lightest);
+        border-left: 3px solid var(--color-secondary);
     }
     
+    .contact-item:last-child {
+        margin-bottom: 0; /* Sin margen en el último item */
+    }
+    
+    /* Mejoras específicas para el formulario en móvil */
+    .contact-form .form-group {
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .contact-form .form-input {
+        padding: var(--spacing-md); /* Campos más grandes en móvil */
+        font-size: 1rem;
+    }
+    
+    .contact-form .btn {
+        width: 100%;
+        padding: var(--spacing-md);
+        font-size: 1.1rem;
+        margin-top: var(--spacing-md);
+    }
+    
+    /* Map placeholder más compacto */
+    .map-placeholder {
+        padding: var(--spacing-lg);
+        margin-top: var(--spacing-lg);
+    }
+    
+    .map-container {
+        height: 180px; /* Altura más reducida para móvil */
+    }
+}
+
+@media (max-width: 480px) {
     .contact-item svg {
         width: 35px;
         height: 35px;
