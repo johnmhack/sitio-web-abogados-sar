@@ -531,3 +531,71 @@ window.SARApp = new SARApp();
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { HeaderManager, BlogManager, FormValidator, ScrollAnimations, SARApp };
 }
+
+// ==============================================
+// MANEJADOR DE REDES SOCIALES
+// Muestra "en proceso" solo para redes no funcionales (no WhatsApp)
+// ==============================================
+class SocialMediaHandler {
+    constructor() {
+        this.messageDiv = null;
+        this.init();
+    }
+
+    init() {
+        // Crear elemento de mensaje
+        this.createMessageElement();
+        
+        // Agregar event listeners a los enlaces de redes sociales (excepto WhatsApp)
+        this.bindEvents();
+        
+        console.log('✅ Social Media Handler inicializado');
+    }
+
+    createMessageElement() {
+        this.messageDiv = document.createElement('div');
+        this.messageDiv.id = 'social-message';
+        this.messageDiv.className = 'social-message';
+        this.messageDiv.innerHTML = '🔄 Esta red social está en proceso...';
+        this.messageDiv.style.display = 'none';
+        document.body.appendChild(this.messageDiv);
+    }
+
+    bindEvents() {
+        // Seleccionar solo los enlaces de redes sociales que NO son WhatsApp
+        const socialLinks = document.querySelectorAll('.social-link:not([href*="wa.me"]):not([target="_blank"])');
+        
+        socialLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.showProcessMessage();
+            });
+        });
+    }
+
+    showProcessMessage() {
+        if (!this.messageDiv) return;
+        
+        // Mostrar mensaje
+        this.messageDiv.style.display = 'block';
+        this.messageDiv.classList.add('show');
+        
+        // Ocultar después de 3 segundos
+        setTimeout(() => {
+            this.messageDiv.classList.remove('show');
+            setTimeout(() => {
+                if (this.messageDiv) {
+                    this.messageDiv.style.display = 'none';
+                }
+            }, 300);
+        }, 3000);
+    }
+}
+
+// Inicializar cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+    // Solo inicializar si existen los elementos de redes sociales
+    if (document.querySelector('.social-link')) {
+        window.socialMediaHandler = new SocialMediaHandler();
+    }
+});
