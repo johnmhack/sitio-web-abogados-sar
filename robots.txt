@@ -1,0 +1,48 @@
+# Robots.txt - SAR Abogados Especializados
+# Archivo de configuración para robots de búsqueda
+
+User-agent: *
+Allow: /
+
+# Permitir el acceso a todos los recursos importantes
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /posts/
+Allow: /abogados/
+
+# Bloquear archivos de configuración y datos sensibles
+Disallow: /admin/
+Disallow: /config/
+Disallow: /.git/
+Disallow: /*.log$
+Disallow: /*.tmp$
+
+# Archivos importantes del sitio
+Sitemap: https://abogadossar.com/sitemap.xml
+
+# Crawl delay para ser cortés con los servidores
+Crawl-delay: 1
+
+# Comentarios específicos para buscadores principales
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Bloquear bots maliciosos conocidos
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Fecha de última actualización
+# Last updated: 2025-11-18

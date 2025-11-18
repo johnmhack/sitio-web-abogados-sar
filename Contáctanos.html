@@ -11,15 +11,76 @@
     <title>SAR Abogados Especializados - Contáctanos</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../images/logos/LOGO_RUBY_RAMOS_SIMBOLO.svg">
-    <link rel="canonical" href="https://abogadossar.com/Contáctanos.html">
+    <link rel="icon" type="image/svg+xml" href="images/logos/LOGO_RUBY_RAMOS_SIMBOLO.svg">
+    <link rel="canonical" href="https://abogadossar.com/Cont%C3%A1ctanos.html">
+
+    <!-- Meta tags adicionales para SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="CO">
+    <meta name="geo.placename" content="Colombia">
+    <meta name="geo.position" content="4.570868,-74.297333">
+    <meta name="ICBM" content="4.570868, -74.297333">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="SAR Abogados Especializados - Contáctanos">
+    <meta property="og:description" content="Contáctanos para una consulta legal personalizada. SAR Abogados Especializados, defendemos sus derechos con ética y compromiso.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://abogadossar.com/Contáctanos.html">
+    <meta property="og:image" content="https://abogadossar.com/images/logos/LOGO_RUBY_RAMOS.svg">
+    <meta property="og:site_name" content="SAR Abogados Especializados">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SAR Abogados Especializados - Contáctanos">
+    <meta name="twitter:description" content="Contáctanos para una consulta legal personalizada. SAR Abogados Especializados, defendemos sus derechos con ética y compromiso.">
+    <meta name="twitter:image" content="https://abogadossar.com/images/logos/LOGO_RUBY_RAMOS.svg">
 
     <!-- CSS optimizado -->
     <link rel="stylesheet" href="css/styles.css">
     
     <!-- Font Awesome para iconos de redes sociales -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWP8GTHPK6"></script>
 </head>
+
+<body>
+    <!-- Google Analytics Event Tracking -->
+    <script>
+        // Trackear clics en teléfonos y emails
+        document.addEventListener('DOMContentLoaded', function() {
+            // Trackear clics en teléfonos
+            const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            phoneLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.analytics) {
+                        window.analytics.trackPhoneClick();
+                    }
+                });
+            });
+
+            // Trackear clics en emails
+            const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+            emailLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.analytics) {
+                        window.analytics.trackEmailClick();
+                    }
+                });
+            });
+
+            // Trackear envío de formulario de contacto
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function() {
+                    if (window.analytics) {
+                        window.analytics.trackContactForm();
+                    }
+                });
+            }
+        });
+    </script>
 
 <body>
     <!-- Header -->
@@ -254,6 +315,8 @@
     <!-- JavaScript optimizado con validación de formularios -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="js/script.js"></script>
-
+    
+    <!-- Google Analytics 4 -->
+    <script src="js/analytics.js"></script>
 </body>
 </html>

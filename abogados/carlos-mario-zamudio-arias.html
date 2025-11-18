@@ -14,6 +14,29 @@
     <link rel="icon" type="image/svg+xml" href="../../images/logos/LOGO_RUBY_RAMOS_SIMBOLO.svg">
     <link rel="canonical" href="https://abogadossar.com/abogados/carlos-mario-zamudio-arias.html">
 
+    <!-- Meta tags adicionales para SEO -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="geo.region" content="CO-DC">
+    <meta name="geo.placename" content="Bogotá, Colombia">
+    <meta name="geo.position" content="4.7110;-74.0721">
+    <meta name="ICBM" content="4.7110, -74.0721">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://abogadossar.com/abogados/carlos-mario-zamudio-arias.html">
+    <meta property="og:title" content="Carlos Mario Zamudio Arias - Abogado Conciliador | SAR Abogados">
+    <meta property="og:description" content="Abogado Conciliador y Especialista en Derecho Comercial. Estudiante de Maestría en Derecho y Negocios Internacionales. Especializado en derecho comercial, penal y administrativo.">
+    <meta property="og:image" content="https://abogadossar.com/images/abogados/carlos_mario_zamudio_arias.webp">
+    <meta property="og:site_name" content="SAR Abogados Especializados">
+    <meta property="og:locale" content="es_CO">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Carlos Mario Zamudio Arias - Abogado Especialista | SAR Abogados">
+    <meta name="twitter:description" content="Abogado Conciliador y Especialista en Derecho Comercial. Estudiante de Maestría en Derecho y Negocios Internacionales.">
+    <meta name="twitter:image" content="https://abogadossar.com/images/abogados/carlos_mario_zamudio_arias.webp">
+
     <!-- CSS optimizado -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -379,6 +402,29 @@
 
     <!-- JavaScript optimizado -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    
+    <!-- Google Analytics 4 -->
+    <script src="../js/analytics.js"></script>
+    <script>
+        // Configuración específica para perfil de abogado
+        document.addEventListener('DOMContentLoaded', function() {
+            // Configurar content groups para abogados
+            if (typeof gtag !== 'undefined') {
+                gtag('config', 'G-FWP8GTHPK6', {
+                    content_group1: 'Perfiles de Abogados',
+                    content_group2: 'Carlos Mario Zamudio',
+                    content_group3: 'Derecho Comercial'
+                });
+            }
+            
+            // Tracking de eventos específicos del perfil
+            trackEvent('Perfil Abogado', 'Vista', 'Carlos Mario Zamudio');
+            
+            // Tracking de tiempo en página del perfil
+            trackTimeOnPage('perfil_abogado_carlos_mario');
+        });
+    </script>
+    
     <script src="../js/script.js"></script>
 </body>
 </html>
