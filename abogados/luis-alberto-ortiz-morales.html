@@ -14,6 +14,29 @@
     <link rel="icon" type="image/svg+xml" href="../../images/logos/LOGO_RUBY_RAMOS_SIMBOLO.svg">
     <link rel="canonical" href="https://abogadossar.com/abogados/luis-alberto-ortiz-morales.html">
 
+    <!-- Meta tags adicionales para SEO -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="geo.region" content="CO-DC">
+    <meta name="geo.placename" content="Bogotá, Colombia">
+    <meta name="geo.position" content="4.7110;-74.0721">
+    <meta name="ICBM" content="4.7110, -74.0721">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://abogadossar.com/abogados/luis-alberto-ortiz-morales.html">
+    <meta property="og:title" content="Luis Alberto Ortiz Morales - Abogado Docente Universitario | SAR Abogados">
+    <meta property="og:description" content="Abogado Especialista en Derecho Administrativo y Pedagogía y Docencia Universitaria. Experto en sector público, contratación estatal y procesos disciplinarios.">
+    <meta property="og:image" content="https://abogadossar.com/images/abogados/luis_alberto_ortiz_morales.webp">
+    <meta property="og:site_name" content="SAR Abogados Especializados">
+    <meta property="og:locale" content="es_CO">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Luis Alberto Ortiz Morales - Abogado Docente Universitario | SAR Abogados">
+    <meta name="twitter:description" content="Abogado Especialista en Derecho Administrativo y Docente Universitario. Experto en sector público y contratación estatal.">
+    <meta name="twitter:image" content="https://abogadossar.com/images/abogados/luis_alberto_ortiz_morales.webp">
+
     <!-- CSS optimizado -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -380,6 +403,29 @@
 
     <!-- JavaScript optimizado -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    
+    <!-- Google Analytics 4 -->
+    <script src="../js/analytics.js"></script>
+    <script>
+        // Configuración específica para perfil de abogado
+        document.addEventListener('DOMContentLoaded', function() {
+            // Configurar content groups para abogados
+            if (typeof gtag !== 'undefined') {
+                gtag('config', 'G-FWP8GTHPK6', {
+                    content_group1: 'Perfiles de Abogados',
+                    content_group2: 'Luis Alberto Ortiz',
+                    content_group3: 'Derecho Administrativo'
+                });
+            }
+            
+            // Tracking de eventos específicos del perfil
+            trackEvent('Perfil Abogado', 'Vista', 'Luis Alberto Ortiz');
+            
+            // Tracking de tiempo en página del perfil
+            trackTimeOnPage('perfil_abogado_luis_ortiz');
+        });
+    </script>
+    
     <script src="../js/script.js"></script>
 </body>
 </html>

@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Consejos para evitar problemas legales en tu empresa por SAR Abogados Especializados.">
+    
+    <!-- Meta tags adicionales para SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="CO">
+    <meta name="geo.placename" content="Colombia">
+    <meta name="geo.position" content="4.570868,-74.297333">
+    <meta name="ICBM" content="4.570868, -74.297333">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Consejos para Evitar Problemas Legales en tu Empresa - SAR Abogados">
+    <meta property="og:description" content="Consejos especializados para evitar problemas legales en tu empresa por SAR Abogados Especializados.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://abogadossar.com/posts/post2.html">
+    <meta property="og:image" content="https://abogadossar.com/images/logos/LOGO_RUBY_RAMOS.svg">
+    <meta property="og:site_name" content="SAR Abogados Especializados">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Consejos para Evitar Problemas Legales en tu Empresa - SAR Abogados">
+    <meta name="twitter:description" content="Consejos especializados para evitar problemas legales en tu empresa por SAR Abogados Especializados.">
+    <meta name="twitter:image" content="https://abogadossar.com/images/logos/LOGO_RUBY_RAMOS.svg">
+    
     <title>SAR Abogados Especializados - Consejos para Evitar Problemas Legales en tu Empresa</title>
     <link rel="icon" href="../images/logos/LOGO_RUBY_RAMOS_SIMBOLO.svg">
     <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWP8GTHPK6"></script>
 </head>
+
+<body>
+    <!-- Google Analytics Event Tracking -->
+    <script>
+        // Trackear clics en teléfonos y emails
+        document.addEventListener('DOMContentLoaded', function() {
+            // Trackear clics en teléfonos
+            const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            phoneLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.analytics) {
+                        window.analytics.trackPhoneClick();
+                    }
+                });
+            });
+
+            // Trackear clics en emails
+            const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+            emailLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.analytics) {
+                        window.analytics.trackEmailClick();
+                    }
+                });
+            });
+        });
+    </script>
 <body>
     <!-- Header con información de contacto -->
     <header class="header">
@@ -113,5 +165,8 @@
     </footer>
 
     <script src="../js/script.js"></script>
+    
+    <!-- Google Analytics 4 -->
+    <script src="../js/analytics.js"></script>
 </body>
 </html>
