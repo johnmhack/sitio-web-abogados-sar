@@ -2963,6 +2963,18 @@ main {
     color: var(--color-white);
 }
 
+/* Categoría Activa */
+.category-list a.active {
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-weight: var(--font-weight-semibold);
+}
+
+.category-list a.active .category-count {
+    background: var(--color-white);
+    color: var(--color-primary);
+}
+
 /* Artículos Recientes */
 .recent-posts {
     list-style: none;

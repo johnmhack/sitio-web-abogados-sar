@@ -131,10 +131,12 @@ class BlogManager {
     }
 
     init() {
-        if (!this.postsContainer || !this.posts.length) return;
+        // DESACTIVADO: No renderizar posts desde JavaScript
+        // Los posts ya están en el HTML
+        // if (!this.postsContainer || !this.posts.length) return;
         
-        this.renderPosts();
-        this.initLazyLoading();
+        // this.renderPosts();
+        // this.initLazyLoading();
     }
 
     renderPosts() {
@@ -597,5 +599,251 @@ document.addEventListener('DOMContentLoaded', () => {
     // Solo inicializar si existen los elementos de redes sociales
     if (document.querySelector('.social-link')) {
         window.socialMediaHandler = new SocialMediaHandler();
+    }
+});
+
+// ==============================================
+// CLASE: BLOG FILTER
+// Maneja el filtrado de posts por categoría
+// ==============================================
+class BlogFilter {
+    constructor() {
+        this.categoryLinks = document.querySelectorAll('.category-list a');
+        this.posts = document.querySelectorAll('.posts-container .post');
+        this.init();
+    }
+
+    init() {
+        if (!this.categoryLinks.length || !this.posts.length) return;
+        
+        console.log('✅ Blog Filter inicializado');
+        console.log(`📊 Posts encontrados: ${this.posts.length}`);
+        console.log(`📂 Categorías encontradas: ${this.categoryLinks.length}`);
+        
+        this.bindEvents();
+    }
+
+    bindEvents() {
+        this.categoryLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const category = link.getAttribute('data-category');
+                
+                // Actualizar estado activo
+                this.categoryLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                
+                // Filtrar posts
+                this.filterPosts(category);
+                
+                console.log(`🔍 Filtrando por categoría: ${category}`);
+            });
+        });
+    }
+
+    filterPosts(category) {
+        let visiblePosts = [];
+        
+        this.posts.forEach(post => {
+            const postCategory = post.getAttribute('data-category');
+            
+            if (!category || category === 'all' || postCategory === category) {
+                visiblePosts.push(post);
+                // Resetear estilos para que la paginación los maneje
+                post.style.display = 'block';
+                post.style.opacity = '1';
+                post.style.transform = 'translateY(0)';
+            } else {
+                // Ocultar post
+                post.style.display = 'none';
+                post.style.opacity = '0';
+            }
+        });
+        
+        console.log(`✅ Posts visibles después del filtro: ${visiblePosts.length}`);
+        
+        // Actualizar paginación con posts filtrados
+        if (window.blogPagination) {
+            window.blogPagination.updatePagination(visiblePosts);
+        }
+        
+        // Mostrar mensaje si no hay posts
+        this.showNoResultsMessage(visiblePosts.length);
+    }
+
+    showNoResultsMessage(count) {
+        const container = document.querySelector('.posts-container');
+        if (!container) return;
+        
+        // Remover mensaje previo si existe
+        const existingMessage = container.querySelector('.no-results-message');
+        if (existingMessage) {
+            existingMessage.remove();
+        }
+        
+        // Si no hay resultados, mostrar mensaje
+        if (count === 0) {
+            const message = document.createElement('div');
+            message.className = 'no-results-message';
+            message.innerHTML = `
+                <p style="text-align: center; padding: 2rem; color: var(--color-text-light);">
+                    📭 No hay artículos en esta categoría por el momento.
+                </p>
+            `;
+            container.appendChild(message);
+        }
+    }
+}
+
+// Inicializar filtro de blog cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.querySelector('.posts-container')) {
+        window.blogFilter = new BlogFilter();
+    }
+});
+
+// ==============================================
+// CLASE: BLOG PAGINATION
+// Maneja la paginación de posts del blog
+// ==============================================
+class BlogPagination {
+    constructor() {
+        this.postsPerPage = 5; // 5 posts por página
+        this.currentPage = 1;
+        this.posts = Array.from(document.querySelectorAll('.posts-container .post'));
+        this.totalPosts = this.posts.length;
+        this.totalPages = Math.ceil(this.totalPosts / this.postsPerPage);
+        
+        // Elementos del DOM
+        this.postsContainer = document.querySelector('.posts-container');
+        this.paginationContainer = document.querySelector('#pagination');
+        this.prevButton = document.querySelector('#prev-page');
+        this.nextButton = document.querySelector('#next-page');
+        this.pageInfo = document.querySelector('.pagination-info');
+        
+        this.init();
+    }
+
+    init() {
+        if (!this.postsContainer || !this.paginationContainer) {
+            console.log('❌ Elementos de paginación no encontrados');
+            return;
+        }
+        
+        console.log('✅ Blog Pagination inicializado');
+        console.log(`📊 Total de posts: ${this.totalPosts}`);
+        console.log(`📄 Total de páginas: ${this.totalPages}`);
+        console.log(`📝 Posts por página: ${this.postsPerPage}`);
+        
+        // Configurar eventos
+        this.bindEvents();
+        
+        // Mostrar primera página
+        this.showPage(1);
+    }
+
+    bindEvents() {
+        if (this.prevButton) {
+            this.prevButton.addEventListener('click', () => {
+                if (this.currentPage > 1) {
+                    this.showPage(this.currentPage - 1);
+                    this.scrollToTop();
+                }
+            });
+        }
+
+        if (this.nextButton) {
+            this.nextButton.addEventListener('click', () => {
+                if (this.currentPage < this.totalPages) {
+                    this.showPage(this.currentPage + 1);
+                    this.scrollToTop();
+                }
+            });
+        }
+    }
+
+    showPage(pageNumber) {
+        this.currentPage = pageNumber;
+        
+        // Calcular índices
+        const startIndex = (pageNumber - 1) * this.postsPerPage;
+        const endIndex = startIndex + this.postsPerPage;
+        
+        // Ocultar todos los posts primero
+        this.posts.forEach(post => {
+            post.style.display = 'none';
+            post.style.opacity = '0';
+        });
+        
+        // Mostrar posts de la página actual con animación
+        const postsToShow = this.posts.slice(startIndex, endIndex);
+        postsToShow.forEach((post, index) => {
+            post.style.display = 'block';
+            
+            setTimeout(() => {
+                post.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                post.style.opacity = '1';
+                post.style.transform = 'translateY(0)';
+            }, index * 100);
+        });
+        
+        // Actualizar controles de paginación
+        this.updatePaginationControls();
+        
+        console.log(`📄 Mostrando página ${pageNumber} de ${this.totalPages}`);
+        console.log(`📝 Posts mostrados: ${postsToShow.length}`);
+    }
+
+    updatePaginationControls() {
+        // Actualizar botones
+        if (this.prevButton) {
+            this.prevButton.disabled = this.currentPage === 1;
+        }
+        
+        if (this.nextButton) {
+            this.nextButton.disabled = this.currentPage === this.totalPages;
+        }
+        
+        // Actualizar información de página
+        if (this.pageInfo) {
+            this.pageInfo.textContent = `Página ${this.currentPage} de ${this.totalPages}`;
+        }
+    }
+
+    scrollToTop() {
+        // Scroll suave hacia el inicio del contenedor de posts
+        const blogSection = document.querySelector('.blog-page');
+        if (blogSection) {
+            const offset = 100; // Offset para el header
+            const elementPosition = blogSection.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    // Método público para actualizar la paginación (útil cuando se filtra por categoría)
+    updatePagination(filteredPosts = null) {
+        if (filteredPosts) {
+            this.posts = filteredPosts;
+            this.totalPosts = this.posts.length;
+        } else {
+            this.posts = Array.from(document.querySelectorAll('.posts-container .post'));
+            this.totalPosts = this.posts.length;
+        }
+        
+        this.totalPages = Math.ceil(this.totalPosts / this.postsPerPage);
+        this.currentPage = 1;
+        this.showPage(1);
+    }
+}
+
+// Inicializar paginación cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.querySelector('.posts-container') && document.querySelector('#pagination')) {
+        window.blogPagination = new BlogPagination();
     }
 });
