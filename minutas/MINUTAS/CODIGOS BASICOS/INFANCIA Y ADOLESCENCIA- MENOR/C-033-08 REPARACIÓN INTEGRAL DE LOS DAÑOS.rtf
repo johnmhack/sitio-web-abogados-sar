@@ -1,0 +1,944 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0\stshfdbch0\stshfloch0\stshfhich0\stshfbi0\deflang3082\deflangfe3082{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f36\fswiss\fcharset0\fprq2{\*\panose 020b0604030504040204}Tahoma;}{\f37\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Roman PS{\*\falt Courier PS};}{\f230\froman\fcharset238\fprq2 Times New Roman CE;}
+{\f231\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f233\froman\fcharset161\fprq2 Times New Roman Greek;}{\f234\froman\fcharset162\fprq2 Times New Roman Tur;}{\f235\froman\fcharset177\fprq2 Times New Roman (Hebrew);}
+{\f236\froman\fcharset178\fprq2 Times New Roman (Arabic);}{\f237\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f238\froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\f240\fswiss\fcharset238\fprq2 Arial CE;}
+{\f241\fswiss\fcharset204\fprq2 Arial Cyr;}{\f243\fswiss\fcharset161\fprq2 Arial Greek;}{\f244\fswiss\fcharset162\fprq2 Arial Tur;}{\f245\fswiss\fcharset177\fprq2 Arial (Hebrew);}{\f246\fswiss\fcharset178\fprq2 Arial (Arabic);}
+{\f247\fswiss\fcharset186\fprq2 Arial Baltic;}{\f248\fswiss\fcharset163\fprq2 Arial (Vietnamese);}{\f590\fswiss\fcharset238\fprq2 Tahoma CE;}{\f591\fswiss\fcharset204\fprq2 Tahoma Cyr;}{\f593\fswiss\fcharset161\fprq2 Tahoma Greek;}
+{\f594\fswiss\fcharset162\fprq2 Tahoma Tur;}{\f595\fswiss\fcharset177\fprq2 Tahoma (Hebrew);}{\f596\fswiss\fcharset178\fprq2 Tahoma (Arabic);}{\f597\fswiss\fcharset186\fprq2 Tahoma Baltic;}{\f598\fswiss\fcharset163\fprq2 Tahoma (Vietnamese);}
+{\f599\fswiss\fcharset222\fprq2 Tahoma (Thai);}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;
+\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{
+\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \snext0 \styrsid13895505 Normal;}{
+\s1\qj \li0\ri0\keepn\widctlpar\aspalpha\aspnum\faauto\outlinelevel0\adjustright\rin0\lin0\itap0 \b\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext0 \styrsid13895505 heading 1;}{\s2\qc \li0\ri0\sl360\slmult1
+\keepn\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0 \b\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext0 \styrsid13895505 heading 2;}{
+\s3\qc \li0\ri0\keepn\widctlpar\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0 \b\fs28\ul\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext0 \styrsid13895505 heading 3;}{
+\s7\qc \li0\ri0\keepn\widctlpar\aspalpha\aspnum\faauto\outlinelevel6\adjustright\rin0\lin0\itap0 \b\fs22\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext0 \styrsid13895505 heading 7;}{\*\cs10 \additive \ssemihidden 
+Default Paragraph Font;}{\*\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs20\lang1024\langfe1024\cgrid\langnp1024\langfenp1024 \snext11 \ssemihidden Normal Table;}{\s15\qc \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 
+\b\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext15 \styrsid13895505 Title;}{\s16\qj \li0\ri51\sl360\slmult1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin51\lin0\itap0 
+\f37\fs26\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 \sbasedon0 \snext16 \styrsid13895505 Body Text 3;}{\s17\qj \fi34\li-34\ri51\widctlpar\aspalpha\aspnum\faauto\adjustright\rin51\lin-34\itap0 
+\fs20\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 \sbasedon0 \snext17 \styrsid13895505 Block Text;}{\s18\qj \li0\ri0\sl360\slmult1\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 
+\sbasedon0 \snext18 \styrsid13895505 Body Text 2;}{\*\cs19 \additive \sbasedon10 \styrsid13895505 page number;}{\s20\ql \li0\ri0\widctlpar\tqc\tx4252\tqr\tx8504\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 
+\f37\fs26\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 \sbasedon0 \snext20 \styrsid13895505 header;}{\s21\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 
+\sbasedon0 \snext21 \ssemihidden \styrsid4072553 footnote text,Texto nota pie Car,Footnote Text Char Char Char Char Char,Footnote Text Char Char Char Char,Footnote reference,FA Fu;}{\*\cs22 \additive \super \sbasedon10 \ssemihidden \styrsid4072553 
+footnote reference;}{\s23\qj \li567\ri612\widctlpar\nooverflow\faroman\rin612\lin567\itap0 \fs26\lang1033\langfe3082\cgrid\langnp1033\langfenp3082 \sbasedon0 \snext23 \styrsid9634204 Block Text;}{
+\s24\qj \li0\ri-281\widctlpar\nooverflow\faroman\rin-281\lin0\itap0 \fs28\cf1\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 \sbasedon0 \snext24 \styrsid14495748 Body Text 3;}{\s25\qj \li0\ri-232\widctlpar\nooverflow\faroman\rin-232\lin0\itap0 
+\fs28\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 \sbasedon0 \snext25 \styrsid14495748 Body Text;}{\s26\ql \li283\ri0\sa120\widctlpar\nooverflow\faroman\rin0\lin283\itap0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 
+\sbasedon0 \snext26 \styrsid14495748 Body Text Indent;}{\s27\qj \fi283\li0\ri0\sb28\sa28\sl260\slmult0\widctlpar\nooverflow\faroman\rin0\lin0\itap0 \fs24\cf1\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext27 \styrsid14495748 leyes;}{
+\s28\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \f36\fs16\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext28 \ssemihidden \styrsid11955489 Balloon Text;}{\s29\ql \li0\ri0\widctlpar
+\tqc\tx4252\tqr\tx8504\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext29 \styrsid4668720 footer;}}{\*\latentstyles\lsdstimax156\lsdlockeddef0}{\*\listtable
+{\list\listtemplateid-352797804\listsimple{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01*;}{\levelnumbers;}}{\listname ;}\listid-2}{\list\listtemplateid1911431314\listhybrid
+{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid-1014586598\'02\'00.;}{\levelnumbers\'01;}\i0\cf0\fbias0 \fi-360\li829\jclisttab\tx829\lin829 }{\listlevel\levelnfc4
+\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'01.;}{\levelnumbers\'01;}\fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0
+\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'02.;}{\levelnumbers\'01;}\fi-180\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0
+{\leveltext\leveltemplateid201981967\'02\'03.;}{\levelnumbers\'01;}\fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981977
+\'02\'04.;}{\levelnumbers\'01;}\fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'05.;}{\levelnumbers\'01;}
+\fi-180\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981967\'02\'06.;}{\levelnumbers\'01;}\fi-360\li5040\jclisttab\tx5040\lin5040 }
+{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'07.;}{\levelnumbers\'01;}\fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc2\levelnfcn2\leveljc2
+\leveljcn2\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'08.;}{\levelnumbers\'01;}\fi-180\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid793139064}{\list\listtemplateid-161059842\listhybrid{\listlevel
+\levelnfc1\levelnfcn1\leveljc0\leveljcn0\levelfollow0\levelstartat3\levelspace0\levelindent0{\leveltext\leveltemplateid378825850\'02\'00.;}{\levelnumbers\'01;}\fbias0 \fi-720\li754\jclisttab\tx754\lin754 }{\listlevel\levelnfc4\levelnfcn4\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'01.;}{\levelnumbers\'01;}\fi-360\li1114\jclisttab\tx1114\lin1114 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'02.;}{\levelnumbers\'01;}\fi-180\li1834\jclisttab\tx1834\lin1834 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981967\'02\'03.;}{\levelnumbers\'01;}\fi-360\li2554\jclisttab\tx2554\lin2554 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981977
+\'02\'04.;}{\levelnumbers\'01;}\fi-360\li3274\jclisttab\tx3274\lin3274 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'05.;}{\levelnumbers\'01;}
+\fi-180\li3994\jclisttab\tx3994\lin3994 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981967\'02\'06.;}{\levelnumbers\'01;}\fi-360\li4714\jclisttab\tx4714\lin4714 }
+{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'07.;}{\levelnumbers\'01;}\fi-360\li5434\jclisttab\tx5434\lin5434 }{\listlevel\levelnfc2\levelnfcn2\leveljc2
+\leveljcn2\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'08.;}{\levelnumbers\'01;}\fi-180\li6154\jclisttab\tx6154\lin6154 }{\listname ;}\listid991566684}{\list\listtemplateid1541033986\listhybrid{\listlevel
+\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat2\levelspace0\levelindent0{\leveltext\leveltemplateid-596072748\'02\'00.;}{\levelnumbers\'01;}\fbias0 \fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc255\levelnfcn255\leveljc0
+\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid-1882833220\'00;}{\levelnumbers;}\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0
+{\leveltext\leveltemplateid354861966\'00;}{\levelnumbers;}\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid-1854399006\'00;}{\levelnumbers;}
+\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid-759368702\'00;}{\levelnumbers;}\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0
+\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid1915361048\'00;}{\levelnumbers;}\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0
+{\leveltext\leveltemplateid838604740\'00;}{\levelnumbers;}\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid377668108\'00;}{\levelnumbers;}
+\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid-662919300\'00;}{\levelnumbers;}\jclisttab\tx360 }{\listname ;}\listid1125663574}
+{\list\listtemplateid-1370821174\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid394327540\'02\'00.;}{\levelnumbers\'01;}\fbias0 \fi-360\li720
+\jclisttab\tx720\lin720 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid1242844068\'00;}{\levelnumbers;}\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0
+\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid1473950150\'00;}{\levelnumbers;}\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0
+{\leveltext\leveltemplateid-1834969834\'00;}{\levelnumbers;}\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid314707472\'00;}{\levelnumbers;}
+\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid-990082528\'00;}{\levelnumbers;}\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0
+\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid1568469180\'00;}{\levelnumbers;}\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0
+{\leveltext\leveltemplateid-73492772\'00;}{\levelnumbers;}\jclisttab\tx360 }{\listlevel\levelnfc255\levelnfcn255\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid-372365784\'00;}{\levelnumbers;}
+\jclisttab\tx360 }{\listname ;}\listid1145397222}{\list\listtemplateid-63545966\listhybrid{\listlevel\levelnfc1\levelnfcn1\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid-221348974\'02\'00.;}{\levelnumbers
+\'01;}\fbias0 \fi-720\li754\jclisttab\tx754\lin754 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'01.;}{\levelnumbers\'01;}\fi-360\li1114
+\jclisttab\tx1114\lin1114 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'02.;}{\levelnumbers\'01;}\fi-180\li1834\jclisttab\tx1834\lin1834 }{\listlevel
+\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981967\'02\'03.;}{\levelnumbers\'01;}\fi-360\li2554\jclisttab\tx2554\lin2554 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'04.;}{\levelnumbers\'01;}\fi-360\li3274\jclisttab\tx3274\lin3274 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace0
+\levelindent0{\leveltext\leveltemplateid201981979\'02\'05.;}{\levelnumbers\'01;}\fi-180\li3994\jclisttab\tx3994\lin3994 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981967\'02\'06.;}{\levelnumbers\'01;}\fi-360\li4714\jclisttab\tx4714\lin4714 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981977
+\'02\'07.;}{\levelnumbers\'01;}\fi-360\li5434\jclisttab\tx5434\lin5434 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'08.;}{\levelnumbers\'01;}
+\fi-180\li6154\jclisttab\tx6154\lin6154 }{\listname ;}\listid1281571492}{\list\listtemplateid-1551590348{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat3\levelspace0\levelindent0{\leveltext\'02\'00.;}{\levelnumbers\'01;}
+\fbias0 \fi-570\li570\jclisttab\tx570\lin570 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'04\'00.\'01.;}{\levelnumbers\'01\'03;}\fbias0 \fi-720\li720\jclisttab\tx720\lin720 }
+{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'06\'00.\'01.\'02.;}{\levelnumbers\'01\'03\'05;}\fbias0 \fi-720\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc0\levelnfcn0\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'08\'00.\'01.\'02.\'03.;}{\levelnumbers\'01\'03\'05\'07;}\fbias0 \fi-1080\li1080\jclisttab\tx1080\lin1080 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\levelspace0\levelindent0{\leveltext\'0a\'00.\'01.\'02.\'03.\'04.;}{\levelnumbers\'01\'03\'05\'07\'09;}\fbias0 \fi-1080\li1080\jclisttab\tx1080\lin1080 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelspace0\levelindent0{\leveltext\'0c\'00.\'01.\'02.\'03.\'04.\'05.;}{\levelnumbers\'01\'03\'05\'07\'09\'0b;}\fbias0 \fi-1440\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0
+\levelindent0{\leveltext\'0e\'00.\'01.\'02.\'03.\'04.\'05.\'06.;}{\levelnumbers\'01\'03\'05\'07\'09\'0b\'0d;}\fbias0 \fi-1800\li1800\jclisttab\tx1800\lin1800 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0
+\levelindent0{\leveltext\'10\'00.\'01.\'02.\'03.\'04.\'05.\'06.\'07.;}{\levelnumbers\'01\'03\'05\'07\'09\'0b\'0d\'0f;}\fbias0 \fi-1800\li1800\jclisttab\tx1800\lin1800 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelspace0\levelindent0{\leveltext\'12\'00.\'01.\'02.\'03.\'04.\'05.\'06.\'07.\'08.;}{\levelnumbers\'01\'03\'05\'07\'09\'0b\'0d\'0f\'11;}\fbias0 \fi-2160\li2160\jclisttab\tx2160\lin2160 }{\listname ;}\listid1693220687}{\list\listtemplateid1490295252
+\listhybrid{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid-347541092\'03(\'00);}{\levelnumbers\'02;}\i\fbias0 \fi-720\li1080\jclisttab\tx1080\lin1080 }{\listlevel\levelnfc0
+\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid1621418700\'02\'01.;}{\levelnumbers\'01;}\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2
+\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'02.;}{\levelnumbers\'01;}\fi-180\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0
+\levelindent0{\leveltext\leveltemplateid201981967\'02\'03.;}{\levelnumbers\'01;}\fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981977\'02\'04.;}{\levelnumbers\'01;}\fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981979
+\'02\'05.;}{\levelnumbers\'01;}\fi-180\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981967\'02\'06.;}{\levelnumbers\'01;}
+\fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'07.;}{\levelnumbers\'01;}\fi-360\li5760\jclisttab\tx5760\lin5760 }
+{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'08.;}{\levelnumbers\'01;}\fi-180\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid2079672518}}
+{\*\listoverridetable{\listoverride\listid1281571492\listoverridecount0\ls1}{\listoverride\listid991566684\listoverridecount0\ls2}{\listoverride\listid793139064\listoverridecount0\ls3}{\listoverride\listid1145397222\listoverridecount0\ls4}
+{\listoverride\listid1693220687\listoverridecount0\ls5}{\listoverride\listid2079672518\listoverridecount0\ls6}{\listoverride\listid1125663574\listoverridecount0\ls7}{\listoverride\listid-2\listoverridecount1{\lfolevel\listoverrideformat{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelold\levelspace120\levelindent360{\leveltext\'01-;}{\levelnumbers;}\fi-360\li360\lin360 }}\ls8}}{\*\pgptbl {\pgp\ipgp4\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp
+\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp2\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp2\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp2\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp2\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp2\itap0\li0
+\ri0\sb0\sa0}{\pgp\ipgp4\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp4\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp2\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp2\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp7\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp2\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp2\itap0\li0\ri0\sb0\sa0}
+{\pgp\ipgp2\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp2\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp2\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp2\itap0\li0\ri0\sb0\sa0}}{\*\rsidtbl \rsid7410\rsid134145\rsid146525\rsid357367\rsid467387\rsid479013\rsid550583\rsid665713\rsid671753
+\rsid680909\rsid740289\rsid744987\rsid787386\rsid1001627\rsid1003904\rsid1006295\rsid1123786\rsid1198303\rsid1274585\rsid1315628\rsid1333668\rsid1517197\rsid1531697\rsid1605470\rsid1646606\rsid1838932\rsid1900726\rsid1908125\rsid1910287\rsid1927149
+\rsid2097709\rsid2127157\rsid2171917\rsid2243943\rsid2315856\rsid2443886\rsid2518642\rsid2778318\rsid2845028\rsid2957051\rsid2967567\rsid3041878\rsid3308532\rsid3351297\rsid3366119\rsid3674147\rsid3681918\rsid4068675\rsid4072553\rsid4141137\rsid4203552
+\rsid4263088\rsid4590015\rsid4668720\rsid4787192\rsid4792507\rsid4795600\rsid4804465\rsid5000045\rsid5130040\rsid5179712\rsid5196599\rsid5252051\rsid5336688\rsid5405240\rsid5535858\rsid5592460\rsid5718452\rsid5728505\rsid5843451\rsid5854384\rsid5862148
+\rsid5898405\rsid5967975\rsid6118617\rsid6164835\rsid6298697\rsid6491698\rsid6509864\rsid6623124\rsid6841867\rsid6893973\rsid6954225\rsid6956953\rsid7092717\rsid7156551\rsid7297082\rsid7417194\rsid7550016\rsid7804007\rsid7865749\rsid7937989\rsid7956752
+\rsid7957670\rsid7961403\rsid8214814\rsid8223677\rsid8390574\rsid8617564\rsid8739237\rsid8986568\rsid8988550\rsid9011053\rsid9044192\rsid9050187\rsid9066446\rsid9184719\rsid9203582\rsid9244032\rsid9324643\rsid9451869\rsid9512039\rsid9512891\rsid9571361
+\rsid9634204\rsid9638658\rsid9644471\rsid9665892\rsid9842086\rsid9981622\rsid10112746\rsid10176353\rsid10291244\rsid10301428\rsid10301888\rsid10304997\rsid10307244\rsid10435030\rsid10490601\rsid10498882\rsid10583938\rsid10634517\rsid10636332\rsid10639361
+\rsid10701485\rsid10713426\rsid10821891\rsid10911253\rsid10969413\rsid11018064\rsid11028221\rsid11146833\rsid11354065\rsid11403497\rsid11497890\rsid11500287\rsid11560084\rsid11615211\rsid11697387\rsid11732538\rsid11744538\rsid11801353\rsid11814605
+\rsid11815318\rsid11867762\rsid11877701\rsid11891259\rsid11944640\rsid11955489\rsid11994362\rsid12077488\rsid12266521\rsid12329896\rsid12341034\rsid12352555\rsid12413198\rsid12416315\rsid12416909\rsid12469748\rsid12615361\rsid12782026\rsid12786065
+\rsid12800388\rsid12808559\rsid12861917\rsid12914026\rsid12935937\rsid13001982\rsid13006859\rsid13042044\rsid13042096\rsid13107898\rsid13193188\rsid13270374\rsid13307549\rsid13318727\rsid13375554\rsid13396612\rsid13440167\rsid13447507\rsid13462271
+\rsid13516652\rsid13644385\rsid13718743\rsid13771427\rsid13779383\rsid13895505\rsid13924068\rsid14028308\rsid14228514\rsid14253284\rsid14307269\rsid14380591\rsid14423972\rsid14495748\rsid14513201\rsid14549842\rsid14554732\rsid14577578\rsid14580217
+\rsid14768438\rsid14832690\rsid15011142\rsid15102434\rsid15337144\rsid15543440\rsid15548181\rsid15605252\rsid15813709\rsid15866372\rsid15948810\rsid16396781\rsid16659020}{\*\generator Microsoft Word 11.0.6359;}{\info
+{\title PROYECTO DE CIRCULACI\'d3N RESTRINGIDA}{\author  }{\operator DanielRD}{\creatim\yr2008\mo3\dy14\hr8\min25}{\revtim\yr2008\mo3\dy14\hr8\min25}{\printim\yr2008\mo1\dy25\hr10\min5}{\version2}{\edmins1}{\nofpages25}{\nofwords9308}{\nofchars51197}
+{\nofcharsws60385}{\vern24703}}\paperw12242\paperh20163\margl2268\margr1134\margt1701\margb2835 \deftab708\widowctrl\ftnbj\aenddoc\hyphhotz425\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\formshade\horzdoc\dgmargin\dghspace67\dgvspace180
+\dghorigin2268\dgvorigin1701\dghshow1\dgvshow2\jexpand\viewkind4\viewscale100\pgbrdrhead\pgbrdrfoot\splytwnine\ftnlytwnine\htmautsp\nolnhtadjtbl\useltbaln\alntblind\lytcalctblwd\lyttblrtgr\lnbrkrule\nobrkwrptbl\snaptogridincell\allowfieldendsel\wrppunct
+\asianbrkrule\rsidroot13895505 \fet0{\*\ftnsep \pard\plain \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid15543440 \chftnsep 
+\par }}{\*\ftnsepc \pard\plain \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid15543440 \chftnsepc 
+\par }}{\*\aftnsep \pard\plain \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid15543440 \chftnsep 
+\par }}{\*\aftnsepc \pard\plain \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid15543440 \chftnsepc 
+\par }}\sectd \psz5\linex0\endnhere\titlepg\sectlinegrid381\sectdefaultcl\sectrsid13895505\sftnbj {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3
+\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}
+{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}\pard\plain 
+\s2\ql \li0\ri0\keepn\widctlpar\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid13107898 \b\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid13107898\charrsid13107898 Sentencia}{\insrsid7156551\charrsid13107898  C-}
+{\insrsid12416909\charrsid13107898 033}{\insrsid13107898\charrsid13107898 /}{\insrsid7156551\charrsid13107898 08}{\insrsid13895505\charrsid13107898 
+\par }\pard\plain \qc \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\b\insrsid13895505\charrsid13107898 
+\par }\pard \qj \li3953\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin3953\itap0\pararsid13107898 {\insrsid13107898\charrsid13107898 Referencia: e}{\insrsid13895505\charrsid13107898 xpediente D-6824
+\par 
+\par Demanda de inconstitucionalidad contra los art\'edculos 174 (parcial) y 175 (parcial) de la Ley 1098 de 2006 }{\i\insrsid13895505\charrsid13107898 \'93Por la cual se expide el C\'f3digo de la Infancia y la Adolescencia\'94.
+\par }{\insrsid13895505\charrsid13107898 
+\par Demandantes: Mar\'eda Consuelo Gonz\'e1lez Toro y Ang\'e9lica del Pilar Su\'e1rez Mendoza.
+\par 
+\par Magistrado Ponente: 
+\par }{\insrsid13107898\charrsid13107898 Dr. }{\insrsid13895505\charrsid13107898 JAIME C\'d3RDOBA TRIVI\'d1O
+\par }\pard \qj \li2552\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin2552\itap0\pararsid13107898 {\b\insrsid13895505\charrsid13107898 
+\par 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid13895505\charrsid13107898 Bogot\'e1, }{\insrsid13107898 D.C., }{\insrsid12416909\charrsid13107898 veintitr\'e9s (23)}{\insrsid13107898  de }{
+\insrsid12416909\charrsid13107898 enero}{\insrsid13107898  }{\insrsid7156551\charrsid13107898 de dos mil ocho}{\insrsid13107898  }{\insrsid13895505\charrsid13107898 (200}{\insrsid7156551\charrsid13107898 8}{\insrsid13895505\charrsid13107898 ).
+\par 
+\par La Sala Plena de la Corte Constitucional, en ejercicio de sus atribuciones constitucionales y legales, en especial las previstas en el art\'edculo 241, numeral 4, de la Constituci\'f3n Pol\'edtica, y cumplidos todos los tr\'e1
+mites y requisitos contemplados en el Decreto 2067 de 1991, ha proferido la siguiente
+\par }\pard\plain \s16\qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 \f37\fs26\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 {\f0\fs28\insrsid13895505\charrsid13107898 
+\par }\pard\plain \qc \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\b\insrsid13895505\charrsid13107898 
+\par SENTENCIA
+\par }\pard\plain \s17\qj \fi34\li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 \fs20\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 {\fs28\insrsid13895505\charrsid13107898 
+\par }{\fs28\insrsid12416909\charrsid13107898 
+\par {\listtext\pard\plain\s17 \b\fs28\lang1034\langfe3082\langnp1034\insrsid13895505\charrsid13107898 \hich\af0\dbch\af0\loch\f0 I.\tab}}\pard \s17\qj \fi-720\li754\ri0\widctlpar
+\tx560\jclisttab\tx754\aspalpha\aspnum\faauto\ls1\adjustright\rin0\lin754\itap0\pararsid13107898 {\b\fs28\insrsid13895505\charrsid13107898 ANTECEDENTES 
+\par }\pard \s17\qj \li34\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin34\itap0\pararsid13107898 {\b\fs28\insrsid13895505\charrsid13107898 
+\par }\pard\plain \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid13895505\charrsid13107898 En ejercicio de la acci\'f3n p\'fablica consagrada en el art
+\'edculo 241 de la Constituci\'f3n Pol\'edtica, las ciudadanas Mar\'eda Consuelo Gonz\'e1lez Toro y Ang\'e9lica del Pilar Su\'e1rez Mendoza, solicitaron ante esta Corporaci\'f3n la declaratoria de inconstitucionalidad de  los art\'edculos 174 (parci
+al) y 175 (parcial) de la Ley 1098 de 2006 }{\i\insrsid13895505\charrsid13107898 \'93Por medio de  la cual se expide el C\'f3digo de la Infancia y la Adolescencia\'94.
+\par }{\b\insrsid13895505\charrsid13107898 
+\par }{\insrsid2171917\charrsid13107898 Las demandantes presentaron su demanda}{\insrsid11814605\charrsid13107898  inicial}{\insrsid2171917\charrsid13107898  }{\insrsid11814605\charrsid13107898 a trav\'e9s de}{\insrsid2171917\charrsid13107898 
+ escrito radicado en la Corte el siete (7) de mayo de dos mil siete (2007). }{\insrsid7417194\charrsid13107898 Mediante}{\insrsid6956953\charrsid13107898  providencia de quince (15) de }{\insrsid2171917\charrsid13107898 mayo c}{
+\insrsid12786065\charrsid13107898 ursan}{\insrsid2171917\charrsid13107898 tes,}{\insrsid6956953\charrsid13107898 
+ el magistrado sustanciador dispuso inadmitir la demanda, al advertir que los motivos de inconstitucionalidad aducidos por las demandantes no cumpl}{\insrsid467387\charrsid13107898 \'edan con las condiciones de claridad, certeza, especific
+idad, pertinencia y suficiencia, que conforme a la jurisprudencia de la Corte, deben }{\insrsid12786065\charrsid13107898 caracterizar}{\insrsid467387\charrsid13107898  las razones que fundamentan el cargo de inconstitucionalidad.}{
+\insrsid7417194\charrsid13107898  Por consiguiente,}{\insrsid467387\charrsid13107898  }{\insrsid7417194\charrsid13107898 s}{\insrsid467387\charrsid13107898 e concedi\'f3 }{\insrsid12786065\charrsid13107898 a las demandantes }{
+\insrsid467387\charrsid13107898 el t\'e9rmino de ley para la correcci\'f3n de su demanda.}{\insrsid2171917\charrsid13107898  En escrito }{\insrsid12786065\charrsid13107898 presentado en mayo 23, }{\insrsid1315628\charrsid13107898 quienes demandan}{
+\insrsid12786065\charrsid13107898  afirman corregir }{\insrsid1315628\charrsid13107898 el libelo}{\insrsid12786065\charrsid13107898  inicial y agregan a}{\insrsid5718452\charrsid13107898 l mismo}{\insrsid12786065\charrsid13107898  algunos p\'e1rrafos.}{
+\insrsid7417194\charrsid13107898  }{\insrsid12786065\charrsid13107898 Mediante providencia de mayo 25 de 2007}{\insrsid467387\charrsid13107898 , la demanda fue admitida}{\insrsid5718452\charrsid13107898  por el Despacho sustanciador}{
+\insrsid12786065\charrsid13107898 .}{\insrsid467387\charrsid13107898 
+\par }{\insrsid6956953\charrsid13107898 
+\par }\pard\plain \s17\qj \li34\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin34\itap0\pararsid13107898 \fs20\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 {\fs28\insrsid13895505\charrsid13107898 Cumplidos los tr\'e1mites constituci
+onales y legales propios de esta clase de procesos, entra la Corte a decidir sobre la demanda de la referencia.
+\par }\pard\plain \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\b\insrsid13895505\charrsid13107898 
+\par }{\b\insrsid11801353\charrsid13107898 
+\par }{\b\insrsid13107898 II. }{\b\insrsid13895505\charrsid13107898 NORMAS DEMANDADAS
+\par 
+\par }\pard\plain \s18\qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 \fs28\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 {\lang3082\langfe3082\langnp3082\insrsid13895505\charrsid13107898 A continuaci\'f3
+n se transcribe el texto de las disposiciones parcialmente demandadas, de conformidad con su publicaci\'f3n en el Diario oficial N}{\lang3082\langfe3082\langnp3082\insrsid13462271\charrsid13107898 o}{
+\lang3082\langfe3082\langnp3082\insrsid13895505\charrsid13107898 .}{\lang3082\langfe3082\langnp3082\insrsid13462271\charrsid13107898  46.446 de noviembre 8 de 2006, }{\lang3082\langfe3082\langnp3082\insrsid13895505\charrsid13107898 y se subraya lo acusado
+}{\lang3082\langfe3082\langnp3082\insrsid11801353\charrsid13107898 :}{\b\lang3082\langfe3082\langnp3082\insrsid13895505\charrsid13107898 
+\par }\pard\plain \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\b\insrsid13895505 
+\par }{\b\insrsid13107898\charrsid13107898 
+\par }\pard \qc \li567\ri618\widctlpar\aspalpha\aspnum\faauto\adjustright\rin618\lin567\itap0\pararsid13107898 {\fs24\insrsid13895505\charrsid13107898 "LEY No.}{\fs24\insrsid13462271\charrsid13107898  1098}{\fs24\insrsid13895505\charrsid13107898   DE }{
+\fs24\insrsid13462271\charrsid13107898 2006}{\fs24\insrsid13895505\charrsid13107898  
+\par }{\fs24\insrsid13107898 (}{\fs24\insrsid6841867\charrsid13107898 Noviembre}{\fs24\insrsid13462271\charrsid13107898  8}{\fs24\insrsid13895505\charrsid13107898 )
+\par 
+\par }\pard \qc \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\i\fs24\cf1\insrsid13462271\charrsid13107898 \'93Por la cual se expide el C\'f3digo de la Infancia y la Adolescencia\'94.
+\par }{\fs24\cf1\insrsid13462271\charrsid13107898 
+\par }\pard \qc \li567\ri618\widctlpar\aspalpha\aspnum\faauto\adjustright\rin618\lin567\itap0\pararsid13107898 {\fs24\insrsid13895505\charrsid13107898 
+\par El Congreso de Colombia
+\par 
+\par DECRETA:
+\par }\pard \qj \li567\ri618\widctlpar\aspalpha\aspnum\faauto\adjustright\rin618\lin567\itap0\pararsid13107898 {\fs24\insrsid6956953\charrsid13107898 
+\par \'93}{\fs24\insrsid13895505\charrsid13107898 (\'85)
+\par }{\fs24\insrsid671753\charrsid13107898 
+\par }\pard \qc \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\fs24\insrsid671753\charrsid13107898 {\*\bkmkstart CAPITULO_IIIC}CAP\'cdTULO III{\*\bkmkend CAPITULO_IIIC}
+\par 
+\par REPARACI\'d3N DEL DA\'d1O. 
+\par }\pard \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\fs24\cf1\insrsid671753\charrsid13107898 
+\par }\pard \qc \li567\ri618\widctlpar\aspalpha\aspnum\faauto\adjustright\rin618\lin567\itap0\pararsid13107898 {\fs24\insrsid671753\charrsid13107898 (\'85)
+\par }\pard \qj \li567\ri618\widctlpar\aspalpha\aspnum\faauto\adjustright\rin618\lin567\itap0\pararsid13107898 {\fs24\insrsid13895505\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\fs24\cf1\insrsid13042044\charrsid13107898 ART\'cdCULO 174. DEL PRINCIPIO DE OPORTUNIDAD, LA CONCILIACI\'d3N Y LA REPARACI\'d3N INTEGRAL DE LOS DA\'d1
+OS. Las autoridades judiciales deber\'e1n facilitar en todo momento el logro de acuerdos que permitan la conciliaci\'f3n y la reparaci\'f3n de los da\'f1os, y tendr\'e1n como principio rector la aplicaci\'f3n preferente del principio de oportunidad. }{
+\fs24\ul\cf1\insrsid13042044\charrsid13107898 Estas se realizar\'e1n con el consentimiento de ambas partes y}{\fs24\cf1\insrsid13042044\charrsid13107898  se llevar\'e1n a cabo con una visi\'f3n pedag\'f3gica y formativa mediante la cual el ni\'f1o, la ni
+\'f1a o el adolescente pueda tomar conciencia de las consecuencias de su actuaci\'f3n delictiva y de las responsabilidades que de ella se derivan. As\'ed mismo, el conciliador buscar\'e1 la reconciliaci\'f3n con la v\'edctima.
+\par \~
+\par Cuando de la }{\fs24\ul\cf1\insrsid13042044\charrsid13107898 aplicaci\'f3n del principio de oportunidad se pudieren derivar riesgos para la vida y la integridad f\'edsica del adolescente}{\fs24\cf1\insrsid13042044\charrsid13107898 
+, el juez competente deber\'e1 ordenar otras medidas de protecci\'f3n, las cuales incluir\'e1n, entre otras, ayudas econ\'f3micas para el cambio de residencia de la familia. El Gobierno gestionar\'e1 la apropiaci\'f3
+n de las partidas necesarias para cubrir a este rubro.
+\par }{\b\fs24\insrsid13895505\charrsid13107898 
+\par }{\fs24\cf1\insrsid11801353\charrsid13107898 ART\'cdCULO 175. EL P}{\fs24\cf1\insrsid13042044\charrsid13107898 R}{\fs24\cf1\insrsid11801353\charrsid13107898 IN}{\fs24\cf1\insrsid13042044\charrsid13107898 C}{\fs24\cf1\insrsid11801353\charrsid13107898 I}{
+\fs24\cf1\insrsid13042044\charrsid13107898 PIO DE OPORTUNIDAD EN LOS PROCESOS SEGUIDOS A LOS ADOLESCENTES COMO PART\'cdCIPES DE LOS DELITOS COMETIDOS POR GRUPOS ARMADOS AL MARGEN DE LA LEY. La Fiscal\'eda General de la Naci\'f3n podr\'e1 }{
+\fs24\ul\cf1\insrsid13042044\charrsid13107898 renunciar }{\fs24\cf1\insrsid13042044\charrsid13107898 a la persecuci\'f3n penal, en los casos en que los adolescentes, en cualquier condici\'f3
+n hayan hecho parte de grupos armados al margen de la ley, o hayan participado directa o indirectamente en las hostilidades o en acciones armadas o en los delitos cometidos por grupos armados al margen de la ley cuando:
+\par \~
+\par 1. }{\fs24\ul\cf1\insrsid13042044\charrsid13107898 Se establezca que el adolescente tuvo como fundamento de su decisi\'f3n las condiciones sociales, econ\'f3micas y culturales de su medio para haber estimado como de mayor valor la pert
+enencia a un grupo armado al margen de la ley.
+\par }{\fs24\cf1\insrsid13042044\charrsid13107898 \~
+\par 2. }{\fs24\ul\cf1\insrsid13042044\charrsid13107898 Se establezca que la situaci\'f3n de marginamiento social, econ\'f3mico y cultural no le permit\'edan al adolescente contar con otras alternativas de desarrollo de su personalidad.
+\par }{\fs24\cf1\insrsid13042044\charrsid13107898 \~
+\par 3. }{\fs24\ul\cf1\insrsid13042044\charrsid13107898 Se establezca que el adolescente no estaba en capacidad de orientar sus esfuerzos a conocer otra forma de participaci\'f3n social.
+\par }{\fs24\cf1\insrsid13042044\charrsid13107898 \~
+\par 4. }{\fs24\ul\cf1\insrsid13042044\charrsid13107898 Por fuerza, amenaza, coacci\'f3n y constre\'f1imiento.
+\par 
+\par }{\fs24\cf1\insrsid13042044\charrsid13107898 Los adolescentes que se desvinculen de grupos armados al margen de la ley, tendr\'e1n que ser remitidos al programa de atenci\'f3n especializada del Instituto Colombiano de Bienestar Familiar, para ni\'f1os, ni
+\'f1as y adolescentes desvinculados de grupos armados irregulares.
+\par \~
+\par PAR\'c1GRAFO. No se aplicar\'e1 el principio de oportunidad cuando se trate de hechos que puedan significar violaciones graves al derecho internacional humanitario, cr\'edmenes de lesa humanidad o genocidio de acuerdo con el Estatuto de Roma}{
+\fs24\cf1\insrsid6956953\charrsid13107898 \'94.}{\fs24\cf1\insrsid13042044\charrsid13107898 
+\par }{\b\insrsid13042044\charrsid13107898 
+\par }{\b\insrsid146525\charrsid13107898 
+\par {\listtext\pard\plain\b\fs28\insrsid13895505\charrsid13107898 \hich\af0\dbch\af0\loch\f0 III.\tab}}\pard \qj \fi-720\li754\ri0\widctlpar\jclisttab\tx536\aspalpha\aspnum\faauto\ls2\adjustright\rin0\lin754\itap0\pararsid13107898 {
+\b\insrsid13895505\charrsid13107898 LA DEMANDA
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\b\insrsid13895505\charrsid13107898 
+\par }{\insrsid671753\charrsid13107898 Las demandantes fundamentan su acusaci\'f3n parcial contra los art\'edculos 174 y 175 de la Ley 1098 de 2007, en los siguientes argumentos:
+\par 
+\par {\listtext\pard\plain\fs28\insrsid12786065\charrsid13107898 \hich\af0\dbch\af0\loch\f0 1.\tab}}\pard \qj \fi-360\li829\ri0\widctlpar\jclisttab\tx829\aspalpha\aspnum\faauto\ls3\adjustright\rin0\lin829\itap0\pararsid13107898 {
+\insrsid12786065\charrsid13107898 Respecto de la expresi\'f3n del art\'edculo 174, seg\'fan la cual }{\i\insrsid12786065\charrsid13107898 \'93estas se realizar\'e1n con el consentimiento de las partes\'94 }{\insrsid12786065\charrsid13107898 
+referida a la posibilidad de realizar acuerdos que permitan la conciliaci\'f3n y la reparaci\'f3n de los da\'f1os}{\insrsid13718743\charrsid13107898 , sostienen que con ella }{\i\insrsid13718743\charrsid13107898 \'93se desconoce la participaci\'f3
+n del fiscal en la aplicaci\'f3n del principio de oportunidad, ya que es \'e9ste y no las partes quien decide de acuerdo con la pol\'edtica criminal del Estado y concepto del juez de control de garant\'edas si es procedente o no\'94. }{
+\insrsid13718743\charrsid13107898 En el escrito de correcci\'f3n de la demanda agregan  respecto de este cargo, que el principio de oportunidad }{\i\insrsid13718743\charrsid13107898 \'93es exclusivo de la Fiscal\'eda\'94.}{
+\i\insrsid3681918\charrsid13107898 
+\par }\pard \qj \li469\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin469\itap0\pararsid13107898 {\i\insrsid3681918\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid13718743\charrsid13107898 \hich\af0\dbch\af0\loch\f0 2.\tab}}\pard \qj \fi-360\li829\ri0\widctlpar\jclisttab\tx829\aspalpha\aspnum\faauto\ls3\adjustright\rin0\lin829\itap0\pararsid13107898 {
+\insrsid13718743\charrsid13107898 Con}{\insrsid15866372\charrsid13107898  relaci\'f3n }{\insrsid13718743\charrsid13107898 a}{\insrsid15866372\charrsid13107898  }{\insrsid13718743\charrsid13107898 la expresi\'f3n }{\i\cf1\insrsid15866372\charrsid13107898  
+}{\i\cf1\insrsid13718743\charrsid13107898 \'93}{\i\ul\cf1\insrsid15866372\charrsid13107898 aplicaci\'f3n del principio de oportunidad se pudieren derivar riesgos para la vida y la integridad f\'edsica del adolescente\'94}{
+\i\cf1\insrsid15866372\charrsid13107898 , }{\cf1\insrsid13718743\charrsid13107898 contenida en }{\insrsid13718743\charrsid13107898 el inciso 2\'b0 del art\'edculo 174, afirman}{\cf1\insrsid13718743\charrsid13107898  que es inconstitucional }{
+\i\cf1\insrsid13718743\charrsid13107898 \'93pues e}{\i\cf1\insrsid3308532\charrsid13107898 s}{\i\cf1\insrsid13718743\charrsid13107898  necesario e importante que exista una pol\'edtica criminal concreta en la que se diga cu\'e1les son los rie}{
+\i\cf1\insrsid11560084\charrsid13107898 s}{\i\cf1\insrsid13718743\charrsid13107898 gos que puede sufrir el menor en su vida e integridad}{\i\cf1\insrsid11560084\charrsid13107898 , pues el fiscal tendr\'ed
+a una amplia discrecionalidad seleccionado los casos en que se podr\'edan dar estos supuestos\'94.}{\cf1\insrsid11560084\charrsid13107898  En su segundo escrito agregan, con relaci\'f3n a este cargo, que la expresi\'f3n se\'f1alada es violatoria del }{
+\i\cf1\insrsid11560084\charrsid13107898 \'93art\'edculo 13 de la Constituci\'f3n, viola el art\'edculo 2\'ba de la Convenci\'f3n sobre los Derechos del Ni\'f1o, as\'ed
+ como los principios establecidos en el Derecho Internacional y Derechos Humanos (sic); el principio de \'93igualdad\'94 y el derecho a la no discriminaci\'f3n, lo anterior porque no se prev\'e9
+ estas circunstancias para los menores que se encuentran en grupos al margen de la Ley\'94.}{\i\insrsid9184719\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\i\insrsid11560084\charrsid13107898 
+\par }\pard \qj \li829\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin829\itap0\pararsid13107898 {\cf1\insrsid11560084\charrsid13107898 Agregan respecto de la misma expresi\'f3n}{\cf1\insrsid1927149\charrsid13107898 ,}{
+\cf1\insrsid11560084\charrsid13107898  que ella configura una violaci\'f3n }{\i\cf1\insrsid11560084\charrsid13107898 \'93al principio de especialidad de la justicia de menores }{\i\cf1\insrsid1927149\charrsid13107898 establecida en el art\'ed
+culo 5.5 de la Convenci\'f3n Americana, al igual que debido proceso\'94, }{\cf1\insrsid1927149\charrsid13107898 sin que desarrollen tal censura.}{\insrsid11560084\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\i\insrsid13718743\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid1927149\charrsid13107898 \hich\af0\dbch\af0\loch\f0 3.\tab}}\pard \qj \fi-360\li829\ri0\widctlpar\jclisttab\tx829\aspalpha\aspnum\faauto\ls3\adjustright\rin0\lin829\itap0\pararsid13107898 {
+\insrsid1927149\charrsid13107898 Sobre el art\'edculo 175, que contempla algunas causales con fundamento en las cuales la Fiscal\'eda podr\'eda }{\i\insrsid1927149\charrsid13107898 renunciar }{\insrsid1927149\charrsid13107898 a la persecuci\'f3
+n penal del adolescente que hubiere formado parte de los grupos armados ilegales, afirman las actoras que con la consagraci\'f3n de la  }{\i\insrsid1927149\charrsid13107898 \'93renuncia\'94 }{\insrsid1927149\charrsid13107898 como \'fa
+nica posibilidad de aplicar el principio de oportunidad, el legislador est\'e1 desconociendo el \'e1mbito que le es propio ya que }{\i\insrsid1927149\charrsid13107898 \'93\'e9ste se da en tres supuestos, la suspensi\'f3n, la interrupci\'f3n y la renuncia
+\'94.
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\i\insrsid1927149\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid1927149\charrsid13107898 \hich\af0\dbch\af0\loch\f0 4.\tab}}\pard \qj \fi-360\li829\ri0\widctlpar\jclisttab\tx829\aspalpha\aspnum\faauto\ls3\adjustright\rin0\lin829\itap0\pararsid13107898 {
+\insrsid1927149\charrsid13107898 En relaci\'f3n con las cuatro causales que conforme a la misma disposici\'f3n (Art.}{\insrsid3308532\charrsid13107898  175) permitir\'edan a la Fiscal\'eda}{\insrsid1927149\charrsid13107898  la aplicaci\'f3
+n del principio de oportunidad, las demandantes estiman que si dicho principio se supedita a }{\insrsid9512891\charrsid13107898 condiciones sociales, econ\'f3micas o familiares, }{\i\insrsid9512891\charrsid13107898 \'93se est\'e1
+ reconociendo que el Estado no tiene la capacidad para garantizar a sus asociados condiciones m\'ednimas de subsistencia como los }{\i\insrsid11814605\charrsid13107898 (sic) }{\i\insrsid9512891\charrsid13107898 estipulados en la Constituci\'f3
+n y los Tratados Internacionales ratificados por Colombia\'94}{\i\insrsid1927149\charrsid13107898 
+\par }\pard \qj \li829\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin829\itap0\pararsid13107898 {\insrsid1927149\charrsid13107898 
+\par }{\insrsid9512891\charrsid13107898 Sostienen quienes demandan que, no resulta admisible }{\i\insrsid9512891\charrsid13107898 \'93tanta discrecionalidad y menos en actos cometidos por j\'f3
+venes incursos en grupos armados al margen de la ley porque se pueden excusar en el hecho de que no ten\'edan salida\'85\'94}{\insrsid9512891\charrsid13107898  A su juicio tambi\'e9n resulta violado el derecho a la igualdad }{
+\i\insrsid9512891\charrsid13107898 \'93pues se observa que se tiene m\'e1s inter\'e9s en los j\'f3venes pertenecientes a grupos al margen de la ley\'94.}{\i\insrsid9512891 
+\par }{\i\insrsid13107898\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid2243943\charrsid13107898 \hich\af0\dbch\af0\loch\f0 5.\tab}}\pard \qj \fi-360\li829\ri0\widctlpar\jclisttab\tx829\aspalpha\aspnum\faauto\ls3\adjustright\rin0\lin829\itap0\pararsid13107898 {
+\insrsid2243943\charrsid13107898 Al referirse a las circunstancias en que seg\'fan el precepto acusado, proceder\'eda la aplicaci}{\insrsid7956752\charrsid13107898 \'f3n del principio }{\insrsid11814605\charrsid13107898 de oportunidad se\'f1alan que los i
+}{\insrsid7956752\charrsid13107898 nstrumentos }{\insrsid11814605\charrsid13107898 i}{\insrsid7956752\charrsid13107898 nternacionales ratificados por el Estado colombiano }{\i\insrsid7956752\charrsid13107898 \'93
+son de obligatorio cumplimiento por hacer parte sustancial del bloque de constitucionalidad\'94}{\insrsid7956752\charrsid13107898 . Sostienen que Colombia ha ratificado tanto la Convenci\'f3n sobre los Derechos del Ni\'f1
+o como el Protocolo II Adicional a los Convenios de Ginebra, que proh\'edben que los menores de 15 a\'f1os sean reclutados en fuerzas o grupos armados y \'93}{\i\insrsid7956752\charrsid13107898 que participen directamente en las hostilidades\'94}{
+\insrsid7956752\charrsid13107898 . }{\i\insrsid7956752\charrsid13107898  }{\insrsid7956752\charrsid13107898 Y agregan de manera confusa que los grupos armados }{\i\insrsid7956752\charrsid13107898 \'93
+acatan solamente las normas relativas al Derecho Internacional Humanitario, por lo que aducen poder reclutar ni\'f1os y ni\'f1as entre los 15 y los 18 a\'f1os, en contra de la reserva elevada por Colombia sobre la Convenci\'f3
+n Internacional sobre los Derechos del Ni\'f1o\'94.}{\i\insrsid9512891\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid2243943\charrsid13107898 
+\par }\pard \qj \li829\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin829\itap0\pararsid13107898 {\insrsid7956752\charrsid13107898 Sobre este mismo aspecto afirman que Colombia tambi\'e9n ha ratificado el Convenio 182 de 1999 }{
+\insrsid9644471\charrsid13107898 de la Organizaci\'f3n Internacional del Trabajo, relativo a la obligaci\'f3n de los Estados Parte de emprender todas las medidas para erradicar las peores formas de trabajo }{\insrsid3366119\charrsid13107898 
+infantil. Sin embargo, no exponen las razones por las cuales el art\'edculo 175 demandado entrar\'eda en contradicci\'f3n con la Constituci\'f3n o con los Instrumentos Internacionales que hacen parte del bloque de constitucionalidad. Mencionan as\'ed
+ mismo el Protocolo Opcional a la Convenci\'f3n Internacional sobre los Derechos del Ni\'f1o, que proh\'edbe el reclutamiento de menores de 18 a\'f1os en los conflictos armados }{\i\insrsid3366119\charrsid13107898 \'93el cual se encuentra en tr\'e1
+mite de ratificaci\'f3n en el Congreso de la Rep\'fablica\'94, }{\insrsid3366119\charrsid13107898 sin adicionar ning\'fan an\'e1lisis al respecto.}{\insrsid2243943\charrsid13107898 
+\par }{\insrsid3366119\charrsid13107898 
+\par }\pard \qj \li871\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin871\itap0\pararsid13107898 {\insrsid3366119\charrsid13107898 Concluyen se\'f1alando que }{\insrsid357367\charrsid13107898 la }{\insrsid5898405\charrsid13107898 amplitud en la }{
+\insrsid357367\charrsid13107898  configuraci\'f3n de}{\insrsid5898405\charrsid13107898  las }{\insrsid357367\charrsid13107898 causales para la aplicaci\'f3n del principio de oportunidad }{\insrsid10112746\charrsid13107898 en }{
+\insrsid357367\charrsid13107898 favor de los adolescentes}{\insrsid5898405\charrsid13107898 , permite una excesiva discrecionalidad y un trato demasiado benigno a estos infractores, lo que a su vez podr\'eda convertir esta re}{
+\insrsid10112746\charrsid13107898 gulaci\'f3n en un incentivo}{\insrsid5898405\charrsid13107898  para que los grupos armados }{\insrsid14577578\charrsid13107898 acudieran}{\insrsid10112746\charrsid13107898 ,}{\insrsid14577578\charrsid13107898  }{
+\insrsid10112746\charrsid13107898 cada vez }{\insrsid14577578\charrsid13107898 con mayor frecuencia}{\insrsid10112746\charrsid13107898 ,}{\insrsid14577578\charrsid13107898  a la incorporaci\'f3n de estos menores}{\insrsid4072553\charrsid13107898 ,}{
+\insrsid14577578\charrsid13107898  con enorme sacrificio de }{\insrsid4072553\charrsid13107898 los deberes de protecci\'f3n a los menores, y de }{\insrsid1517197\charrsid13107898 la garant\'ed}{\insrsid14577578\charrsid13107898 
+a de verdad, justicia y reparaci\'f3n. }{\i\insrsid4072553\charrsid13107898 
+\par }{\i\insrsid3366119\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid3366119\charrsid13107898 \hich\af0\dbch\af0\loch\f0 6.\tab}}\pard \qj \fi-360\li829\ri0\widctlpar\jclisttab\tx829\aspalpha\aspnum\faauto\ls3\adjustright\rin0\lin829\itap0\pararsid13107898 {
+\insrsid3366119\charrsid13107898 Con relaci\'f3n a la presunta vulneraci\'f3n del art\'edculo 13 de la Constituci\'f3n}{\insrsid1517197\charrsid13107898 , afirman las demandantes que }{\i\insrsid1517197\charrsid13107898 \'93
+en los menores la margen de la ley se tienen en cuenta circunstancias familiares, sociales, culturales, y no se dan estos supuestos en los \'93ni\'f1os\'94
+ que no pertenecen a estos grupos armados, aun cuando estas mismas circunstancias son las que hacen que un ni\'f1o quebrante la ley, independientemente que pertene
+zcan o no a un grupo armado al margen de la ley  son menores infractores que necesitan medidas de protecci\'f3n sin ning\'fan tipo de discriminaci\'f3n\'94.}{\i\insrsid3366119\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid4072553\charrsid13107898 
+\par }{\i\insrsid5898405\charrsid13107898 
+\par {\listtext\pard\plain\b\fs28\insrsid13895505\charrsid13107898 \hich\af0\dbch\af0\loch\f0 IV.\tab}}\pard \qj \fi-720\li754\ri0\widctlpar\jclisttab\tx754\aspalpha\aspnum\faauto\ls2\adjustright\rin0\lin754\itap0\pararsid13107898 {
+\b\insrsid13895505\charrsid13107898 INTERVENCIONES
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\b\insrsid13895505\charrsid13107898 
+\par {\listtext\pard\plain\b\fs28\insrsid11867762\charrsid13107898 \hich\af0\dbch\af0\loch\f0 1.\tab}}\pard \qj \fi-536\li536\ri0\widctlpar\jclisttab\tx536\aspalpha\aspnum\faauto\ls4\adjustright\rin0\lin536\itap0\pararsid13107898 {
+\b\insrsid11867762\charrsid13107898 De la Fiscal\'eda General de la Naci\'f3n}{\b\insrsid13895505\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\b\insrsid11867762\charrsid13107898 
+\par }{\insrsid10821891\charrsid13107898 Para la Fiscal\'eda la expresi\'f3n }{\i\insrsid10821891\charrsid13107898 \'93Estas se realizar\'e1n con el consentimiento de ambas partes\'94 }{\insrsid10821891\charrsid13107898 contenida en el inciso primero del art
+\'edculo 174 de la Ley 1098 de 2006, no excluye a ese organismo de la aplicaci\'f3n del principio de oportunidad, ni coarta las facultades procesales reconocidas al ente acusador por la Constituci\'f3n. Conforme a una larga tradici\'f3n jur\'ed
+dica, la acci\'f3n penal es de car\'e1cter p\'fablico, y la Fiscal\'eda \'93la \'fanica depositaria de su ejercicio\'94 por lo que es insostenible la interpretaci\'f3n de las actoras en el sentido que el principio de oportunidad se pud
+iese aplicar por el convenio entre v\'edctima e imputado. Bajo una interpretaci\'f3n correcta del precepto, \'e9ste resulta exequible.
+\par 
+\par }{\insrsid6298697\charrsid13107898 En cuanto}{\insrsid16659020\charrsid13107898  al cargo relativo a la}{\insrsid6298697\charrsid13107898  indeterminaci\'f3n de los eventos en }{\insrsid16659020\charrsid13107898 que es posible ordenar medidas de protecci
+\'f3n para conjurar los riesgos para la vida e integridad f\'edsica del adolescente, originados en la aplicaci\'f3n del principio de oportunidad,  estima la Fiscal\'eda que el precepto, con buen criterio, dej\'f3
+ en manos del juez competente la potestad de evaluar el riesgo y ponderar la necesidad de una medida para la protecci\'f3n de la vida e integridad del menor. Le era imposible al legislador prever y enumerar todas las posibles fuentes de riesgo. As\'ed
+, resulta claro para la Fiscal\'eda que }{\insrsid1900726\charrsid13107898 para cada tipo de riesgo la medida a adoptar debe ser diferente, y por ende la medida se ajusta al art\'edculo 13 de la Carta}{\insrsid146525\charrsid13107898 ,}{
+\insrsid1900726\charrsid13107898  y al segundo de la Convenci\'f3n sobre los Derechos del Ni\'f1o.}{\insrsid13895505\charrsid13107898 
+\par }{\insrsid1900726\charrsid13107898 
+\par }{\insrsid1900726\charrsid13107898 Estima, adem\'e1s, que la mencionada indeterminaci\'f3n sobre los supuestos que originan las medidas de protecci}{\insrsid1838932\charrsid13107898 \'f3n, no vulnera el p
+rincipio de especialidad de la justicia de menores establecido en el art\'edculo 5.5 de la Convenci\'f3n Americana sobre Derechos Humanos, y el debido proceso, puesto que el juez que las aplica est\'e1
+ adscrito al sistema de responsabilidad penal de los adolescentes, quien est\'e1 investido de la facultad de adoptar medidas de protecci\'f3n cuando quiera que de la aplicaci\'f3n del principio de oportun}{\insrsid13307549\charrsid13107898 
+idad se desprendan peligros para}{\insrsid1838932\charrsid13107898  el menor imputado.}{\insrsid1900726\charrsid13107898 
+\par }{\insrsid1838932\charrsid13107898 
+\par }{\insrsid1838932\charrsid13107898 En relaci\'f3n con el cargo contra el inciso primero del art\'edculo 175, relativo a la limitaci\'f3n del principio de oportunidad, en materia de responsabilidad de los adolescentes, a la }{
+\i\insrsid1838932\charrsid13107898 \'93renuncia\'94}{\insrsid1838932\charrsid13107898  de la acci\'f3n, considera la Fiscal\'eda que }{\insrsid6164835\charrsid13107898 en este evento el legislador est\'e1
+ haciendo uso de la facultad constitucional de desarrollar racionalmente la pol\'edtica criminal del Estado y, en tal medida, ning\'fan reproche de constitucionalidad puede hacerse a tal disposici\'f3n.}{\insrsid13895505\charrsid13107898 
+\par }{\insrsid6164835\charrsid13107898 
+\par }{\insrsid6164835\charrsid13107898 Estima la Fiscal\'eda que el cargo consistente en la violaci\'f3n del principio de igualdad, por el hecho de que el legislador no hizo extensivas, a otros menores infractores,  las causales del art\'ed
+culo 175 que ameritan medidas de protecci\'f3n a favor de adolescentes que hacen parte de grupos armados al margen de la ley, debe prosperar puesto que }{\i\insrsid6164835\charrsid13107898 \'93no resulta constitucionalmente leg\'edtimo 
+que esas mismas medidas no protejan a otros menores que hayan trasgredido la ley penal por las mismas circunstancias se\'f1aladas en el art\'edculo 175 del C\'f3digo de la Infancia y la adolescencia}{\i\insrsid12469748\charrsid13107898 \'94.}{
+\insrsid12469748\charrsid13107898 
+\par }{\i\insrsid12469748\charrsid13107898 
+\par }{\insrsid12469748\charrsid13107898 Concluye la Fiscal\'eda se\'f1alando que en efecto, la norma contiene un trato discriminatorio contra los menores que no hacen parte de grupos armados al margen de la ley, puesto que aunque la situaci\'f3
+n de un menor de edad que es v\'edctima del conflicto armado, y que hace parte de uno de estos grupos, es diferente a la de otros menores que tambi\'e9n son v\'edctimas de otro tipo de violencias, presenta similitudes que son m\'e1
+s relevantes que las diferencias, por lo que se exigir\'eda un trato igual. }{\insrsid5728505\charrsid13107898 Solicita la declaratoria de inexequibilidad de las expresiones }{\i\insrsid5728505\charrsid13107898 \'93(\'85) en cualquier condici\'f3
+n hayan hecho parte de grupos armados al margen de la ley, o hayan participado directa o indirectamente en las hostilidades o en acciones armadas o en los delitos cometidos por grupos armados al margen de la ley cuando\'94, }{
+\insrsid5728505\charrsid13107898 y }{\i\insrsid13307549\charrsid13107898 \'93por}{\i\insrsid5728505\charrsid13107898  haber estimado como de mayor valor la pertenencia a un grupo armado al margen de la ley\'94, }{\insrsid5728505\charrsid13107898 
+contenidas en el art\'edculo 175 de la Ley 1098 de 2006.}{\insrsid6164835\charrsid13107898 
+\par }{\b\insrsid13895505\charrsid13107898 
+\par {\listtext\pard\plain\b\fs28\insrsid12469748\charrsid13107898 \hich\af0\dbch\af0\loch\f0 2.\tab}}\pard \qj \fi-720\li720\ri0\widctlpar\tx536\jclisttab\tx720\aspalpha\aspnum\faauto\ls4\adjustright\rin0\lin720\itap0\pararsid13107898 {
+\b\insrsid12469748\charrsid13107898 Del Ministerio del Interior y de Justicia}{\b\insrsid13895505\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\b\insrsid13895505\charrsid13107898 
+\par }{\insrsid5854384\charrsid13107898 Solicita a la Corte se declare inhibida para emitir pronunciamiento de fondo sobre las pretensiones de la demanda, por formulaci\'f3n apenas aparente de cargos, \'f3
+ en caso de optar por el estudio de fondo, declare la exequibilidad de los apartes demandados. Sustenta su solicitud en los siguientes argumentos:
+\par 
+\par }{\insrsid1517197\charrsid13107898 2.1. }{\insrsid5854384\charrsid13107898 Cita abundante jurisprudencia de esta Corporaci\'f3n relativa a los requisitos que deben cumplir las demandas de inconstitucionalidad, y se\'f1ala que }{
+\i\insrsid5854384\charrsid13107898 \'93no existe una confrontaci\'f3n en abstracto entre el contenido de las disposiciones }{\insrsid5854384\charrsid13107898  }{\i\insrsid5854384\charrsid13107898 acusadas y las normas constitucionales objeto de vulneraci
+\'f3n, siendo por ende los argumentos con los cuales se sustentan los cargos aludidos}{\i\insrsid13307549\charrsid13107898 ,}{\i\insrsid5854384\charrsid13107898  puramente superficiales\'94.
+\par }\pard \qj \li360\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin360\itap0\pararsid13107898 {\i\insrsid5854384\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid1517197\charrsid13107898 2.2. }{\insrsid12615361\charrsid13107898 No obstante}{\insrsid4795600\charrsid13107898  ingresa en el an\'e1
+lisis de los cargos y}{\insrsid12615361\charrsid13107898  se\'f1ala}{\insrsid4795600\charrsid13107898 ,}{\insrsid12615361\charrsid13107898  que no es cierto, como lo afirman las demandantes el inciso 1\'b0 del art\'edculo 174 desconozca la participaci\'f3
+n del fiscal en la aplicaci\'f3n del principio de oportunidad, pues de acuerdo con el art\'edculo 144 de la misma Ley, el procedimiento aplicable al sistema de responsabilidad penal para adolescentes, salvo las reglas especiales de procedimiento }{
+\insrsid4795600\charrsid13107898 definidas en dicha norma, se regir\'e1n por las normas consagradas en la Ley 906 de 2004, exceptuando aquellas que sean contrarias al inter\'e9s supe}{\insrsid13307549\charrsid13107898 rior del adolescente. Destaca}{
+\insrsid4795600\charrsid13107898 , en ese orden de ideas}{\insrsid13307549\charrsid13107898 ,}{\insrsid4795600\charrsid13107898  que el criterio de oportunidad no es un derecho del imputado, sino una potestad de la Fiscal\'ed
+a, facultad que le ha sido encomendada por mandato constitucional.}{\i\insrsid5854384\charrsid13107898 
+\par }{\i\insrsid4795600\charrsid13107898 
+\par }{\insrsid1517197\charrsid13107898 2.3. }{\insrsid4795600\charrsid13107898 En relaci\'f3n con el art\'edculo 175 y la discrecionalidad que la ley atribuye al fiscal para aplicar el principio de oportunidad, precisa que se trata de
+ una discrecionalidad reglada, ya que la Fiscal\'eda no tiene la libertad absoluta de renunciar al ejercicio de la acci\'f3n penal, }{\i\insrsid1333668\charrsid13107898 \'93
+sino que se debe basar en las causales previstas en el estatuto procedimental penal\'94.}{\i\insrsid4795600 
+\par }{\i\insrsid13107898\charrsid13107898 
+\par {\listtext\pard\plain\b\fs28\insrsid1333668\charrsid13107898 \hich\af0\dbch\af0\loch\f0 3.\tab}}\pard \qj \fi-720\li720\ri0\widctlpar\jclisttab\tx536\aspalpha\aspnum\faauto\ls4\adjustright\rin0\lin720\itap0\pararsid13107898 {
+\b\insrsid1333668\charrsid13107898 De la Defensor\'eda del Pueblo
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\b\insrsid1333668\charrsid13107898 
+\par }{\insrsid11891259\charrsid13107898 En primer t\'e9rmino, estima que los comentarios y afirmaciones vertidos en la demanda carecen de entidad suficiente para estructurar cargos fundados en razones claras, ciertas, espec\'ed
+ficas, pertinentes y suficientes, motivo por el cual resulta }{\insrsid13307549\charrsid13107898 \'93}{\insrsid11891259\charrsid13107898 formalmente inepta}{\insrsid13307549\charrsid13107898 \'94}{\insrsid11891259\charrsid13107898 . Aunqu
+e se mencionan algunos art\'edculos de la Carta, no se desarrollan los argumentos por los cuales las normas legales configurar\'edan una violaci\'f3n de los preceptos superiores. En consecuencia solicita a la Corte un fallo inhibitorio.}{
+\insrsid1333668\charrsid13107898 
+\par }{\insrsid11891259\charrsid13107898 
+\par En segundo lugar, }{\ul\insrsid11891259\charrsid13107898 bajo una interpretaci\'f3n de los fundamentos de la demanda,}{\insrsid11891259\charrsid13107898  consigna algunas precisiones, que se presentan a continuaci\'f3
+n, en las que fundamenta una solicitud de constitucionalidad de los art\'edculos 174 y 175 de la Ley 1098 de 2006}{\insrsid13307549\charrsid13107898  (Se destaca)}{\insrsid11891259\charrsid13107898 :
+\par 
+\par {\listtext\pard\plain\fs28\insrsid5000045\charrsid13107898 \hich\af0\dbch\af0\loch\f0 3.1.\tab}}\pard \qj \fi-720\li720\ri0\widctlpar\jclisttab\tx720\aspalpha\aspnum\faauto\ls5\ilvl1\adjustright\rin0\lin720\itap0\pararsid13107898 {
+\insrsid5000045\charrsid13107898 El cargo contra el inciso primero del art\'edculo 174, se funda en una lectura equivocada de la expresi\'f3n objeto de reproche, pues el consentimiento de las partes, que es condici\'f3
+n necesaria para celebrar una conciliaci\'f3n, no se refiere a la determinaci\'f3n sobre la aplicaci\'f3n del principio de oportunidad, facultad que sigue estando en cabeza de la Fiscal\'eda General de la Naci\'f3n.}{\insrsid11891259\charrsid13107898 
+
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid13307549\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid10301428\charrsid13107898 \hich\af0\dbch\af0\loch\f0 3.2.\tab}}\pard \qj \fi-720\li720\ri0\widctlpar\jclisttab\tx720\aspalpha\aspnum\faauto\ls5\ilvl1\adjustright\rin0\lin720\itap0\pararsid13107898 {
+\insrsid10301428\charrsid13107898 Respecto de la expresi\'f3n \'93renunciar\'94 del art\'edculo 175, luego de proponer su integraci\'f3n jur\'eddica con todo el texto del inciso primero de esa disposici\'f3n, manifiesta que la Constituci\'f3
+n autoriza a la Fiscal\'eda a \'93renunciar\'94 a la persecuci\'f3n }{\insrsid13307549\charrsid13107898 del }{\insrsid10301428\charrsid13107898 responsable del delito en ciertos eventos, y el art\'ed
+culo 175 demandado se limita a recoger dicha potestad, para su aplicaci\'f3n en los casos de delitos cometidos por adolescentes pertenecientes a grupos armados ilegales.}{\insrsid10301888\charrsid13107898 
+ Esta facultad excepcional encuentra amplio respaldo constitucional pues contribuye a la realizaci\'f3n del inter\'e9s superior del menor de edad, a su protecci\'f3n integral y a la protecci\'f3n contra toda forma de abandono, violencia, explotaci\'f3
+n, en consonancia con las obligaciones  del Estado y la sociedad derivados de la Convenci\'f3n Internacional de los Derechos del Ni\'f1o, los Convenios de la O.I.T. para la erradicaci\'f3n de las peores formas de trabajo infantil, y de la Carta Pol\'ed
+tica.
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid10301888\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid10301888\charrsid13107898 \hich\af0\dbch\af0\loch\f0 3.3.\tab}}\pard \qj \fi-720\li720\ri0\widctlpar\jclisttab\tx720\aspalpha\aspnum\faauto\ls5\ilvl1\adjustright\rin0\lin720\itap0\pararsid13107898 {
+\insrsid10301888\charrsid13107898 Sobre la censura contra las causales previstas en el art\'edculo 175, en el sentido que }{\insrsid10307244\charrsid13107898 e}{\insrsid14423972\charrsid13107898 l estimular la inserci\'f3
+n de menores en los grupos armados ilegales puede conduc}{\insrsid10307244\charrsid13107898 ir}{\insrsid14423972\charrsid13107898  al desconocimiento de la reserva elevada por Colombia sobre el art\'edculo 38 de la Convenci\'f3n sobre los Derechos del Ni
+\'f1o, estima la Defensor\'eda que el hecho de que los grupos armados al margen de la Ley desplieguen conductas constitutivas de infracciones graves al Derecho Internacional Humanitario, o violaciones a las norma
+s y convenios internacionales sobre derechos humanos, o dise\'f1en estrategias para ejecutar hechos delictivos vali\'e9ndose de la actividad de los ni\'f1
+os y adolescentes, no modifica el panorama de los deberes que incumben a la sociedad y al Estado para evitar su vinculaci\'f3n o reclutamiento a estos grupos, o para su reinserci\'f3n a la vida civil y la restituci\'f3n de sus derechos.}{
+\insrsid14380591\charrsid13107898  }{\i\insrsid14380591\charrsid13107898 \'93Si el conflicto armado ha privado a los ni\'f1os y adolescentes de gozar de sus m\'e1s elementales derechos, el Estado no  puede hacer nada dist
+into a desplegar todos sus esfuerzos y recursos para rescatarlos y reintegrarlos a un ambiente de plenas garant\'edas, protecci\'f3n integral y oportunidades de restituci\'f3n de su dignidad y resocializaci\'f3n\'94.}{\insrsid5000045\charrsid13107898 
+
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid14380591\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid13107898 \hich\af0\dbch\af0\loch\f0 3.4.\tab}}\pard \qj \fi-720\li720\ri0\widctlpar\jclisttab\tx720\aspalpha\aspnum\faauto\ls5\ilvl1\adjustright\rin0\lin720\itap0\pararsid13107898 {\insrsid13107898 Con relaci\'f3n }{
+\insrsid10713426\charrsid13107898 al trato diferenciado que los adolescentes pertenecientes a los grupos armados al margen de la ley reciben, frente a \'93los ni\'f1os que no pertenecen a estos grupos\'94
+ pero que, enfrentados a las mismas o similares circunstancias los llevan al quebrantamiento de la ley, }{\insrsid14554732\charrsid13107898 advierte la Defensor\'eda que lo que el art\'edculo 175 impugnado consagra son unas condiciones espec\'ed
+ficas que han estimulado, facilitado o incluso impuesto, como \'fanica alternativa la vinculaci\'f3n de los adolescentes a los grupos armados ilegales con presencia en determinadas regiones del pa\'eds, cuya comprobaci\'f3n permitir\'eda a la Fiscal\'ed
+a la aplicaci\'f3n del principio de oportunidad. Ello implica que la situaci\'f3n f\'e1ctica inicial es diferente, pero la consecuencia jur\'eddica es en esencia la misma para todos los adolescentes, independientemente de su
+ pertenencia a grupos armados ilegales: la aplicaci\'f3n del principio de oportunidad y la adopci\'f3n de medidas y programas especiales de atenci\'f3n y protecci\'f3n.}{\insrsid14380591\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid14554732\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid14580217\charrsid13107898 \hich\af0\dbch\af0\loch\f0 3.5.\tab}}\pard \qj \fi-720\li720\ri0\widctlpar\jclisttab\tx720\aspalpha\aspnum\faauto\ls5\ilvl1\adjustright\rin0\lin720\itap0\pararsid13107898 {
+\insrsid14580217\charrsid13107898 As\'ed, e}{\insrsid14554732\charrsid13107898 l planteamiento de las demandantes sobre una presunta vulneraci}{\insrsid14580217\charrsid13107898 \'f3n del principio de igualdad, parte de una lectura que desconoce el art
+\'edculo 174 de la Ley 1098 de 2006, norma que confiere a la Fiscal\'eda la facultad de aplicar el principio de oportunidad en los casos que involucran la responsabilidad de los ni\'f1os, ni\'f1as y adolescentes, por v\'eda gener
+al, es decir, a favor de aquellos que no hacen parte de los mencionados grupos armados ilegales, as\'ed como medidas especiales de protecci\'f3n cuando de la aplicaci\'f3n del principio \'93se pudieren derivar riesgos para la vida e integridad f\'ed
+sica del adolescente\'94.}{\insrsid14554732\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid14580217\charrsid13107898 
+\par }\pard \qj \li720\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0\pararsid13107898 {\insrsid14580217\charrsid13107898 En consecuencia, el tratamiento legal, con algunos matices, no implica }{\insrsid13042096\charrsid13107898 un }{
+\insrsid14580217\charrsid13107898 trato discriminatorio, odioso o desfavorable, para los adolescentes que no hacen parte de }{\insrsid13042096\charrsid13107898 los mencionados grupos armados ilegales, sino que dada una condici\'f3n f\'e1ctica espec\'ed
+fica, como es la pertenencia a los mencionados grupos, la valoraci\'f3n que de dicha circunstancia haga el funcionario, incidir\'e1 para efectos de evaluar la renuncia a la persecuci\'f3n penal.}{\insrsid14580217\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid13042096\charrsid13107898 
+\par {\listtext\pard\plain\b\fs28\insrsid11500287\charrsid13107898 \hich\af0\dbch\af0\loch\f0 4.\tab}}\pard \qj \fi-570\li570\ri0\widctlpar\jclisttab\tx570\aspalpha\aspnum\faauto\ls5\adjustright\rin0\lin570\itap0\pararsid13107898 {
+\b\insrsid11500287\charrsid13107898 De}{\b\insrsid13042096\charrsid13107898 l Instituto Colombiano de Bienestar Familiar
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\b\insrsid13042096\charrsid13107898 
+\par }{\insrsid11354065\charrsid13107898 La Directora General del ICBF interviene ante la Corte para solicitar la declaratoria de exequibilidad de los preceptos demandados, con fundamento en las siguientes consideraciones:}{\insrsid13042096\charrsid13107898 
+
+\par }{\insrsid11354065\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid7865749\charrsid13107898 \hich\af0\dbch\af0\loch\f0 4.1.\tab}}\pard \qj \fi-720\li720\ri0\widctlpar\tx603\aspalpha\aspnum\faauto\ls5\ilvl1\adjustright\rin0\lin720\itap0\pararsid13107898 {\insrsid7865749\charrsid13107898  
+}{\insrsid10498882\charrsid13107898 Afirma, de manera gen\'e9rica, que las normas demandadas est\'e1n conforme no s\'f3lo con la Constituci\'f3n, sino con el conjunto de instrumentos internacionales, que en materia de protecci\'f3n del ni\'f1
+o, Colombia est\'e1 }{\insrsid10307244\charrsid13107898 obliga}{\insrsid10498882\charrsid13107898 da a }{\insrsid10307244\charrsid13107898 respetar}{\insrsid10498882\charrsid13107898 , y tambi\'e9n de manera gen\'e9
+rica hace una amplia referencia a los antecedentes de la Ley 1098 de 2006.
+\par }\pard \qj \li0\ri0\widctlpar\tx603\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid10498882\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid10498882\charrsid13107898 \hich\af0\dbch\af0\loch\f0 4.2.\tab}}\pard \qj \fi-720\li720\ri0\widctlpar\tx603\aspalpha\aspnum\faauto\ls5\ilvl1\adjustright\rin0\lin720\itap0\pararsid13107898 {
+\insrsid10498882\charrsid13107898  En particular, se\'f1ala que e}{\insrsid11354065\charrsid13107898 l inciso primero del art\'edculo 174 de la Ley 1098 de 2006 debe entenderse referido a la conciliaci\'f3n y reparaci\'f3
+n por la responsabilidad civil que genera la conducta punible}{\insrsid7865749\charrsid13107898 , y no a la disposici\'f3n de la acci\'f3n penal.}{\insrsid11354065\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\tx603\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid740289\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid13107898 \hich\af0\dbch\af0\loch\f0 4.3.\tab}}\pard \qj \fi-720\li720\ri0\widctlpar\tx603\jclisttab\tx670\aspalpha\aspnum\faauto\ls5\ilvl1\adjustright\rin0\lin720\itap0\pararsid13107898 {\insrsid13107898  }{
+\insrsid7865749\charrsid13107898 El art\'edculo 175 de la misma ley, est\'e1 ce\'f1ido estrictamente al precepto constitucional que consag}{\insrsid4141137\charrsid13107898 ra el principio de oportunidad. El legislador acogi\'f3 una de las tres opciones -
+}{\insrsid7865749\charrsid13107898  la \'93renuncia\'94 }{\insrsid4141137\charrsid13107898 \endash  que autoriza la Constituci\'f3n para la disposici\'f3n de la acci\'f3n penal, }{\insrsid740289\charrsid13107898 en el caso de que los adolescentes 
+hayan participado directa o indirectamente en las hostilidades, o en acciones armadas, o en los delitos cometidos por grupos armados al margen de la ley, cuando concurran las circunstancias previstas en el mismo art\'edculo.}{
+\insrsid7865749\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\tx536\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\b\insrsid10498882 
+\par {\listtext\pard\plain\b\fs28\insrsid10498882\charrsid13107898 \hich\af0\dbch\af0\loch\f0 5.\tab}}\pard \qj \fi-570\li570\ri0\widctlpar\tx536\jclisttab\tx570\aspalpha\aspnum\faauto\ls5\adjustright\rin0\lin570\itap0\pararsid13107898 {
+\b\insrsid10498882\charrsid13107898 Del Instituto }{\b\insrsid11615211\charrsid13107898 Colombiano }{\b\insrsid10498882\charrsid13107898 de Derecho Procesal}{\b\insrsid740289\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\tx536\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\b\insrsid11615211\charrsid13107898 
+\par }{\insrsid7961403\charrsid13107898 Solicita la declaratoria de constitucionalidad de las normas demandadas con fundamento en las siguientes consideraciones:
+\par 
+\par {\listtext\pard\plain\fs28\insrsid7961403\charrsid13107898 \hich\af0\dbch\af0\loch\f0 5.1.\tab}}\pard \qj \fi-720\li720\ri0\widctlpar\tx670\jclisttab\tx720\aspalpha\aspnum\faauto\ls5\ilvl1\adjustright\rin0\lin720\itap0\pararsid13107898 {
+\insrsid7961403\charrsid13107898 El cuestionamiento  al inciso primero del art\'edculo 174 de la Ley 1098 de 2006, obedece a una inadecuada redacci\'f3n de la disposici\'f3n que permite una interpretaci\'f3
+n como la que hacen las demandantes, en el sentido que la expresi\'f3n acusada alude tambi\'e9n al principio de oportunidad, cuando en realidad se refiere exclusivamente a la conciliaci\'f3n y la reparaci\'f3n de los da\'f1os. Dej
+ar sometida al consentimiento de ambas partes, la aplicaci\'f3n del principio de oportunidad, }{\insrsid14549842\charrsid13107898 seg\'fan}{\insrsid7961403\charrsid13107898  la interpretaci\'f3n de }{\insrsid14549842\charrsid13107898 
+las actoras, carece de sentido en cuanto desconoce la naturaleza de la instituci\'f3n.}{\insrsid11615211\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\tx536\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid9050187\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid9050187\charrsid13107898 \hich\af0\dbch\af0\loch\f0 5.2.\tab}}\pard \qj \fi-720\li720\ri0\widctlpar\tx670\jclisttab\tx720\aspalpha\aspnum\faauto\ls5\ilvl1\adjustright\rin0\lin720\itap0\pararsid13107898 {
+\insrsid9050187\charrsid13107898 El ataque contra el inciso final del art\'edculo 174 sobre la discrecionalidad del fiscal para disponer medidas de protecci\'f3n necesarias como consecuencia de la aplicaci\'f3
+n del principio de oportunidad, se orienta a destacar la inconveniencia de la medida como factor estimulante de la impunidad, valoraciones \'e9stas que son extra\'f1as al juicio de constitucionalidad.}{\insrsid14549842\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\tx536\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid9050187\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid9050187\charrsid13107898 \hich\af0\dbch\af0\loch\f0 5.3.\tab}}\pard \qj \fi-720\li720\ri0\widctlpar\tx536\jclisttab\tx720\aspalpha\aspnum\faauto\ls5\ilvl1\adjustright\rin0\lin720\itap0\pararsid13107898 {
+\insrsid9050187\charrsid13107898   La censura contra el art\'edculo 175, est\'e1 basada en \'93temores intuitivos de las demandantes\'94 }{\insrsid5336688\charrsid13107898 y en razones de conveniencia }{\insrsid9050187\charrsid13107898 m\'e1s que en }{
+\insrsid5336688\charrsid13107898 argumentos objetivo}{\insrsid9050187\charrsid13107898 s }{\insrsid5336688\charrsid13107898 \'93}{\insrsid9050187\charrsid13107898 que hagan pensar en un riesgo mayor al que comporta la mera adopci\'f3
+n del principio de oportunidad}{\insrsid5336688\charrsid13107898 \'94.}{\insrsid9050187\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\tx536\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\b\insrsid10498882\charrsid13107898 
+\par 
+\par {\listtext\pard\plain\b\fs28\insrsid2097709\charrsid13107898 \hich\af0\dbch\af0\loch\f0 V.\tab}}\pard \qj \fi-720\li754\ri0\widctlpar\tx536\jclisttab\tx754\aspalpha\aspnum\faauto\ls2\adjustright\rin0\lin754\itap0\pararsid13107898 {
+\b\insrsid2097709\charrsid13107898 CONCEPTO DEL PROCURADOR GENERAL DE LA NACI\'d3N
+\par }\pard \qj \li0\ri0\widctlpar\tx536\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\b\insrsid2097709\charrsid13107898 
+\par }{\insrsid13644385\charrsid13107898 S}{\insrsid2097709\charrsid13107898 urtido el tr\'e1mite de}{\insrsid13644385\charrsid13107898  }{\insrsid2097709\charrsid13107898 l}{\insrsid13644385\charrsid13107898 os }{\insrsid2097709\charrsid13107898  impedimento}
+{\insrsid13644385\charrsid13107898 s formulados por e}{\insrsid2097709\charrsid13107898 l }{\insrsid10307244\charrsid13107898 se\'f1or }{\insrsid2097709\charrsid13107898 Procurador General de la Naci\'f3n y el Viceprocurador,}{
+\insrsid13644385\charrsid13107898  la Procuradora Auxiliar para}{\insrsid10307244\charrsid13107898  Asuntos Constitucionales, emiti\'f3}{\insrsid13644385\charrsid13107898  el concepto No. 4365 del 27 de agosto de 2007 en el que s}{
+\insrsid2097709\charrsid13107898 olicita a la Corte lo siguiente:
+\par 
+\par {\listtext\pard\plain\i\fs28\insrsid2097709\charrsid13107898 \hich\af0\dbch\af0\loch\f0 (i)\tab}}\pard \qj \fi-720\li1080\ri0\widctlpar\tx536\jclisttab\tx1080\aspalpha\aspnum\faauto\ls6\adjustright\rin0\lin1080\itap0\pararsid13107898 {
+\insrsid2097709\charrsid13107898 Inhibirse de emitir pronunciamiento de fondo sobre los cargos presentados contra el inciso 2\'b0 del art\'edculo 17}{\insrsid10307244\charrsid13107898 4 de la Ley 1098 de}{\insrsid2097709\charrsid13107898  2006, por ine
+ptitud sustantiva de la demanda.
+\par }\pard \qj \li360\ri0\widctlpar\tx536\aspalpha\aspnum\faauto\adjustright\rin0\lin360\itap0\pararsid13107898 {\insrsid2097709\charrsid13107898 
+\par {\listtext\pard\plain\i\fs28\insrsid2097709\charrsid13107898 \hich\af0\dbch\af0\loch\f0 (ii)\tab}}\pard \qj \fi-720\li1080\ri0\widctlpar\tx536\jclisttab\tx1080\aspalpha\aspnum\faauto\ls6\adjustright\rin0\lin1080\itap0\pararsid13107898 {
+\insrsid2097709\charrsid13107898 Declarar exequibles las expresiones }{\i\insrsid2097709\charrsid13107898 \'93Estas se realizar\'e1n con el consentimiento de ambas partes\'94 }{\insrsid2097709\charrsid13107898 del art\'edculo 174; }{
+\i\insrsid2097709\charrsid13107898 \'93renunciar\'94 }{\insrsid2097709\charrsid13107898 del inciso primero del art\'edculo 175, y el numeral 1\'b0 del art\'edculo 175 de la Ley 1098 de 2006, respecto de los cargos examinados.
+\par }\pard \qj \li0\ri0\widctlpar\tx536\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid2097709\charrsid13107898 
+\par {\listtext\pard\plain\i\fs28\insrsid2097709\charrsid13107898 \hich\af0\dbch\af0\loch\f0 (iii)\tab}}\pard \qj \fi-720\li1080\ri0\widctlpar\tx536\jclisttab\tx1080\aspalpha\aspnum\faauto\ls6\adjustright\rin0\lin1080\itap0\pararsid13107898 {
+\insrsid2097709\charrsid13107898 Declarar la exequibilidad condicionada de los numerales 2\'b0 y 3\'b0, del art\'edculo 175 }{\insrsid15102434\charrsid13107898 
+de la Ley 1098 de 2006, bajo el entendido que las referidas causales pueden aducirse para aplicar el principio de oportunidad a cualquier adolescente, tenga o no relaci\'f3n con grupos armados ilegales.}{\insrsid2097709\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\tx536\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid15102434\charrsid13107898 
+\par {\listtext\pard\plain\i\fs28\insrsid15102434\charrsid13107898 \hich\af0\dbch\af0\loch\f0 (iv)\tab}}\pard \qj \fi-720\li1080\ri0\widctlpar\tx536\jclisttab\tx1080\aspalpha\aspnum\faauto\ls6\adjustright\rin0\lin1080\itap0\pararsid13107898 {
+\insrsid15102434\charrsid13107898 Declarar inexequible el numeral 4\'b0 del art\'edculo 175 de la Ley 1098 de 2004.
+\par }\pard \qj \fi-603\li536\ri0\widctlpar\tx536\aspalpha\aspnum\faauto\adjustright\rin0\lin536\itap0\pararsid13107898 {\insrsid1333668\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid134145\charrsid13107898 Fundamenta sus solicitudes en las siguientes consideraciones:}{\insrsid1333668\charrsid13107898 
+\par }{\insrsid134145\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid2127157\charrsid13107898 \hich\af0\dbch\af0\loch\f0 1.\tab}}\pard \qj \fi-536\li536\ri0\widctlpar\jclisttab\tx536\aspalpha\aspnum\faauto\ls6\ilvl1\adjustright\rin0\lin536\itap0\pararsid13107898 {
+\insrsid2127157\charrsid13107898 El cargo formulado contra el inciso 2\'b0 del art\'edculo 174 de la Ley 1098 de 2006 no cumple con los presupuestos de pertinencia y suficiencia, pues se apoya en razones de conveniencia como la de fijar una pol\'ed
+tica criminal concreta que pormenorice casu\'edsticamente los eventos en que existe riesgo grave para el menor, sin que desarrolle planteamientos que impliquen una censura constitucional a la norma. }{\insrsid12413198\charrsid13107898 El cargo por violaci
+\'f3n al principio de igualdad adolece de suficiencia y certeza, pues con base en una restricci\'f3n al alcance de la norma}{\insrsid13270374\charrsid13107898 ,}{\insrsid12413198\charrsid13107898  que el texto no impone, se colige la violaci\'f3
+n del principio de igualdad. T}{\insrsid13270374\charrsid13107898 ampoco se\'f1ala la demanda por qu\'e9}{\insrsid12413198\charrsid13107898  se configura una violaci\'f3n al principio de especialidad de la jurisdicci\'f3n de menores}{
+\insrsid13270374\charrsid13107898 ,}{\insrsid12413198\charrsid13107898  previsto en el art\'edculo 5\'b0 num. 5\'b0 de la Convenci\'f3n Americana sobre Derechos Humanos.}{\insrsid134145\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid13270374\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid7550016\charrsid13107898 \hich\af0\dbch\af0\loch\f0 2.\tab}}\pard \qj \fi-536\li536\ri0\widctlpar\jclisttab\tx536\aspalpha\aspnum\faauto\ls6\ilvl1\adjustright\rin0\lin536\itap0\pararsid13107898 {
+\insrsid7550016\charrsid13107898 La expresi\'f3n }{\i\insrsid7550016\charrsid13107898 \'93Estas se realizaran con el consentimiento de ambas partes\'94 }{\insrsid7550016\charrsid13107898 del art\'ed
+culo 174 de la Ley 1098 de 2006 es exequible, por cuanto no desconoce que la aplicaci\'f3n del principio de oportunidad es una funci\'f3n asignada al fiscal, conforme a la pol\'edtica criminal del Estado, como lo se\'f1ala el art\'ed
+culo 250 constitucional. }{\insrsid6954225\charrsid13107898 Destaca el Ministerio P\'fablico que }{\insrsid10969413\charrsid13107898 cuando la disposici\'f3n acusada alude al principio de oportunidad, no lo hace para se\'f1alar que s\'f3
+lo es aplicable por consenso, }{\i\insrsid10969413\charrsid13107898 \'93sino para indicarle a las autoridades judiciales que la aplicaci\'f3n preferente}{\insrsid10969413\charrsid13107898  }{\i\insrsid10969413\charrsid13107898 
+del principio de oportunidad es un principio rector de la actuaci\'f3n judicial dentro del sistema de responsabilidad para los adolescentes, aspecto que marca sin duda una diferencia trascendental respecto de la proyecci\'f3
+n de este principio en el procedimiento penal de los adultos.\'94}{\insrsid12413198\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid10969413\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid8986568\charrsid13107898 \hich\af0\dbch\af0\loch\f0 3.\tab}}\pard \qj \fi-536\li536\ri0\widctlpar\jclisttab\tx536\aspalpha\aspnum\faauto\ls6\ilvl1\adjustright\rin0\lin536\itap0\pararsid13107898 {
+\insrsid8986568\charrsid13107898 Respecto del t\'e9rmino }{\i\insrsid8986568\charrsid13107898 \'93renunciar\'94 }{\insrsid8986568\charrsid13107898 del inciso 1\'b0 del art\'edculo 175 de la Ley 1098 de 2006, se\'f1ala la Procuradur\'ed
+a que el establecimiento de causales especiales de aplicaci\'f3n del principio de oportunidad que dan lugar a la }{\i\insrsid8986568\charrsid13107898 renuncia}{\insrsid8986568\charrsid13107898  de la persecuci\'f3n penal para los adolescentes }{
+\insrsid13396612\charrsid13107898 relacionados con grupos armados al margen de la ley, no comporta la exclusi\'f3n de las contenidas en la Ley 906 de 2004, que siendo procedentes, den lugar a la suspensi\'f3n o interrupci\'f3n de la acci\'f3
+n penal. Ello teniendo en cuenta que el punto de partida del an\'e1lisis del sistema de responsabilidad penal para los adolescentes es el art\'edculo 144 de la Ley 1098 de 2006, conforme al cual }{\i\insrsid13396612\charrsid13107898 \'93
+salvo las reglas especiales de procedimiento definidas en el presente libro, el procedimiento del sistema de responsabilidad penal para adolescentes se regir\'e1
+ por las normas consagradas en la Ley 906 de 2004 exceptuando aquellas que sean contrarias al inter\'e9s superior del adolescente\'94.}{\insrsid10969413\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid13396612\charrsid13107898 
+\par {\listtext\pard\plain\fs28\insrsid7410\charrsid13107898 \hich\af0\dbch\af0\loch\f0 4.\tab}}\pard \qj \fi-536\li536\ri0\widctlpar\jclisttab\tx536\aspalpha\aspnum\faauto\ls6\ilvl1\adjustright\rin0\lin536\itap0\pararsid13107898 {
+\insrsid7410\charrsid13107898 En relaci\'f3n con la acusaci\'f3n contra el art\'edculo 175, advierte la Procuradur\'eda, }{\ul\insrsid7410\charrsid13107898 que pese a la precaria argumentaci\'f3n que la precede}{\insrsid7410\charrsid13107898 
+, la encuentra parcialmente fundada. En este sentido se\'f1ala que, salvo la causal prevista en el numeral 1\'b0, referida particular
+mente al gran valor que tiene para el adolescente pertenecer a un grupo armado al margen de la ley, dadas sus condiciones sociales, econ\'f3micas y culturales, y que la hace aplicable exclusivamente a los adolescentes  que en cualquier condici\'f3
+n hubieren pertenecido a tales grupos, participado en las hostilidades o en acciones armadas o en delitos cometidos por esos grupos, las dem\'e1s causales contempladas en la norma plantea hip\'f3
+tesis en las que ciertamente pueden incurrir menores que siendo ajenos a los grupos armados ilegales incurran en conductas delictivas. }{\insrsid10307244\charrsid13107898 (Se destaca).}{\insrsid7410\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid7410\charrsid13107898 
+\par }\pard \qj \li536\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin536\itap0\pararsid13107898 {\insrsid7410\charrsid13107898 En este orden de ideas, no encuentra la Procuradur\'eda ninguna justificaci\'f3n para que }{
+\insrsid5252051\charrsid13107898 las causales para la aplicaci\'f3n del principio de oportunidad previstas en los numerales 2 y 3}{\cs22\super\insrsid5252051\charrsid13107898 \chftn {\footnote \pard\plain 
+\s21\qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid5252051 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\super\insrsid9842086 \chftn }{\insrsid9842086  (2) Establecer}{
+\lang9226\langfe3082\langnp9226\insrsid9842086  que la situaci\'f3n de marginamiento  social econ\'f3mico y cultural impiden al adolescente contar con otras alternativas de desarrollo de su personalidad; 
+(3)  Establecer que el adolescente no estaba en capacidad de orientar sus esfuerzos a conocer otra forma de participaci\'f3n social.}}}{\insrsid5252051\charrsid13107898  del art\'edc
+ulo 175 de la Ley 1098 de 2006, sean reconocidas exclusivamente a los adolescentes vinculados con grupos armados al margen de la ley, preceptos que considera en consecuencia contrarios al principio de igualdad.}{\insrsid7410\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid5252051\charrsid13107898 
+\par }\pard \qj \fi-536\li536\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin536\itap0\pararsid13107898 {\insrsid5252051\charrsid13107898 5.    Por \'faltimo, estima que la causal prevista en el numeral 4\'b0 del art\'edculo 175}{
+\insrsid5862148\charrsid13107898 , en cuanto consagra como causal de aplicaci\'f3n del principio de oportunidad el haber actuado bajo }{\i\insrsid5862148\charrsid13107898 \'93}{\i\insrsid13440167\charrsid13107898 f}{\i\insrsid5862148\charrsid13107898 
+uerza, amenaza, coacci\'f3n o constre\'f1imiento\'94,}{\insrsid5862148\charrsid13107898  es violatoria de la Constituci\'f3n, toda vez que tal como lo prev\'e9 el art\'edculo 327 de la ley 906 de 2004, la aplicaci\'f3
+n del principio de oportunidad no puede comprometer la presunci\'f3n de inocencia, de manera que s\'f3lo proceder\'e1 cuando exista un m\'ednimo de prueba que permita inferir la autor\'eda o participaci\'f3n en la conducta y su tipicidad. Resulta extra
+\'f1o al principio de oportunidad la consagraci\'f3n de causales que excluyen la responsabilidad del agente, y que en consecuencia dar\'edan lugar a la preclusi\'f3n o cesaci\'f3n de}{\insrsid13440167\charrsid13107898 l}{\insrsid5862148\charrsid13107898 
+ procedimiento, mas no a la renuncia a la persecuci\'f3n en virtud del principio dispositivo. }{\insrsid13440167\charrsid13107898 
+No se puede aplicar el principio de oportunidad en eventos en los que no existe fundamento para el ejercicio del poder punitivo por ausencia de responsabilidad (Art. 32 Ley 599 de 2000); esta pretensi\'f3n desconoce el principio de presunci\'f3
+n de inocencia.}{\insrsid5862148\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid2127157\charrsid13107898 
+\par 
+\par {\listtext\pard\plain\b\fs28\insrsid13895505\charrsid13107898 \hich\af0\dbch\af0\loch\f0 VI.\tab}}\pard \qj \fi-720\li754\ri0\widctlpar\jclisttab\tx754\aspalpha\aspnum\faauto\ls2\adjustright\rin0\lin754\itap0\pararsid13107898 {
+\b\insrsid13895505\charrsid13107898 FUNDAMENTOS DE LA DECISI\'d3N
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\b\insrsid13895505\charrsid13107898 
+\par }{\b\insrsid8739237\charrsid13107898 1}{\b\insrsid13107898 . }{\b\insrsid13895505\charrsid13107898 Competencia de la Corte
+\par 
+\par }{\insrsid13895505\charrsid13107898 De conformidad con lo dispuesto en el art\'edculo 241, numeral 4o. de la Constituci\'f3n Pol\'edtica, la Corte Constitucional es competente para conocer y decidir definitivamente sobre l
+a demanda de inconstitucionalidad de la referencia, pues la disposici\'f3n acusada forma parte de una ley de la Rep\'fablica}{\insrsid8739237\charrsid13107898 , en este caso, de la Ley 1098 de 2006, }{\i\insrsid9011053\charrsid13107898 \'93
+Por la cual  se }{\i\insrsid8739237\charrsid13107898 expide el C\'f3digo de la Infancia y la Adolescencia\'94.}{\b\i\insrsid13895505\charrsid13107898 
+\par }{\b\insrsid13895505\charrsid13107898 
+\par }{\b\insrsid7957670\charrsid13107898 2. Cuesti\'f3n preliminar. La aptitud sustan}{\b\insrsid2443886\charrsid13107898 tiva}{\b\insrsid7957670\charrsid13107898  de la demanda}{\b\insrsid13895505\charrsid13107898 
+\par }{\b\insrsid9011053\charrsid13107898 
+\par }\pard\plain \s25\qj \li0\ri20\widctlpar\nooverflow\faroman\rin20\lin0\itap0\pararsid13107898 \fs28\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 {\insrsid9011053\charrsid13107898 El Ministerio del Interior y de Justicia solicita a}{
+\insrsid7957670\charrsid13107898  la}{\insrsid9011053\charrsid13107898  Corte se declare inhibida para emitir pronunciamiento de fondo sobre las pretensiones  de la demanda }{\insrsid7957670\charrsid13107898 por contener una}{
+\insrsid2443886\charrsid13107898  }{\i\insrsid7957670\charrsid13107898 \'93}{\i\insrsid9011053\charrsid13107898 formulaci\'f3n apenas aparente de cargos\'94. }{\insrsid2443886\charrsid13107898 L}{\insrsid9011053\charrsid13107898 a Defensor\'eda }{
+\insrsid11944640\charrsid13107898 del Pueblo }{\insrsid2443886\charrsid13107898 considera que las manifestaciones que las demandantes exponen tanto en el escrito inicial como en el de correcci\'f3n }{\insrsid11944640\charrsid13107898 de la demanda, }{
+\insrsid2443886\charrsid13107898 no resultan id\'f3neas y adecuadas para estructurar cargos en }{\insrsid11944640\charrsid13107898 contra de las normas demandadas, se\'f1ala que aunque se mencionan algunos art\'edculos de la Carta}{
+\insrsid4787192\charrsid13107898 ,}{\insrsid11944640\charrsid13107898  no se desarrollan los argumentos por los cuales las normas legales configurar\'edan una violaci\'f3
+n de los preceptos superiores. El Instituto Colombiano de Derecho Procesal considera que el cargo contra el inciso 1\'ba del art\'edculo 174 est\'e1 basado en una interpretaci\'f3n err\'f3
+nea de las demandantes; el cargo contra el inciso final del mismo precepto }{\insrsid2171917\charrsid13107898 se funda en razones de inconveniencia ajenas al juicio de constitucionalidad; en tanto que la acusaci\'f3n contra el art\'edculo 175 
+se sostiene en }{\i\insrsid2171917\charrsid13107898 \'93temores intuitivos de las demandantes\'94 }{\insrsid2171917\charrsid13107898 y en razones de conveniencia, m\'e1s que en argumentos objetivos. Para la Procuradur\'ed
+a la ineptitud sustantiva de la demanda se predica de la censura contra el inciso 2\'ba del art\'edculo 174.}{\insrsid9011053\charrsid13107898 
+\par }{\insrsid2171917\charrsid13107898 
+\par A partir de tales antecedentes corresponde a la Corte despejar el asunto previo relativo a la idoneidad de la demanda para provocar un pronunciamiento de fondo.
+\par }{\insrsid9011053\charrsid13107898 
+\par }\pard\plain \qj \li0\ri49\widctlpar\aspalpha\aspnum\faauto\adjustright\rin49\lin0\itap0\pararsid13107898 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\b\insrsid7957670\charrsid13107898 2.1}{\b\insrsid14495748\charrsid13107898 
+. Presupuestos que debe tener en cuenta el ciudadano para presentar en debida forma una demanda de inconstitucionalidad.
+\par }{\insrsid14495748\charrsid13107898 
+\par La presentaci\'f3n en debida forma de las demandas de inco}{\insrsid4787192\charrsid13107898 nstitucionalidad, como }{\insrsid14495748\charrsid13107898 materializaci\'f3n del derecho pol\'edtico y ciudadano a interponer acciones p\'fa
+blicas en defensa de la Constituci\'f3n, ha sido un tema ampliamente }{\insrsid1517197\charrsid13107898 desarrollado}{\insrsid14495748\charrsid13107898  por la jurisprudencia de esta Corporaci\'f3n}{\cs22\super\insrsid14495748\charrsid13107898 \chftn 
+{\footnote \pard\plain \s21\qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6118617 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\super\insrsid9842086 \chftn }{\insrsid9842086 
+ Sobre el punto, se pueden consultar, entre otras, las Sentencias C-131 de 1993, C-447 de 1997, C-250 de 1999, C-402 de 1999, C- 170 de 2004, C-865 de 2004, C-1115 de 2004,  C-181 de 2005,  y C-980 de 2005. Una s\'ed
+ntesis comprehensiva de este precedente se encuentra en la C-1052 de 2001. Para el presente caso se utiliza la exposici\'f3n efectuada m\'e1s recientemente en la sentencia C- 980 de 2005.}}}{\insrsid14495748\charrsid13107898 .}{
+\insrsid4804465\charrsid13107898 
+\par 
+\par D}{\insrsid14495748\charrsid13107898 esde sus primeros pronunciamientos}{\insrsid4804465\charrsid13107898 ,}{\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain 
+\s21\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid14495748 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\super\insrsid9842086 \chftn }{\insrsid9842086  }{\lang9226\langfe3082\langnp9226\insrsid9842086 
+Sentencia C-131 de 1993, M.P. Alejandro Mart\'ednez Caballero.}}}{\insrsid14495748\charrsid13107898  }{\insrsid4804465\charrsid13107898 atendiendo al }{\insrsid4787192\charrsid13107898 contenido de las disposiciones c}{\insrsid4804465\charrsid13107898 
+onstitucionales y legales que regulan la materia }{\insrsid14495748\charrsid13107898 la Corte dej\'f3 en claro que, aun cuando la acci\'f3n de inconstitucionalidad es de naturaleza p\'fablica y como tal no est}{\insrsid4804465\charrsid13107898 \'e1}{
+\insrsid14495748\charrsid13107898  sujeta a una t\'e9cnica especial, quien la ejerce s\'ed debe asumir una carga procesal m\'ednima que permita al \'f3rgano de control adelantar con diligencia la funci\'f3n que en ese campo le ha sido asignada}{
+\insrsid4787192\charrsid13107898 ,}{\insrsid4804465\charrsid13107898  consistente en }{\insrsid14495748\charrsid13107898  decidir definitivamente y con alcance de cosa juzgada, las controversias sobre la validez de las leyes y }{
+\insrsid4787192\charrsid13107898 los }{\insrsid14495748\charrsid13107898 decretos con fuerza de ley que hayan llegado a su conocimiento a trav\'e9s de demanda ciudadana.
+\par 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid4804465\charrsid13107898 De conformidad con}{\insrsid14495748\charrsid13107898  la propia interpretaci\'f3n jurisprudencial, condici
+onar el ejercicio de la acci\'f3n de inconstitucionalidad al cumplimiento de unos presupuestos m\'ednimos, no }{\insrsid9044192\charrsid13107898 conduce a}{\insrsid14495748\charrsid13107898  la negaci\'f3n de ese derecho pol\'edtico, constituido en una }{
+\insrsid9044192\charrsid13107898 aut\'e9ntica}{\insrsid14495748\charrsid13107898  modalidad de participaci\'f3n ciudadana para la defensa directa de la Constituci\'f3n}{\cs22\super\insrsid4787192\charrsid13107898 \chftn {\footnote \pard\plain 
+\s21\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\super\insrsid9842086 \chftn }{\insrsid9842086  Ib\'eddem.}}}{\insrsid14495748\charrsid13107898 
+. Por el contrario, bajo el supuesto que no se trata de una garant\'eda absoluta e ilimitada, fijarle algunas condiciones d}{\insrsid4792507\charrsid13107898 e procedibilidad promueve fines}{\insrsid14495748\charrsid13107898  constitucionalmente admisible
+}{\insrsid4792507\charrsid13107898 s como es el de }{\insrsid14495748\charrsid13107898 racionalizar su uso, en el entendido que el precitado derecho no ha sido concebido para interferir}{\insrsid4792507\charrsid13107898 ,}{
+\insrsid14495748\charrsid13107898  sin motivo ni justificaci\'f3n v\'e1lida}{\insrsid4792507\charrsid13107898 ,}{\insrsid14495748\charrsid13107898  la vigencia de la ley, y }{\insrsid4792507\charrsid13107898 adem\'e1s}{\insrsid14495748\charrsid13107898 
+, delimitar el \'e1mbito de competencia del \'f3rgano de control constitucional, ya que la Carta Pol\'edtica no lo faculta para llevar a cabo un control oficioso de constitucionalidad sobre las leyes.
+\par 
+\par }\pard \qj \li0\ri51\widctlpar\aspalpha\aspnum\faauto\adjustright\rin51\lin0\itap0\pararsid13107898 {\insrsid1006295\charrsid13107898 De otro lado, tambi\'e9n h}{\insrsid14495748\charrsid13107898 a }{\insrsid1006295\charrsid13107898 enfatizado}{
+\insrsid14495748\charrsid13107898  la Corte}{\insrsid1006295\charrsid13107898  }{\insrsid14495748\charrsid13107898 que }{\insrsid1006295\charrsid13107898 la exigencia de}{\insrsid14495748\charrsid13107898  ciertos presupuestos b\'e1sicos no }{
+\insrsid1006295\charrsid13107898 persigue }{\insrsid14495748\charrsid13107898 convertir el ejercicio de la acci\'f3n p\'fablica en una especialidad jur\'eddica, sino garantizar que el aparato jurisdiccional del Estado se ponga en movimiento s\'f3
+lo sobre una base razonable y s\'f3lida, es decir, que a trav\'e9s de aquella se plantee una }{\insrsid1006295\charrsid13107898 genuina}{\insrsid14495748\charrsid13107898  controversia de tipo constitucional en torno a la posible oposici\'f3
+n entre una norma legal y la Constituci\'f3n Pol\'edtica, que justifique la intervenci\'f3n del \'f3rgano de control constitucional.
+\par 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid1006295\charrsid13107898 Bajo esa perspectiva}{\insrsid14495748\charrsid13107898 ,}{\insrsid1006295\charrsid13107898  en acatamiento de}{
+\insrsid14495748\charrsid13107898  las previsiones contenidas en el art\'edculo 2\'b0 del Decreto 2067 de 1991}{\cs22\super\insrsid1006295\charrsid13107898 \chftn {\footnote \pard\plain 
+\s21\qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid1006295 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\super\insrsid9842086 \chftn }{\insrsid9842086 
+ Este precepto fue declarado exequible mediante sentencia C-131 de 1993 (M.P. Alejandro Mart\'ednez  Caballero).}}}{\insrsid14495748\charrsid13107898 , esta Corporaci\'f3n ha sostenido que la demanda de inconstitucion
+alidad se entiende presentada en debida forma, cuando el demandante}{\insrsid6118617\charrsid13107898 :}{\insrsid14495748\charrsid13107898  }{\i\insrsid14495748\charrsid13107898 (i)}{\insrsid14495748\charrsid13107898  }{\insrsid6118617\charrsid13107898 se
+\'f1ala las disposiciones}{\insrsid14495748\charrsid13107898  que se acusan como inconstitucionales, }{\i\insrsid14495748\charrsid13107898 (ii)}{\insrsid6118617\charrsid13107898  describe  los preceptos }{\insrsid14495748\charrsid13107898 
+superiores que se estiman violadas y, particularmente, }{\i\insrsid14495748\charrsid13107898 (ii)}{\insrsid14495748\charrsid13107898  expone las razones o motivos por los cuales se considera que dichos textos constitucionales han sido infringidos.
+\par }\pard \qj \li0\ri51\widctlpar\aspalpha\aspnum\faauto\adjustright\rin51\lin0\itap0\pararsid13107898 {\insrsid14495748\charrsid13107898 
+\par }\pard \qj \li0\ri49\widctlpar\aspalpha\aspnum\faauto\adjustright\rin49\lin0\itap0\pararsid13107898 {\insrsid6118617\charrsid13107898 Con relaci\'f3n a la exigencia de exponer}{\insrsid14495748\charrsid13107898  las causas que motivan la viol}{
+\insrsid6118617\charrsid13107898 aci\'f3n alegada, ha expresado esta}{\insrsid14495748\charrsid13107898  }{\insrsid6118617\charrsid13107898 Corporaci\'f3n}{\insrsid14495748\charrsid13107898  que la misma \'93}{\i\insrsid14495748\charrsid13107898 
+no se satisface con la exposici\'f3n de cualquier tipo de razones o motivos, sino que es necesario que \'e9stas sean }{\i\insrsid14495748\charrsid13107898 \lquote claras, ciertas, espec\'edficas, pertinentes y suficientes\rquote }{
+\cs22\i\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain \s21\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid14495748 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {
+\cs22\super\insrsid9842086\charrsid8390574 \chftn }{\insrsid9842086\charrsid8390574  Sentencia C-1052 de 2001 (M.P. Manuel Jos\'e9 Cepeda Espinosa).}}}{\insrsid14495748\charrsid13107898 \'94}{\insrsid4787192\charrsid13107898 .}{
+\insrsid6118617\charrsid13107898  S\'f3lo de esta manera}{\insrsid14495748\charrsid13107898  el juez constitucional puede hacer la confrontaci\'f3n entre el texto demandado y la norma superior y deducir si existe o no contradicci\'f3n}{
+\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain \s21\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid14495748 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {
+\cs22\super\insrsid9842086\charrsid8390574 \chftn }{\insrsid9842086\charrsid8390574  Cfr. Sentencia C-402 de 1999 (M.P. Jos\'e9 Gregorio Hern\'e1ndez Galindo).}}}{\insrsid14495748\charrsid13107898 
+. Para la Corte, las acusaciones vagas, abstractas o imprecisas no son entonces id\'f3neas para cuestionar y destruir la presunci\'f3n de constitucionalidad que ampara la ley y, en consecuencia, deben ser desestimadas por improcedentes. }{
+\insrsid6118617\charrsid13107898 Tampoco revisten idoneidad aquellas que no se fundan en una interpretaci\'f3n que no se deriva del texto demandado.}{\insrsid14495748\charrsid13107898 
+\par 
+\par El alcance de los presupuestos de }{\i\insrsid14495748\charrsid13107898 claridad, certeza, }{\i\insrsid6118617\charrsid13107898 especificidad, }{\i\insrsid14495748\charrsid13107898 pertinencia y suficiencia}{\insrsid14495748\charrsid13107898 
+ en la formulaci\'f3n de la acusaci\'f3n, los explic\'f3 la Corte en los siguientes t\'e9rminos}{\cs22\super\insrsid6118617\charrsid13107898 \chftn {\footnote \pard\plain \s21\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 
+\fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\super\insrsid9842086\charrsid8390574 \chftn }{\insrsid9842086\charrsid8390574  Sentencia C-1052 de 2001 (M.P. Manuel Jos\'e9 Cepeda Espinosa).}}}{\insrsid14495748\charrsid13107898 :
+\par 
+\par }\pard \qj \li0\ri-4\widctlpar\aspalpha\aspnum\faauto\adjustright\rin-4\lin0\itap0\pararsid13107898 {\insrsid14495748\charrsid13107898 La }{\i\insrsid14495748\charrsid13107898 claridad}{\b\insrsid14495748\charrsid13107898  }{
+\insrsid14495748\charrsid13107898 de la demanda es un requisito indispensable para establecer la conducencia del concepto de la violaci\'f3n, pues aunque \'93}{\i\insrsid14495748\charrsid13107898 el car\'e1cter popular de la acci\'f3
+n de inconstitucionalidad, }{\insrsid14495748\charrsid13107898 [por regla general],}{\i\insrsid14495748\charrsid13107898  releva al ciudadano que la ejerce de hacer una exposici\'f3n erudita y t\'e9cnica sobre las razones de oposici\'f3
+n entre la norma que acusa y el Estatuto Fundamental\'94}{\cs22\i\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain \qj \li0\ri51\widctlpar\aspalpha\aspnum\faauto\adjustright\rin51\lin0\itap0\pararsid14495748 
+\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\fs20\super\insrsid9842086\charrsid8390574 \chftn }{\fs20\insrsid9842086\charrsid8390574  Cfr Corte Constitucional Sentencia C-143 de 1993 M.P. Jos\'e9 Gregorio Hern\'e1ndez.  Estudi\'f3
+ la Corte en aquella ocasi\'f3n la demanda de inconstitucionalidad contra los art\'edculos 16 y 20 de la Ley 3}{\fs20\up6\insrsid9842086\charrsid8390574 a}{\fs20\insrsid9842086\charrsid8390574 
+ de 1986, 246, 249 y 250 del Decreto 1222 de 1986. En el mismo sentido puede consultarse la Sentencia C-428 de 1996 M.P. Carlos Gaviria D\'edaz.}}}{\i\insrsid14495748\charrsid13107898 ,}{\insrsid14495748\charrsid13107898 
+ no lo excusa del deber de seguir un hilo conductor en la argumentaci\'f3n que permita al lector comprender el contenido de su demanda y las justificaciones en las que se basa.
+\par }\pard \qj \li284\ri333\widctlpar\aspalpha\aspnum\faauto\adjustright\rin333\lin284\itap0\pararsid13107898 {\insrsid14495748\charrsid13107898 
+\par }\pard \qj \li0\ri63\widctlpar\aspalpha\aspnum\faauto\adjustright\rin63\lin0\itap0\pararsid13107898 {\insrsid8390574\charrsid13107898 La }{\i\insrsid8390574\charrsid13107898 certeza}{\insrsid8390574\charrsid13107898  de }{
+\insrsid14495748\charrsid13107898 las razones que respaldan los cargos de inconstitucionalidad }{\insrsid8390574\charrsid13107898 radica en}{\insrsid14495748\charrsid13107898  que la demanda recaiga sobre una proposici\'f3n jur\'eddica real y existente}{
+\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain \s26\qj \li0\ri0\sa120\widctlpar\nooverflow\faroman\rin0\lin0\itap0\pararsid14495748 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {
+\cs22\b\i\lang9226\langfe3082\super\langnp9226\insrsid9842086\charrsid8390574 \chftn }{\lang9226\langfe3082\langnp9226\insrsid9842086\charrsid8390574 As\'ed, por ejemplo en la Sentencia C-362 de 2001; M.P. Alvaro Tafur G\'e1lvis, la Corte tambi\'e9
+n se inhibi\'f3 de conocer la demanda }{\insrsid9842086\charrsid8390574 de inconstitucionalidad }{\insrsid9842086 instaurada en contra del }{\insrsid9842086\charrsid8390574 art\'edculo 5\'ba del Decreto 2700 de 1991, pues \'93}{
+\lang9226\langfe3082\langnp9226\insrsid9842086\charrsid8390574 del estudio m\'e1s detallado de los argumentos esgrimidos por el demandante, co
+mo corresponde a la presente etapa procesal, puede deducirse que los cargos que se plantean aparentemente contra la norma atacada no lo son realmente contra ella\'94.}}}{\insrsid14495748\charrsid13107898  }{\i\insrsid14495748\charrsid13107898 \'93
+y no simplemente }{\insrsid14495748\charrsid13107898 [sobre una]}{\i\insrsid14495748\charrsid13107898  deducida por el actor, o }{\insrsid14495748\charrsid13107898 impl\'edcita\'94}{\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote 
+\pard\plain \qj \li0\ri51\widctlpar\tx8647\aspalpha\aspnum\faauto\adjustright\rin51\lin0\itap0\pararsid14495748 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\fs20\super\insrsid9842086\charrsid8390574 \chftn }{
+\fs20\insrsid9842086\charrsid8390574  Sentencia C-504 de 1995; M.P. Jos\'e9 Gregorio Hern\'e1ndez Galindo. La Corte se declar\'f3 inhibida para conocer de la demanda presentada contra el art\'edculo 16, parcial, del Decreto 0624 de 1989 \'93
+por el cual se expide el Estatuto Tributario de los impuestos administrados por la Direcci\'f3n}{\insrsid9842086  }{\fs20\insrsid9842086\charrsid12861917 General de Impuestos Nacionales\'94, pues la acusaci\'f3n carece de obj
+eto, ya que alude a una disposici\'f3n no consagrada por el}{\fs20\insrsid9842086\charrsid5179712  legislador.}}}{\insrsid14495748\charrsid13107898  e incluso sobre otras normas vigentes que, en todo caso, no son el objeto concreto de la demanda}{
+\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain \s21\qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13771427 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {
+\cs22\super\insrsid9842086\charrsid5179712 \chftn }{\insrsid9842086\charrsid5179712  Cfr. Corte Constitucional Sentencia C-1544 de 2000 M.P. Jos\'e9 Gregorio Hern\'e1ndez Galindo.  La Corte se inhibe en esta oportunidad }{\insrsid9842086 de }{
+\insrsid9842086\charrsid5179712 proferir fallo de m\'e9rito respecto de los art\'edculos 48 y 49 de la Ley 546 de 1999, por presentarse ineptitud sustancial de la demanda, debido a que el actor present\'f3 cargos que se puedan predicar de normas jur\'ed
+dicas distintas a las demandadas. En el mismo sentido C-113 de 2000 M.P. Jos\'e9 Gregorio Hern\'e1ndez Galindo, C-1516 de 2000 M.P. Cristina Pardo Schlesinger, y C-1552 de 2000 M.P. Alfredo Beltr\'e1n Sierra.}}}{\insrsid14495748\charrsid13107898 .  }{
+\insrsid8390574\charrsid13107898 En este sentido,}{\insrsid14495748\charrsid13107898  el ejercicio de la acci\'f3n p\'fablica de inconstitucionalidad supone la confrontaci\'f3n del texto const
+itucional con una norma legal que tiene un contenido verificable a partir de la in}{\insrsid8390574\charrsid13107898 terpretaci\'f3n de su propio texto, t\'e9cnica \'e9
+sta que excluye aquella encaminada a establecer proposiciones inexistentes que no han sido suministradas por el legislador}{\i\insrsid14495748\charrsid13107898 , }{\insrsid14495748\charrsid13107898 para pre
+tender deducir la inconstitucionalidad de las mismas}{\i\insrsid8390574\charrsid13107898 .}{\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain 
+\qj \li0\ri51\widctlpar\aspalpha\aspnum\faauto\adjustright\rin51\lin0\itap0\pararsid14495748 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\fs20\super\insrsid9842086\charrsid5179712 \chftn }{\fs20\insrsid9842086\charrsid5179712 
+ En este mismo sentido pueden consultarse, adem\'e1s de las ya citadas, las sentencias C-509 de 1996 (M.P. Vladimiro Naranjo Mesa), C-1048 de 2000 (M.P. Jos\'e9 Gregorio Hern\'e1ndez Galindo), C-011 de 2001 (M.P. Alvaro Tafur G\'e1lvis), entre otras. }}}{
+\insrsid14495748\charrsid13107898 .
+\par }\pard \qj \li284\ri333\widctlpar\aspalpha\aspnum\faauto\adjustright\rin333\lin284\itap0\pararsid13107898 {\insrsid14495748\charrsid13107898 
+\par }\pard \qj \li0\ri-4\widctlpar\aspalpha\aspnum\faauto\adjustright\rin-4\lin0\itap0\pararsid13107898 {\insrsid10701485\charrsid13107898 L}{\insrsid14495748\charrsid13107898 as razones }{\insrsid14495748\charrsid13107898 son }{
+\i\insrsid14495748\charrsid13107898 espec\'edficas}{\insrsid14495748\charrsid13107898  si definen con claridad la manera como la disposici\'f3n acusada desconoce o vulnera la C}{\insrsid5179712\charrsid13107898 onstituci\'f3n}{
+\insrsid14495748\charrsid13107898  a trav\'e9s}{\b\insrsid14495748\charrsid13107898  }{\insrsid14495748\charrsid13107898 \'93}{\i\insrsid14495748\charrsid13107898 de la formulaci\'f3n de por lo menos un cargo constitucional concr
+eto contra la norma demandada}{\insrsid14495748\charrsid13107898 \'94}{\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain \qj \li0\ri51\widctlpar\tx8789\aspalpha\aspnum\faauto\adjustright\rin51\lin0\itap0\pararsid14495748 
+\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\fs20\super\insrsid9842086\charrsid5179712 \chftn }{\fs20\insrsid9842086\charrsid5179712  Cfr. Corte Constitucional Sentencia C-568 de 1995 M.P. Eduardo Cifuentes Mu\'f1
+oz.  La Corte se declara inhibida para resolver la demanda en contra de los art\'edculos 125, 129, 130 y 131 de la Ley 106 de 1993, puesto que la demandante no estructur\'f3 el concepto de la violaci\'f3n de los preceptos constitucionales invocados.}{
+\i\fs20\insrsid9842086\charrsid5179712  }{\fs20\insrsid9842086\charrsid5179712  }}}{\insrsid14495748\charrsid13107898 . El juicio de constitucionalidad se fundamenta }{\insrsid5179712\charrsid13107898 as\'ed }{\insrsid14495748\charrsid13107898 
+en la necesidad de establecer si realmente existe una oposici\'f3n objetiva y verificable entre el contenido de la ley y el texto de la Constituci\'f3n Pol\'edtica, resultando inadmi
+sible que se deba resolver sobre su inexequibilidad a partir de argumentos}{\b\insrsid14495748\charrsid13107898  }{\i\insrsid14495748\charrsid13107898 \'93vagos, indeterminados, indirectos, abstractos y globales\'94}{
+\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain \s21\qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13771427 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\super\insrsid9842086 
+\chftn }{\insrsid9842086  Estos son los defectos a los cuales se ha referido la jurisprudencia de la Corte cuando ha se\'f1alado la ineptitud de una demanda de inconstitucionalidad, por inadecuada presentaci\'f3n del concepto de la violaci\'f3
+n. Cfr. los autos 097 de 2001 (M.P. Marco Gerardo Monroy Cabra) y 244 de 2001 (M.P. Jaime C\'f3rdoba Trivi\'f1o) y las sentencias C-281 de 1994 (M.P. Jos\'e9 Gregorio Hern\'e1ndez Galindo), C-519 de 1998 (M.P. Vladimiro Naranjo Mesa), C-013 de 2000 (M.P. 
+\'c1lvaro Tafur G\'e1lvis), C-380 de 2000 (M.P. Vladimiro Naranjo Mesa), C-177 de 2001 (M.P. Fabio Mor\'f3n D\'edaz), entre varios pronunciamientos.}}}{\insrsid14495748\charrsid13107898 
+ que no se relacionan concreta y directamente con las disposiciones qu}{\insrsid13107898 e se acusan. }{\insrsid5179712\charrsid13107898 E}{\insrsid14495748\charrsid13107898 sta omisi\'f3n de concretar la acusaci\'f3n impide que se desarrolle la discusi
+\'f3n propia del juicio de constitucionalidad}{\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain \s21\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid14495748 
+\fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\super\insrsid9842086 \chftn }{\insrsid9842086  Cfr. Corte Constitucional Sentencia C-447 de 1997 M.P. Alejandro Mart\'ed
+nez Caballero. La Corte se declara inhibida para pronunciarse de fondo sobre la constitucionalidad del inciso primero del art\'edculo 11 del Decreto Ley 1228 de 1995, por demanda materialmente inepta, debido a la ausencia de cargo.}}}{
+\insrsid14495748\charrsid13107898 .
+\par }\pard \qj \li284\ri333\widctlpar\aspalpha\aspnum\faauto\adjustright\rin333\lin284\itap0\pararsid13107898 {\b\insrsid14495748\charrsid13107898 
+\par }\pard \qj \li0\ri63\widctlpar\aspalpha\aspnum\faauto\adjustright\rin63\lin0\itap0\pararsid13107898 {\insrsid14495748\charrsid13107898 La}{\insrsid5179712\charrsid13107898 s}{\insrsid14495748\charrsid13107898  }{\insrsid5179712\charrsid13107898 
+razones que se exponen en la demanda de inconstitucionalidad}{\i\insrsid5179712\charrsid13107898  }{\insrsid5179712\charrsid13107898 gozan de }{\i\insrsid14495748\charrsid13107898 pertinencia}{\insrsid14495748\charrsid13107898  }{
+\insrsid5179712\charrsid13107898 cuando }{\insrsid14495748\charrsid13107898 el reproche formulado por el peticionario }{\insrsid5179712\charrsid13107898 es}{\insrsid14495748\charrsid13107898  de naturaleza constitucional, es decir, fundado en la apreciaci
+\'f3n del contenido de una norma Superior que se expone y se enfrenta al precepto demandado. En este orden de ideas, son inaceptables los argumentos que se formulan a partir de consideraciones puramente legales}{
+\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain \s21\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid14495748 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {
+\cs22\super\insrsid9842086\charrsid8390574 \chftn }{\insrsid9842086\charrsid8390574  Cfr. la Sentencia C-447 de 1997, ya citada.}}}{\insrsid14495748\charrsid13107898  y doctrinarias}{\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote 
+\pard\plain \qj \li0\ri51\sl240\slmult0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin51\lin0\itap0\pararsid14495748 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\fs20\super\insrsid9842086\charrsid8390574 \chftn }{
+\fs20\insrsid9842086\charrsid8390574  Cfr. Corte Constitucional Sentencia C-504 de 1993; M.P. Eduardo Cifuentes Mu\'f1oz y Carlos Gaviria D\'edaz. La Corte declar\'f3 exequible en esta oportunidad que el Decreto 100 de 1980 (C\'f3digo Penal)
+. Se dijo, entonces: \'93Constituye un error conceptual dirigir el cargo de inconstitucionalidad contra un metalenguaje sin valor normativo y, por tanto, carente de obligatoriedad por no ser parte del ordenamiento jur\'eddico. La doctrina penal es aut\'f3
+noma en la creaci\'f3n de los diferentes modelos penales. No existe precepto constitucional alguno que justifique la limitaci\'f3n de la creatividad del pensamiento doctrinal - \'e1mbito ideol\'f3
+gico y valorativo por excelencia -, debiendo el demandante concretar la posible antinomia jur\'eddica en el texto de una disposici\'f3n que permita estructurar un juicio de constitucionalidad sobre extremos comparables\'94.  As\'ed
+, la Corte desestimaba algunos de los argumentos presentados por el actor que se apoyaban en teor\'edas del derecho penal que re\'f1\'edan con la visi\'f3n contenida en las normas demandadas y con la idea que, en opini\'f3
+n del actor, animaba el texto de la Constituci\'f3n. }}}{\insrsid14495748\charrsid13107898 , o aquellos otros que se limitan a expresar puntos de vista subjetivos en los que }{\i\insrsid14495748\charrsid13107898 \'93el demandante en realidad no est\'e1
+ acusando el contenido de la norma sino que est\'e1 utilizando la acci\'f3n p\'fablica para resolver un problema particular, como podr\'eda ser la indebida aplicaci\'f3n de la disposici\'f3n en un caso espec\'edfico\'94}{
+\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain \s21\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid14495748 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {
+\cs22\super\insrsid9842086\charrsid8390574 \chftn }{\insrsid9842086\charrsid8390574  Cfr. Ib\'edd. Sentencia C-447 de 1997.}}}{\insrsid5179712\charrsid13107898 . Por esta misma raz\'f3n son inadmisibles}{\insrsid14495748\charrsid13107898 
+ las acusaciones que fundan el reparo contra la norma demandada en un an\'e1lisis de conveniencia}{\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain 
+\qj \li0\ri51\widctlpar\aspalpha\aspnum\faauto\adjustright\rin51\lin0\itap0\pararsid14495748 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\fs20\super\insrsid9842086\charrsid8390574 \chftn }{\fs20\insrsid9842086\charrsid8390574 
+ Cfr. Corte Constitucional Sentencia C-269 de 1995 M.P. Eduardo Cifuentes Mu\'f1oz.  Este fallo que se encarg\'f3 de estudiar la Demanda de inconstitucionalidad contra la Ley 61 de 1993 art\'edculo 1\'b0
+ literales b y f, es un ejemplo de aquellos casos en los cuales la Corte desestima algunos de los cargos presentados por el actor, puesto que se limitan a presentar argumentos de conveniencia.  }}}{\insrsid14495748\charrsid13107898 , calific\'e1ndola }{
+\i\insrsid14495748\charrsid13107898 \'93de inocua, innecesaria, o reiterativa\'94}{\cs22\i\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain \qj \li0\ri51\widctlpar
+\tx8789\aspalpha\aspnum\faauto\adjustright\rin51\lin0\itap0\pararsid14495748 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\fs20\super\insrsid9842086\charrsid8390574 \chftn }{\fs20\insrsid9842086\charrsid8390574  Son estos los t\'e9
+rminos descriptivos utilizados por la Corte cuando ha desestimado demandas que presentan argumentos impertinentes a consideraci\'f3n de la Corte. Este asunto tambi\'e9n ha sido abordado, adem\'e1
+s de las ya citadas, en la C-090 de 1996 (M.P. Antonio Barrera Carbonell), C-357 de 1997 (M.P. Jos\'e9 Gregorio Hern\'e1ndez Galindo), C}{\fs20\insrsid9842086 -}{\fs20\insrsid9842086\charrsid8390574 374 de 1997 (M.P. Jos\'e9 Gregorio Hern\'e1
+ndez Galindo) se desestiman de este modo algunos argumentos presentados por el actor contra la Ley 333 de 1996 sobre extinci\'f3n de dominio, C-012 de 2000 (M.P. Alfredo Beltr\'e1n Sierra), C-040 de 2000 (M.P. Fabio Mor\'f3n D\'ed
+az), C-645 de 2000 (M.P. Alejandro Mart\'ednez Caballero), C-876 de 2000 (M.P. Alejandro Mart\'ednez C}{\fs20\insrsid9842086 aballero), C-955 de 2000 (M.P. Jos\'e9 Gregorio Hern\'e1ndez Galindo), }{\fs20\insrsid9842086\charrsid8390574 
+C-1044 de 2000 (M.P. Fabio Mor\'f3n D\'edaz), C-052 de 2001 (M.P. }{\fs20\insrsid9842086 \'c1}{\fs20\insrsid9842086\charrsid8390574 lvaro Tafur G\'e1lvis), C-201 de 2001 (M.P. }{\fs20\insrsid9842086 
+\par }{\fs20\insrsid9842086\charrsid8390574 Jos\'e9 Gregorio Hern\'e1ndez Galindo).}}}{\insrsid14495748\charrsid13107898  a partir de una valoraci\'f3n de sus efectos. 
+\par }\pard \qj \li284\ri333\widctlpar\aspalpha\aspnum\faauto\adjustright\rin333\lin284\itap0\pararsid13107898 {\insrsid14495748\charrsid13107898 
+\par }\pard \qj \li0\ri-4\widctlpar\aspalpha\aspnum\faauto\adjustright\rin-4\lin0\itap0\pararsid13107898 {\insrsid14495748\charrsid13107898 Finalmente, }{\insrsid14495748\charrsid13107898 la }{\i\insrsid14495748\charrsid13107898 suficiencia}{
+\insrsid14495748\charrsid13107898  que se predica de las razones de la demanda de inconstitucionalidad guarda relaci\'f3n}{\insrsid5967975\charrsid13107898  }{\insrsid14495748\charrsid13107898 con la exposici\'f3
+n de todos los elementos de juicio necesarios para iniciar el estudio de constitucionalidad respecto del precepto objeto de reproche}{\insrsid5179712\charrsid13107898 . }{\insrsid14495748\charrsid13107898  }{\insrsid5179712\charrsid13107898 L}{
+\insrsid14495748\charrsid13107898 a suficiencia del razonamiento apela directamente al alcance persuasivo de la demanda, esto es, a la presentaci\'f3n de argumentos que, aunque no logren }{\i\insrsid14495748\charrsid13107898 prime facie}{
+\insrsid14495748\charrsid13107898  convencer al magistrado de que la norma es contraria a la Constituci\'f3n, si despiertan }{\insrsid5967975\charrsid13107898 \'93}{\insrsid14495748\charrsid13107898 una duda m\'ednima}{\insrsid5967975\charrsid13107898 
+\'94}{\insrsid14495748\charrsid13107898  sobre la constitucionalidad de la norma impugnada, de tal manera que }{\insrsid5967975\charrsid13107898 abre}{\insrsid14495748\charrsid13107898  realmente un proceso dirigido a desvirtuar la presunci\'f3
+n de constitucionalidad que ampara a toda norma legal y hace necesario un pronunciamiento por parte de la Corte Constitucional. 
+\par }\pard \qj \li0\ri49\widctlpar\aspalpha\aspnum\faauto\adjustright\rin49\lin0\itap0\pararsid13107898 {\insrsid14495748\charrsid13107898 
+\par }{\insrsid5967975\charrsid13107898 Bajo los anteriores presupuestos}{\insrsid14495748\charrsid13107898 , hay lugar decidir de fondo el juicio de inconstitucionalidad promovido mediante demanda ciudadana, s\'f3lo cuando se verifica que quien ejerce la acci
+\'f3n ha dado cumplimiento a los requisitos se\'f1alados}{\insrsid6623124\charrsid13107898  en el art\'edculo 2\'ba del Decreto 2067 de 1991}{\insrsid14495748\charrsid13107898 , incluyendo aqu\'e9l que exige expresar de manera }{
+\i\insrsid14495748\charrsid13107898 clara, cierta, espec\'edfica, pertinente y suficiente}{\insrsid14495748\charrsid13107898  de qu\'e9 forma la norma acusada es contraria a la Constituci\'f3n Pol\'edtica. Si la demanda no se ajusta a las condiciones m
+\'ednimas de procedibilidad, en particular la que refiere a la exposici\'f3n de las razones de inconstitucionalidad, la misma ser\'e1 sustancialmente inepta y el juez constitucional estar\'e1 obligado a proferir un fallo inhibitorio}{
+\cs22\super\insrsid12266521\charrsid13107898 \chftn {\footnote \pard\plain \s21\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\super\insrsid9842086 \chftn }{
+\insrsid9842086  Sentencia C-980 de 2005 (M.P. Rodrigo Escobar Gil).}}}{\insrsid14495748\charrsid13107898 . 
+\par 
+\par }{\insrsid12266521\charrsid13107898 De otra parte, interpretando el contenido del art\'edculo 6\'ba del Decreto 2067 de 1991, la Corte}{\cs22\super\insrsid12266521\charrsid13107898 \chftn {\footnote \pard\plain 
+\s21\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\super\insrsid9842086 \chftn }{\insrsid9842086  Sentencia C-1115 de 2004 (M.P. Rodrigo Escobar Gil).}}}{
+\insrsid12266521\charrsid13107898  ha establecido que }{\i\insrsid12266521\charrsid13107898 \'93}{\i\insrsid14495748\charrsid13107898 en principio, es en el }{\i\insrsid12266521\charrsid13107898 a}{\i\insrsid14495748\charrsid13107898 uto a trav\'e9
+s del cual se decide sobre la admisibilidad de la demanda, el momento oportuno para definir si la acci\'f3n de inconstitucionalidad cumple o no con los requisitos de procedibilidad a los que se ha hecho expresa referencia. Sin embargo, bajo la consideraci
+\'f3n que ese primer an\'e1lisis responde a una valoraci\'f3n apenas sumaria de la demanda, realizada \'fanicamente por cuenta del Magistrado Ponente, tambi\'e9n resulta jur\'eddicamente admisible que la Corte en Pleno lleve a cabo el an\'e1
+lisis de procedibilidad en la Sentencia, una vez eval\'fae, adem\'e1s de la acusaci\'f3n, la opini\'f3n de los distintos intervinientes y el concepto del Ministerio P\'fablico\'94}{\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote 
+\pard\plain \s21\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid14495748 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\super\insrsid9842086\charrsid8390574 \chftn }{\insrsid9842086\charrsid8390574  }{
+\insrsid9842086 Sentencia }{\lang9226\langfe3082\langnp9226\insrsid9842086 Ib\'eddem.}}}{\insrsid14495748\charrsid13107898 . }{\insrsid12266521\charrsid13107898 
+\par 
+\par }{\insrsid14495748\charrsid13107898 De ah\'ed que, }{\i\insrsid14495748\charrsid13107898 \'93}{\i\insrsid12266521\charrsid13107898 a}{\i\insrsid14495748\charrsid13107898 
+un cuando en el auto admisorio el Magistrado Ponente haya considerado que la demanda re\'fane los requisitos exigidos por el art\'edculo 2\'b0 del Decreto 2067 de 1991, es posible que la Sala Plena adopte la decisi\'f3n contraria, cuando
+ encuentre que el cumplimiento de los requisitos, en particular el referente a la formaci\'f3n de un verdadero cargo de inconstitucionalidad, presenta en realidad una formulaci\'f3n apenas aparente y no real que impide proferir un fallo de fondo}{
+\insrsid14495748\charrsid13107898 \'94}{\cs22\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain \s21\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid14495748 
+\fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\super\insrsid9842086\charrsid8390574 \chftn }{\insrsid9842086\charrsid8390574  Sentencia Ib\'eddem.}}}{\insrsid14495748\charrsid13107898 
+\par 
+\par }{\insrsid744987\charrsid13107898 Bajo los anteriores lineamientos trazados por la Corte y reiterados en esta oportunidad, procede la Sala a evaluar si, como lo se\'f1alan algunos de los intervinientes, la demanda carece de m\'e9
+rito para provocar un pronunciamiento de fondo.}{\insrsid12266521\charrsid13107898 
+\par }{\insrsid10583938\charrsid13107898 
+\par }{\b\insrsid12266521\charrsid13107898 2.2}{\b\insrsid14495748\charrsid13107898 . Ineptitud sustancial de la demanda formulada contra los art\'edculos }{\b\insrsid12266521\charrsid13107898 174 y 175 de}{\b\insrsid14495748\charrsid13107898  la Ley}{
+\b\insrsid12266521\charrsid13107898  1098 de 2006}{\b\insrsid14495748\charrsid13107898 .
+\par }{\cf1\insrsid14495748\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid14495748\charrsid13107898 Seg\'fan qued\'f3 ex}{\insrsid1908125\charrsid13107898 
+presado, las demandantes solicitan a la Corte que se declare la inexequibilidad parcial de los art\'edculos}{\insrsid12861917\charrsid13107898  }{\insrsid1908125\charrsid13107898 174 y 175 de la Ley 1098 de 2006. }{\insrsid14495748\charrsid13107898 
+
+\par }{\b\insrsid11018064\charrsid13107898 
+\par }\pard \qj \li34\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin34\itap0\pararsid13107898 {\insrsid12861917\charrsid13107898 Como se indic\'f3 en la descripci\'f3n de la demanda, e}{\insrsid11018064\charrsid13107898 l primer cargo }{
+\insrsid1003904\charrsid13107898 lo dirigen }{\insrsid12861917\charrsid13107898 las actoras }{\insrsid11018064\charrsid13107898 contra la expresi\'f3n }{\insrsid11028221\charrsid13107898  }{\i\insrsid1003904\charrsid13107898 \'93estas se realizar\'e1
+n con el consentimiento de las partes\'94 }{\insrsid1003904\charrsid13107898 referida a la posibilidad de realizar acuerdos que permitan la }{\i\insrsid1003904\charrsid13107898 conciliaci\'f3n}{\insrsid1003904\charrsid13107898  y la }{
+\i\insrsid1003904\charrsid13107898 reparaci\'f3n}{\insrsid1003904\charrsid13107898  de los da\'f1os. En su opini\'f3n}{\insrsid12861917\charrsid13107898 ,}{\insrsid9638658\charrsid13107898  tal expresi\'f3n desconoce la prerrogativa que la Constituci\'f3
+n radica en el Fiscal de aplicar el principio de oportunidad conforme a la pol\'edtica criminal del Estado}{\insrsid12861917\charrsid13107898  (Art. 250)}{\insrsid9638658\charrsid13107898 .}{\insrsid2957051\charrsid13107898 
+ Las demandantes parten de un entendimiento inexacto de lo que la norma postula. En efecto, el pronombre \'93estas\'94 se refiere a la }{\i\insrsid2957051\charrsid13107898 conciliaci\'f3n}{\insrsid2957051\charrsid13107898  que se puede celebrar y a la }{
+\i\insrsid2957051\charrsid13107898 reparaci\'f3n}{\insrsid2957051\charrsid13107898  a que se puede llegar, mediante el acuerdo entre las partes, y no a la aplicaci\'f3n del principio de oportunidad. Y no pod\'eda ser de otra manera puesto que
+ cuando se trata de }{\insrsid3351297\charrsid13107898 \'93}{\insrsid2957051\charrsid13107898 conciliar}{\insrsid3351297\charrsid13107898 \'94}{\insrsid2957051\charrsid13107898 ,  }{\insrsid3351297\charrsid13107898 s\'f3lo el presunto responsable y la v
+\'edctima pueden llegar a acuerdos acerca de los perjuicios, su monto y la clase de reparaci\'f3n}{\insrsid7804007\charrsid13107898 , mecanismos que de ninguna manera podr\'edan ser impuestos por la autoridad judicial. Si bien}{
+\insrsid12861917\charrsid13107898 ,}{\insrsid7804007\charrsid13107898  \'e9sta tiene facultad para propiciar la b\'fasqueda de f\'f3rmulas de arreglo, los t\'e9rminos de los acuerdos s\'f3lo pueden concretarse }{\i\insrsid7804007\charrsid13107898 \'93
+con el consentimiento de ambas partes\'94}{\insrsid7804007\charrsid13107898  (Art. 174). }{\insrsid1003904\charrsid13107898 
+\par }{\insrsid7804007\charrsid13107898 
+\par Es claro que la expresi\'f3n }{\insrsid12861917\charrsid13107898 acusada }{\insrsid7804007\charrsid13107898 del art\'edculo 174 no se refiere a lo que dispone el art\'edculo 250 de la Constituci\'f3n en materia de aplicaci\'f3
+n del principio de oportunidad. Se refiere, s\'ed, a la posibilidad de que las partes (v\'edctima e imputado) celebren acuerdos para la determinaci\'f3n de los da\'f1os }{\insrsid12935937\charrsid13107898 y las formas de reparaci\'f3n que asumir\'e1 e
+l responsable de su causaci\'f3n, para lo cual se requiere, como lo se\'f1ala el precepto, }{\i\insrsid12935937\charrsid13107898 \'93el consentimiento de ambas partes\'94. }{\insrsid12935937\charrsid13107898 As\'ed
+ las cosas, el cargo se funda en una lectura equivocada de la expresi\'f3n objeto de reproche, pues el consentimiento de las partes, que como se destaca es condici\'f3n necesaria para la celebraci\'f3n de una conciliaci\'f3n, no est\'e1
+ referido a la determinaci\'f3n sobre la aplicaci\'f3n del principio de oportunidad, potestad que sigue estando en }{\insrsid13193188\charrsid13107898 cabeza de la Fiscal\'eda General de la Naci\'f3n.}{\insrsid7804007\charrsid13107898 
+\par }{\insrsid13193188\charrsid13107898 
+\par Encuentra la Corte que, conforme a los lineamientos precedentes, las razones en que se funda el cargo formulado parcialmente contra el inciso primero del art\'edculo 174 carecen de }{\i\insrsid13193188\charrsid13107898 certeza,}{
+\insrsid13193188\charrsid13107898  puesto que ellas no recaen sobre una proposici\'f3n jur\'eddica real y existente, sino sobre una deducida por las actoras de acuerdo con su propia interpretaci\'f3n del precepto acusado. No es posible}{
+\insrsid12914026\charrsid13107898 ,}{\insrsid13193188\charrsid13107898  en este evento}{\insrsid12914026\charrsid13107898 ,}{\insrsid13193188\charrsid13107898  hacer una confrontaci\'f3n de la Constituci\'f3n con una proposici\'f3
+n inexistente, que no ha sido suministrada por el legislado}{\insrsid5843451\charrsid13107898 r}{\insrsid13193188\charrsid13107898  en cuanto responde }{\insrsid12914026\charrsid13107898 a una err\'f3nea interpretaci\'f3
+n de las demandantes. En consecuencia, acogiendo el criterio de todos los intervinientes y el concepto del Ministerio P\'fablico, la Corte se decla}{\insrsid12861917\charrsid13107898 rar\'e1 inhibida para emitir pronunciamiento de m\'e9rito en relaci\'f3
+n con }{\insrsid12914026\charrsid13107898  la expresi\'f3n }{\i\insrsid12914026\charrsid13107898 \'93estas se realizar\'e1n con el consentimiento de las partes\'94}{\insrsid12914026\charrsid13107898  contenida en el inciso primero del art\'ed
+culo 174 de la Ley 1098 de 2006.}{\insrsid1003904\charrsid13107898 
+\par }{\insrsid13193188\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid1646606\charrsid13107898 La segunda censura}{\insrsid12914026\charrsid13107898  se dirige contra el segmento normativo que se\'f1
+ala que cuando de la}{\i\cf1\insrsid11955489\charrsid13107898  \'93aplicaci\'f3n del principio de oportunidad se pudieren derivar riesgos para la vida y la integridad f\'edsica del adolescente\'94, }{\cf1\insrsid1646606\charrsid13107898 
+el juez competente debe adoptar medidas adicionales de protecci\'f3n (i}{\insrsid1646606\charrsid13107898 nciso 2\'b0 del art\'edculo 174). Para }{\insrsid12914026\charrsid13107898 las demandantes }{\insrsid1646606\charrsid13107898 tal preceptiva otorga }
+{\i\insrsid1646606\charrsid13107898 \'93una amplia discrecionalidad al fiscal\'94}{\insrsid1646606\charrsid13107898  pues no establece una pol\'edtica criminal concreta que se\'f1ale cu\'e1
+les son los riesgos que puede sufrir el menor en su vida e integridad. Aducen que la expresi\'f3n se\'f1alada es violatoria del art\'edculo}{\cf1\insrsid11955489\charrsid13107898  2\'ba de la Convenci\'f3n sobre los Derechos del Ni\'f1o, as\'ed como }{
+\cf1\insrsid9324643\charrsid13107898 \'93}{\cf1\insrsid11955489\charrsid13107898 los principios establecidos en el Derecho Internacional y Derechos Humanos}{\cf1\insrsid9324643\charrsid13107898 \'94}{\cf1\insrsid11955489\charrsid13107898  (sic)}{
+\cf1\insrsid1646606\charrsid13107898 . }{\cf1\insrsid15548181\charrsid13107898 De igual manera se vulnerar\'ed}{\cf1\insrsid9324643\charrsid13107898 a }{\cf1\insrsid1646606\charrsid13107898 el principio de }{\cf1\insrsid11955489\charrsid13107898 
+igualdad y el derecho a la}{\cf1\insrsid1646606\charrsid13107898  no discriminaci\'f3n, }{\cf1\insrsid11955489\charrsid13107898 porque }{\cf1\insrsid1646606\charrsid13107898 a su juicio, }{\i\cf1\insrsid9203582\charrsid13107898 \'93}{
+\i\cf1\insrsid11955489\charrsid13107898 no se prev\'e9 estas circunstancias para los menores que se encuentran en grupos al margen de la Ley\'94.}{\cf1\insrsid14228514\charrsid13107898  Agregan respecto de la misma expresi\'f3
+n, que ella configura una violaci\'f3n }{\i\cf1\insrsid14228514\charrsid13107898 \'93al principio de especialidad de la justicia de menores establecida en el art\'edculo 5.5 de la Convenci\'f3n Americana, al igual que debido proceso\'94.}{
+\i\insrsid14228514\charrsid13107898 
+\par }{\insrsid9324643\charrsid13107898 
+\par }{\insrsid1646606\charrsid13107898 De la simple lectura del}{\insrsid9324643\charrsid13107898  cargo se advierte que las razones en que se funda adolecen de los presupuestos de }{\i\insrsid9324643\charrsid13107898 especificidad, }{
+\i\insrsid9203582\charrsid13107898 certeza,}{\i\insrsid9324643\charrsid13107898  }{\i\insrsid9203582\charrsid13107898 y suficiencia}{\i\insrsid9324643\charrsid13107898 . }{\insrsid13006859\charrsid13107898 
+\par 
+\par }{\insrsid9324643\charrsid13107898 Se desconoce el presupuesto de la }{\i\insrsid9324643\charrsid13107898 especificidad}{\insrsid9324643\charrsid13107898  en la formulaci\'f3n del cargo, por cuanto }{\insrsid8988550\charrsid13107898 el mismo }{
+\insrsid9324643\charrsid13107898 se funda en razones \'93vagas}{\insrsid787386\charrsid13107898 ,}{\insrsid9324643\charrsid13107898  indeterminadas}{\insrsid787386\charrsid13107898  e indirectas}{\insrsid9324643\charrsid13107898 \'94, como }{
+\insrsid8988550\charrsid13107898 aquella q}{\insrsid9324643\charrsid13107898 ue }{\insrsid8988550\charrsid13107898 se\'f1ala que la preceptiva no incorpora}{\insrsid9324643\charrsid13107898  una pol\'ed
+tica criminal concreta que establezca todos los riesgos a que se podr\'ed}{\insrsid14768438\charrsid13107898 a}{\insrsid9324643\charrsid13107898  ver enfrentado el menor a qui}{\insrsid8988550\charrsid13107898 e}{\insrsid9324643\charrsid13107898 
+n se aplica el }{\insrsid8988550\charrsid13107898 principio de oportunidad. Este tipo de argumentaci\'f3n no }{\insrsid10490601\charrsid13107898 permite establecer }{\insrsid9203582\charrsid13107898  si existe realmente una oposici\'f3
+n objetiva y verificable entre el contenido de la Ley}{\insrsid14768438\charrsid13107898 ,}{\insrsid9203582\charrsid13107898  y la Constituci\'f3n. }{\insrsid9324643\charrsid13107898 
+\par }{\i\insrsid9203582\charrsid13107898 
+\par }{\insrsid9203582\charrsid13107898 La demanda no }{\insrsid12077488\charrsid13107898 responde a}{\insrsid9203582\charrsid13107898 l requisito de}{\i\insrsid9203582\charrsid13107898  certeza}{\insrsid9203582\charrsid13107898 
+ puesto que la presunta vulneraci\'f3n del principio de igualdad que acusa, se basa en una proposici\'f3n que no se deriva del texto de la norma acusada. A juicio de las demandantes, la norma no prev\'e9 la aplicaci\'f3
+n de las medidas especiales de protecci\'f3n a que alude el precepto }{\insrsid15948810\charrsid13107898 en relaci\'f3n con}{\insrsid9203582\charrsid13107898  }{\i\insrsid9203582\charrsid13107898 \'93meno
+res que se encuentran en grupos armados al margen de la ley\'94}{\insrsid9203582\charrsid13107898 . }{\insrsid1001627\charrsid13107898 El art\'edculo 174, en el que se inserta la expresi\'f3n demandada, establece unas reglas generales para la aplicaci\'f3
+n del principio de oportunidad, la conciliaci\'f3n y la repa}{\insrsid13006859\charrsid13107898 raci\'f3n integral de los da\'f1os,  en relaci\'f3n con}{\insrsid1001627\charrsid13107898  las personas mayores de 14 a\'f1
+os y menores de 18 que hayan incurrido en conductas punibles (Art. 169), si}{\insrsid3041878\charrsid13107898 n hacer distinci\'f3n o referencia alguna a personas pertenecientes a grupos armados al margen de la ley. El cargo}{
+\insrsid13924068\charrsid13107898 , en consecuencia,}{\insrsid3041878\charrsid13107898  }{\insrsid6491698\charrsid13107898 no }{\insrsid14768438\charrsid13107898 se funda en la confrontaci\'f3n de la Constituci\'f3n con el con}{
+\insrsid9244032\charrsid13107898 tenido verificable de una norma}{\insrsid14768438\charrsid13107898 , que emane de la interpretaci\'f3n de su propio texto legal, sino }{\insrsid9244032\charrsid13107898 del alcance particular que}{
+\insrsid14768438\charrsid13107898  le asignan las demandantes.}{\insrsid9324643\charrsid13107898 
+\par }{\insrsid13924068\charrsid13107898 
+\par }{\insrsid15948810\charrsid13107898 Tambi\'e9n desconoce el cargo el principio de }{\i\insrsid14768438\charrsid13107898 suficiencia, }{\insrsid14768438\charrsid13107898 puesto que las demandantes no aportan ning\'fa
+n argumento orientado a demostrar las razones por las }{\insrsid9244032\charrsid13107898 cuales estiman que la expresi\'f3n acusada trasgrede el art\'edculo}{\cf1\insrsid9244032\charrsid13107898  2\'ba de la Convenci\'f3n sobre los Derechos del Ni\'f1
+o, as\'ed como \'93los principios establecidos en el Derecho Internacional y Derechos Humanos\'94. Se sustraen as\'ed al deber de efectuar un}{\cf1\insrsid13006859\charrsid13107898 a}{\cf1\insrsid9244032\charrsid13107898  m\'ednima argumentaci\'f3
+n que genere al menos una duda sobre la constitucionalidad del precepto}{\cf1\insrsid14228514\charrsid13107898 ,}{\cf1\insrsid9244032\charrsid13107898  que abra el juicio }{\cf1\insrsid665713\charrsid13107898 dirigido a desvirtuar la presunci\'f3
+n de constitucionalidad que lo ampara.}{\cf1\insrsid14228514\charrsid13107898  Esta falencia aparece palmaria cuando quienes demandan aducen la supuesta violaci\'f3n del principio de especificidad de la jurisdicci\'f3
+n de menores y el debido proceso, sin aportar raz\'f3n alguna que justifique una censura de tal naturaleza.}{\insrsid13924068\charrsid13107898 
+\par }{\i\insrsid15948810\charrsid13107898 
+\par }{\insrsid14228514\charrsid13107898 En lo que ata\'f1e al cargo contra }{\insrsid11955489\charrsid13107898 el }{\insrsid9981622\charrsid13107898 inciso primero del art\'edculo 175}{\insrsid11955489\charrsid13107898 , }{\insrsid9981622\charrsid13107898 
+a juicio de}{\insrsid11955489\charrsid13107898  las actoras}{\insrsid9981622\charrsid13107898 ,}{\insrsid11955489\charrsid13107898  }{\insrsid9981622\charrsid13107898 la consagraci\'f3n de la}{\insrsid11955489\charrsid13107898  }{
+\i\insrsid11955489\charrsid13107898 \'93renuncia\'94 }{\insrsid11955489\charrsid13107898 como \'fanica posibilidad de aplicar el principio de}{\insrsid9981622\charrsid13107898  oportunidad,  desconoce}{\insrsid11955489\charrsid13107898  el \'e1mbito }{
+\insrsid9981622\charrsid13107898 que la Constituci\'f3n }{\insrsid9451869\charrsid13107898 (Art. 250) }{\insrsid9981622\charrsid13107898 a}{\insrsid9451869\charrsid13107898 d}{\insrsid9981622\charrsid13107898 scribe a este mecanismo procesal }{
+\insrsid11955489\charrsid13107898 ya que }{\i\insrsid11955489\charrsid13107898 \'93\'e9ste se da en tres supuestos, la suspensi\'f3n, la interrupci\'f3n y la renuncia\'94.}{\insrsid9451869\charrsid13107898  El cargo as\'ed planteado }{
+\insrsid10291244\charrsid13107898 adolece del presupuesto de }{\i\insrsid10291244\charrsid13107898 certeza, }{\insrsid10291244\charrsid13107898 habida cuenta que }{\insrsid11403497\charrsid13107898 las demandantes parten de una referencia aislada}{
+\insrsid1198303\charrsid13107898 , no sist\'e9mica,}{\insrsid11403497\charrsid13107898  a la regulaci\'f3n del principio de oportunidad en la Ley 1098 de 2006}{\insrsid1198303\charrsid13107898 . En efecto, la ley 1098/06 contempla una regla de remisi\'f3
+n, seg\'fan la cual }{\i\insrsid1198303\charrsid13107898 \'93el procedimiento del sistema de responsabilidad penal para adolescentes se regir\'e1n por la Ley 906 de 2004 (sistema penal acusatori}{\i\insrsid12352555\charrsid13107898 
+o), exceptuando aquellas que se}{\i\insrsid1198303\charrsid13107898 a}{\i\insrsid12352555\charrsid13107898 n}{\i\insrsid1198303\charrsid13107898  contrarias al inter\'e9s superior del adolescente\'94}{\insrsid1198303\charrsid13107898  (Art. 144)}{
+\i\insrsid1198303\charrsid13107898 . }{\insrsid1198303\charrsid13107898 En este orden de ideas, la formulaci\'f3n de un cargo que involucre una censura }{\insrsid12352555\charrsid13107898 sobre}{\insrsid1198303\charrsid13107898  la oposici\'f3n entre el 
+\'e1mbito de regulaci\'f3n del principio de oportunidad en la Constituci\'f3n}{\insrsid12352555\charrsid13107898 , y }{\insrsid1198303\charrsid13107898  el }{\insrsid12352555\charrsid13107898 previsto en el }{\insrsid1198303\charrsid13107898 
+sistema de respon}{\insrsid12352555\charrsid13107898 sabilidad penal de adolescentes, debe partir de una integraci\'f3n entre las normas especiales de la Ley 1098/06 y las generales de la Ley 906/04 sobre la materia}{\insrsid13006859\charrsid13107898 ,}{
+\insrsid12352555\charrsid13107898  que fueren compatibles con el r\'e9gimen especial, a fin de determinar el contenido normativo objeto de censura. Las demandantes parten de }{\insrsid13006859\charrsid13107898 un planteamiento sobre la presunta r}{
+\insrsid12352555\charrsid13107898 egulaci\'f3n restrictiva (en relaci\'f3n con el art\'edculo 250 de la Carta) del principio de oportunidad en el r\'e9gimen de respon
+sabilidad penal de los adolescentes, sin que previamente hubiesen determinado el verdadero alcance de la regulaci\'f3n legal,  atendiendo la norma de remisi\'f3n. }{\insrsid2778318\charrsid13107898 Tal falencia en la construcci\'f3
+n del cargo impide a la Corte ingresar al estudio de fondo.}{\insrsid11955489\charrsid13107898 
+\par }{\i\insrsid11955489\charrsid13107898 
+\par }{\insrsid2778318\charrsid13107898 Finalmente, las demandantes acusan el contenido de}{\insrsid11955489\charrsid13107898  las cuatro causales }{\insrsid11744538\charrsid13107898 que de acuerdo con}{\insrsid11955489\charrsid13107898  }{
+\insrsid11744538\charrsid13107898 e}{\insrsid2778318\charrsid13107898 l Art. 175, inciso segundo, habilitar\'edan a la Fiscal\'eda para dar}{\insrsid11955489\charrsid13107898  aplicaci\'f3n del principio de oportunidad,}{\insrsid2778318\charrsid13107898 
+ en procesos seguidos a adolescentes que hayan hecho parte de grupos armados al margen de la Ley, o participado directa o indirectamente en las hostilidades o en acciones armadas, o en los delitos cometidos por estos grupos ilegales. }{
+\insrsid9665892\charrsid13107898 
+\par 
+\par }{\insrsid2778318\charrsid13107898 Las razones de quienes demandan se pueden sintetizar as\'ed: }{\i\insrsid2778318\charrsid13107898 (i) }{\insrsid2778318\charrsid13107898 que fundamenta}{\insrsid11744538\charrsid13107898 r}{
+\insrsid2778318\charrsid13107898  la aplicaci\'f3n del principio de oportunidad e}{\insrsid11744538\charrsid13107898 n las condiciones sociales, econ\'f3
+micas o familiares, implica reconocer que el Estado no tiene la capacidad para garantizar a sus asociados condiciones m\'ednimas de subsistencia conforme a }{\i\insrsid11744538\charrsid13107898 \'93}{\i\insrsid11955489\charrsid13107898 la Constituci\'f3
+n y los Tratados Internacionales ratificados por Colombia\'94}{\insrsid11744538\charrsid13107898 ; }{\i\insrsid11744538\charrsid13107898 (ii) }{\insrsid11744538\charrsid13107898 que }{\insrsid11955489\charrsid13107898 no resulta admisible }{
+\i\insrsid11955489\charrsid13107898 \'93tanta discrecionalidad y menos en actos cometidos por j\'f3venes incursos en grupos armados al margen de la ley porque se pueden excusar en el hecho de que no ten\'edan salida\'85\'94}{
+\insrsid11744538\charrsid13107898 ; }{\i\insrsid11744538\charrsid13107898 (iii) }{\insrsid11744538\charrsid13107898 que tal regulaci\'f3n viola}{\insrsid11955489\charrsid13107898  el derecho a la igualdad }{\i\insrsid11955489\charrsid13107898 \'93
+pues se observa que se tiene m\'e1s inter\'e9s en los j\'f3venes perteneciente}{\i\insrsid11744538\charrsid13107898 s a grupos al margen de la ley\'94}{\insrsid11815318\charrsid13107898  que en los \'93ni\'f1os que no pertenecen a estos grupos armados\'94
+}{\i\insrsid11744538\charrsid13107898 ; (iv) }{\insrsid11955489\charrsid13107898 que Colombia ha ratificado la Convenci\'f3n sobre los Derechos del Ni\'f1o}{\insrsid11815318\charrsid13107898 ,}{\insrsid11955489\charrsid13107898 
+ el Protocolo II Adicional a los Convenios de Ginebra, }{\insrsid11815318\charrsid13107898 instrumentos }{\insrsid11955489\charrsid13107898 que proh\'edben que los menores de 15 a\'f1os sean reclutados en fuerzas o grupos armados y \'93}{
+\i\insrsid11955489\charrsid13107898 que participen directamente en las hostilidades\'94}{\i\insrsid11815318\charrsid13107898 , }{\insrsid11815318\charrsid13107898 as\'ed como}{\i\insrsid11815318\charrsid13107898  }{\insrsid11815318\charrsid13107898 
+el Protocolo Opcional a la Convenci\'f3n Internacional sobre los Derechos del Ni\'f1o, que proh\'edbe el reclutamiento de menores de 18 a\'f1os en los conflictos armados }{\i\insrsid11815318\charrsid13107898 \'93el cual se encuentra en tr\'e1
+mite de ratificaci\'f3n en el Congreso de la Rep\'fablica\'94}{\insrsid11744538\charrsid13107898 ; }{\i\insrsid11744538\charrsid13107898 (v)}{\insrsid11955489\charrsid13107898  que los grupos armados }{\i\insrsid11955489\charrsid13107898 \'93acatan 
+solamente las normas relativas al Derecho Internacional Humanitario, por lo que aducen poder reclutar ni\'f1os y ni\'f1as entre los 15 y los 18 a\'f1os, en contra de la reserva elevada por Colombia sobre la Convenci\'f3
+n Internacional sobre los Derechos de}{\i\insrsid11815318\charrsid13107898 l Ni\'f1o}{\i\insrsid12782026\charrsid13107898 \'94}{\i\insrsid11815318\charrsid13107898 ; (vi) }{\insrsid11955489\charrsid13107898 que la amplitud en la  configuraci\'f3
+n de las causales para la aplicaci\'f3n del principio de oportunidad en favor de los adolescentes, permite una excesiva discrecionalidad y un trato demasiado benigno a estos infractores, lo que a su vez podr\'eda convertir esta regulaci\'f3
+n en un incentivo para que los grupos armados acudieran, cada vez con mayor frecuencia, a la incorporaci\'f3n de estos menores}{\insrsid11815318\charrsid13107898 .}{\i\insrsid11815318\charrsid13107898 
+\par }\pard \qj \li469\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin469\itap0\pararsid13107898 {\i\insrsid11815318\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid7297082\charrsid13107898 Vista de manera global la anterior argumentaci\'f3n se advierte que la misma no responde al presupuesto de }{
+\i\insrsid7297082\charrsid13107898 claridad, }{\insrsid7297082\charrsid13107898 dado que no se }{\insrsid2315856\charrsid13107898 identifica}{\insrsid7297082\charrsid13107898  en la formulaci\'f3
+n del cargo un hilo conductor, o por lo menos una postura definida de las demandantes que }{\insrsid9665892\charrsid13107898 imprima}{\insrsid7297082\charrsid13107898  coherencia a sus }{\insrsid2315856\charrsid13107898 argumento}{
+\insrsid7297082\charrsid13107898 s. En algunas de sus manifestaciones parecen condenar la incorporaci\'f3n de menores a las filas de los grupos armados al margen de la ley, mencionando incluso normatividad internacional que proh\'edb}{
+\insrsid2315856\charrsid13107898 e tal pr\'e1ctica. Sin embargo, paralelamente censuran la normatividad que flexibiliza y ampl\'eda la aplicaci\'f3n del principio de oportunidad en relaci\'f3n con estos menores, con argumentos que abogar\'ed
+an por un trato m\'e1s severo. Tal ambig\'fcedad no permite realizar una adecuada confrontaci\'f3n del contenido normativo con la preceptiva internacional que consideran infringida.}{\insrsid11815318\charrsid13107898 
+\par }{\insrsid2315856\charrsid13107898 
+\par Ya de manera particular, observa la Sala}{\insrsid11877701\charrsid13107898  que las razones en que se apoya el cargo carecen de }{\i\insrsid11877701\charrsid13107898 especificidad }{\insrsid11877701\charrsid13107898 y }{
+\i\insrsid11877701\charrsid13107898 pertinencia. }{\insrsid11877701\charrsid13107898 En cuanto a lo primero}{\insrsid10634517\charrsid13107898 , }{\insrsid11877701\charrsid13107898  por que se apela a argumentos vagos, indeterminados}{
+\insrsid9665892\charrsid13107898 , indirectos}{\insrsid11877701\charrsid13107898  y abstractos como}{\insrsid10634517\charrsid13107898  es}{\insrsid11877701\charrsid13107898  el de  identificar }{\insrsid10634517\charrsid13107898 en el dise\'f1
+o de unas causales de oportunidad fundadas en razones sociales, econ\'f3micas o familiares, }{\insrsid11877701\charrsid13107898 un supuesto reconocimiento de la incapacidad del Estado para garantizar condiciones m\'ednimas de subsistencia}{
+\insrsid10634517\charrsid13107898  a sus asociados}{\insrsid11877701\charrsid13107898  ;  o aquel que }{\insrsid10634517\charrsid13107898 se\'f1ala que la amplitud de las causales censuradas puede constituirs
+e en una excusa recurrente para los menores infractores, y en un incentivo para su reclutamiento por parte de los grupos armados ilegales. Manifestaciones de tal entidad impiden que se desarrolle la discusi\'f3
+n propia del juicio de constitucionalidad, de naturaleza objetiva y de contraste entre el contenido normativo acusado, y los preceptos superiores. En cuanto a lo segundo, }{\insrsid15813709\charrsid13107898 
+por que el cargo se funda preponderantemente en razones de inconveniencia sobre la aplicaci\'f3n del precepto acusado, como la supuesta impunidad que devendr\'eda del trato excesivamente benigno que, en criterio de las demandantes, se prodigar\'ed
+a a los excombatientes adolescentes, y el }{\insrsid12808559\charrsid13107898 eventual }{\insrsid9665892\charrsid13107898 fortalecimiento de una pr\'e1ctica}{\insrsid15813709\charrsid13107898  p}{\insrsid9665892\charrsid13107898 rohibida}{
+\insrsid15813709\charrsid13107898  }{\insrsid9665892\charrsid13107898 como es}{\insrsid15813709\charrsid13107898  su incorporaci\'f3n a los grupos armados al margen de la ley. Esas acusaciones responden m\'e1s a una valoraci\'f3n}{
+\insrsid7092717\charrsid13107898  parcial }{\insrsid15813709\charrsid13107898 sobre los efectos de la aplicaci\'f3n de los preceptos acusados, que a la apreciaci\'f3n de su contenido normativo y su conformaci\'f3n con los textos superiores. }{
+\insrsid11877701\charrsid13107898 
+\par }{\insrsid15813709\charrsid13107898 
+\par }\pard\plain \s24\qj \li0\ri49\widctlpar\nooverflow\faroman\rin49\lin0\itap0\pararsid13107898 \fs28\cf1\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 {\insrsid14495748\charrsid13107898 As\'ed las cosas, en el entendido que l
+a censura que respalda la solicitud de inconstitucionalidad se basa en}{\insrsid7092717\charrsid13107898 :}{\insrsid14495748\charrsid13107898  }{\insrsid12808559\charrsid13107898 (i) }{\insrsid14495748\charrsid13107898 una interpretaci\'f3
+n errada de las normas acusadas y en una proposici\'f3n jur\'eddica deducida por l}{\insrsid10304997\charrsid13107898 a}{\insrsid14495748\charrsid13107898 s actor}{\insrsid10304997\charrsid13107898 a}{\insrsid14495748\charrsid13107898 s}{
+\insrsid12808559\charrsid13107898  (Art.174 inciso 1\'ba, y art. 175 inciso }{\insrsid7092717\charrsid13107898 1\'b0}{\insrsid12808559\charrsid13107898 ); }{\insrsid10304997\charrsid13107898 y }{\insrsid12808559\charrsid13107898 (ii) en argumentos vagos,}
+{\insrsid10304997\charrsid13107898   imprecisos, contradictorios y en razones de in}{\insrsid12808559\charrsid13107898 conveniencia sobre la aplicaci\'f3n del precepto  (Art.1}{\insrsid10304997\charrsid13107898 75 inciso 2\'ba, Art. 174 inc. 2\'ba)}{
+\insrsid14495748\charrsid13107898 , debe concluir la Corte que la demanda es sustancialmente inepta. }{\insrsid12808559\charrsid13107898 
+\par }{\insrsid10304997\charrsid13107898 
+\par }{\insrsid15548181\charrsid13107898 Seg\'fan qued\'f3}{\insrsid14495748\charrsid13107898  explicado en }{\insrsid10304997\charrsid13107898 aparte }{\insrsid14495748\charrsid13107898 anterior}{\insrsid10304997\charrsid13107898  }{
+\i\insrsid11697387\charrsid13107898 (supra 2.1}{\i\insrsid10304997\charrsid13107898 )}{\insrsid14495748\charrsid13107898 , s\'f3lo hay lugar a emitir un pronunciamiento de fondo por parte del \'f3
+rgano de control constitucional, cuando el demandante ha formulado }{\insrsid10304997\charrsid13107898 por lo menos }{\insrsid14495748\charrsid13107898 un verdadero cargo de inconstitucionalidad, esto es, cuando el mismo se estructura a partir de razones 
+}{\i\insrsid14495748\charrsid13107898 \'93claras, ciertas, espec\'edficas, pertinentes y suficientes\'94}{\cs22\i\super\insrsid14495748\charrsid13107898 \chftn {\footnote \pard\plain 
+\qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid14495748 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs22\fs20\super\insrsid9842086\charrsid8390574 \chftn }{\fs20\insrsid9842086\charrsid8390574 
+ Sentencia C-1052 de 2001 (M.P. Manuel Jos\'e9 Cepeda Espinosa). En dicho fallo, al unificar los criterios de interpretaci\'f3n definidos por la Corte en los distintos pronunciamientos alusivos al tema, esta Corporaci\'f3n precis\'f3
+ que, sin incurrir en formalismos t\'e9cnicos que contrar\'eden la naturaleza p\'fablica e informal de la acci\'f3n de inconstitucionalidad, se entiende que se ha formulado un verdadero cargo de inconstitucionalidad, esto es, un cargo co
+ncreto, cuando el mismo se apoya en razones }{\i\fs20\insrsid9842086\charrsid8390574 \'93claras, ciertas, espec\'edficas, pertinentes y suficientes\'94}{\cs22\i\fs20\super\insrsid9842086\charrsid8390574 \chftn }{\i\fs20\insrsid9842086\charrsid8390574  }{
+\fs20\insrsid9842086\charrsid8390574 . Ello significa que s\'f3lo hay lugar a activar el respectivo juicio, si la acusaci\'f3n presentada por el actor es (i) lo suficientemente comprensible y de f\'e1
+cil entendimiento (razones claras), (ii) recae directamente sobre el contenido de la disposici\'f3n demandada y no sobre una proposici\'f3n jur\'eddica inferida o deducida por el actor (razones ciertas), (iii) define o muestra en forma di\'e1
+fana la manera como la norma vulnera la Carta Pol\'edtica (razones espec\'ed
+ficas), (iv) utiliza argumentos de naturaleza estrictamente constitucional y no razones de orden legal, personal, doctrinal o de simple conveniencia (razones pertinentes), y (v) contiene todos los elementos de j
+uicio -argumentativos y probatorios- que son imprescindibles para adelantar el juicio de inconstitucionalidad, de manera que despierte por lo menos una sospecha o duda m\'ednima sobre la constitucionalidad del precepto impugnado (razones suficientes). 
+
+\par }}}{\insrsid14495748\charrsid13107898  . En el presente caso no se cumple}{\insrsid10304997\charrsid13107898 n los }{\insrsid14495748\charrsid13107898  presupuesto}{\insrsid10304997\charrsid13107898 s }{\insrsid14495748\charrsid13107898 de certeza,}{
+\insrsid10304997\charrsid13107898  especificidad, claridad y pertinencia}{\insrsid14495748\charrsid13107898  }{\insrsid15548181\charrsid13107898 pues est\'e1}{\insrsid14495748\charrsid13107898  visto que la}{\insrsid7092717\charrsid13107898 s acusaciones 
+}{\insrsid14495748\charrsid13107898  formulada}{\insrsid7092717\charrsid13107898 s,}{\insrsid14495748\charrsid13107898  }{\insrsid7092717\charrsid13107898 en algunos casos, }{\insrsid14495748\charrsid13107898 no recae}{\insrsid7092717\charrsid13107898 n}{
+\insrsid14495748\charrsid13107898  directamente sobre el contenido de las disposiciones demandadas}{\insrsid7092717\charrsid13107898  sino sobre una proposici\'f3n jur\'eddica in}{\insrsid12782026\charrsid13107898 ferida o deducida por la}{
+\insrsid5843451\charrsid13107898 s actora}{\insrsid7092717\charrsid13107898 s, en tanto que en otros se fundamentan en argumentos vagos, indirectos y abstractos que no se derivan del texto legal, sino que obedecen a razones de 
+conveniencia o a apreciaciones personales de las demandantes. }{\ul\insrsid7092717\charrsid13107898 
+\par }{\insrsid7092717\charrsid13107898 
+\par }\pard\plain \qj \li0\ri49\widctlpar\aspalpha\aspnum\faauto\adjustright\rin49\lin0\itap0\pararsid13107898 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid10304997\charrsid13107898 En consecuencia}{\insrsid14495748\charrsid13107898 
+, a pesar de que la presente demanda fue inicialmente admitida por el }{\insrsid10304997\charrsid13107898 Despacho}{\insrsid14495748\charrsid13107898  }{\insrsid10304997\charrsid13107898 s}{\insrsid14495748\charrsid13107898 ustanciador, un an\'e1
+lisis detenido de la misma ha llevado a la Corte a concl}{\insrsid7092717\charrsid13107898 uir que en ella no se estructuraron}{\insrsid14495748\charrsid13107898  verdadero}{\insrsid7092717\charrsid13107898 s}{\insrsid14495748\charrsid13107898  cargo}{
+\insrsid7092717\charrsid13107898 s}{\insrsid14495748\charrsid13107898  de inconstitucionalidad. 
+\par 
+\par Por las razones expuestas, la Corte se inhibir\'e1 de emitir }{\insrsid10304997\charrsid13107898 un }{\insrsid14495748\charrsid13107898 pronunciamiento de fondo sobre la demanda formulada contra }{\insrsid10304997\charrsid13107898 las expresiones }{
+\i\insrsid10304997\charrsid13107898 \'93estas se realizar\'e1n con el consentimiento de ambas partes\'94,}{\insrsid10304997\charrsid13107898  y cuando de }{\i\insrsid10304997\charrsid13107898 \'93la aplicaci\'f3
+n del principio de oportunidad se pudieren derivar riesgos para la vida y la integridad f\'edsica del adolescente\'94}{\insrsid10304997\charrsid13107898  contenidas en el art\'edculo 174 de la Ley 1098 de 2006; }{\insrsid7092717\charrsid13107898 as\'ed
+ como respecto de }{\insrsid10304997\charrsid13107898 la expresi\'f3n }{\i\insrsid10304997\charrsid13107898 \'93renunciar\'94}{\insrsid10304997\charrsid13107898  }{\insrsid7092717\charrsid13107898 del  inciso 1\'b0,  }{\insrsid10304997\charrsid13107898 y 
+los numerales 1}{\insrsid7092717\charrsid13107898 , }{\insrsid10304997\charrsid13107898 2, 3, y 4 }{\insrsid7092717\charrsid13107898  }{\insrsid10304997\charrsid13107898 del art\'edculo 175 de la misma ley.}{\insrsid14495748\charrsid13107898 
+\par }\pard \qj \li14\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin14\itap0\pararsid13107898 {\b\insrsid3674147\charrsid13107898 
+\par }{\b\insrsid10583938\charrsid13107898 
+\par }{\b\insrsid13895505\charrsid13107898 VII. DECISI\'d3N
+\par }\pard \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\b\insrsid13895505\charrsid13107898 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid13895505\charrsid13107898 En m\'e9rito de lo expuesto la Corte Constitucional de la Rep\'fa
+blica de Colombia, administrando justicia en nombre del pueblo y por mandato de la Constituci\'f3n,
+\par }\pard \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid13895505 
+\par }{\insrsid14028308\charrsid13107898 
+\par }\pard \qc \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\b\insrsid13895505\charrsid13107898 RESUELVE:
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid13107898 {\insrsid1123786\charrsid13107898 
+\par }{\insrsid1910287\charrsid13107898 Declarase INHIBIDA para emitir u}{\insrsid680909\charrsid13107898 n}{\insrsid1910287\charrsid13107898  pronunciamiento de fondo }{\insrsid10304997\charrsid13107898 sobre la demanda formulada contra las expresiones }{
+\i\insrsid10304997\charrsid13107898 \'93estas se realizar\'e1n con el consentimiento de ambas partes\'94,}{\insrsid10304997\charrsid13107898  y,  cuando de }{\i\insrsid10304997\charrsid13107898 \'93la aplicaci\'f3
+n del principio de oportunidad se pudieren derivar riesgos para la vida y la integridad f\'edsica del adolescente\'94}{\insrsid10304997\charrsid13107898  contenidas en el art\'edculo 174 de la Ley 1098 de 2006; la expresi\'f3n }{
+\i\insrsid10304997\charrsid13107898 \'93renunciar\'94,}{\insrsid10304997\charrsid13107898  }{\insrsid12782026\charrsid13107898 del inciso 1\'b0 del art\'edculo 175 de la Ley 1098 de 2006}{\insrsid10304997\charrsid13107898  y los numerales 1}{
+\insrsid14028308 , 2, 3, y 4 }{\insrsid12782026\charrsid13107898 del mismo }{\insrsid10304997\charrsid13107898 art\'edculo 175 }{\insrsid1910287\charrsid13107898 de la Ley 1098 de 2006.}{\insrsid13895505\charrsid13107898 
+\par }{\insrsid5405240\charrsid13107898 
+\par }{\insrsid13895505\charrsid13107898 Notif\'edquese, comun\'edquese, c\'famplase, e ins\'e9rtese en la Gaceta de la Corte Constitucional, c\'famplase y arch\'edvese el expediente.
+\par }\pard \qc \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid14028308 {\insrsid13895505\charrsid14028308 
+\par 
+\par 
+\par RODRIGO ESCOBAR GIL
+\par Presidente
+\par 
+\par 
+\par 
+\par JAIME ARA\'daJO RENTER\'cdA
+\par Magistrado
+\par }{\i\insrsid14028308\charrsid14028308 CON SALVAMENTO PARCIAL DE VOTO}{\i\insrsid13895505\charrsid14028308 
+\par }{\insrsid13895505\charrsid14028308 
+\par }{\insrsid10639361\charrsid14028308 
+\par }{\insrsid13895505\charrsid14028308 
+\par MANUEL JOS\'c9 CEPEDA ESPINOSA
+\par Magistrado
+\par 
+\par 
+\par }{\insrsid10639361\charrsid14028308 
+\par }{\insrsid13895505\charrsid14028308 JAIME C\'d3RDOBA TRIVI\'d1O
+\par Magistrado
+\par 
+\par 
+\par }{\insrsid10639361\charrsid14028308 
+\par }{\insrsid13895505\charrsid14028308 MAURICIO GONZ\'c1LEZ CUERVO
+\par Magistrado
+\par }{\i\insrsid14028308\charrsid14028308 IMPEDIMENTO ACEPTADO}{\i\insrsid13895505\charrsid14028308 
+\par }{\insrsid13895505\charrsid14028308 
+\par 
+\par }{\insrsid10639361\charrsid14028308 
+\par }{\insrsid13895505\charrsid14028308 MARCO GERARDO MONROY CABRA
+\par Magistrado
+\par 
+\par 
+\par 
+\par NILSON PINILLA PINILLA
+\par Magistrado
+\par 
+\par 
+\par }{\insrsid10639361\charrsid14028308 
+\par }{\insrsid13895505\charrsid14028308 HUMBERTO ANTONIO SIERRA PORTO
+\par Magistrado
+\par }{\i\insrsid14028308\charrsid14028308 AUSENTE EN COMISI\'d3N}{\i\insrsid13895505\charrsid14028308 
+\par }{\insrsid13895505\charrsid14028308 
+\par 
+\par 
+\par CLARA IN\'c9S VARGAS HERN\'c1NDEZ
+\par Magistrada
+\par 
+\par 
+\par }{\insrsid10639361\charrsid14028308 
+\par }{\insrsid13895505\charrsid14028308 MARTHA VICTORIA S\'c1CHICA M\'c9NDEZ
+\par Secretaria General}{\insrsid13895505 
+\par }}
