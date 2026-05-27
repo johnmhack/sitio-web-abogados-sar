@@ -87,6 +87,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const menu = document.querySelector('.nav-menu');
 
     if (menuToggle && menu) {
+        // Menú principal unificado para todo el sitio
+        const isSubfolder = /\/(abogados|posts)\//.test(window.location.pathname);
+        const prefix = isSubfolder ? '../' : '';
+        const currentPath = window.location.pathname.toLowerCase();
+
+        const navItems = [
+            { href: `${prefix}index.html`, label: 'Inicio', key: 'index.html' },
+            { href: `${prefix}quienes-somos.html`, label: 'Nosotros', key: 'quienes-somos.html' },
+            { href: `${prefix}servicios.html`, label: 'Servicios', key: 'servicios.html' },
+            { href: `${prefix}minutas.html`, label: 'Recursos Jurídicos', key: 'minutas.html' },
+            { href: `${prefix}blog.html`, label: 'Blog', key: 'blog.html' },
+            { href: `${prefix}Contáctanos.html`, label: 'Contáctanos', key: 'contáctanos.html' },
+            { href: `${prefix}portal-clientes.html`, label: 'Portal de Clientes', key: 'portal-clientes.html' }
+        ];
+
+        menu.innerHTML = navItems.map(item => {
+            const isActive = currentPath.includes(item.key) || (item.key === 'index.html' && /\/$/.test(currentPath));
+            return `<li><a href="${item.href}" class="nav-link${isActive ? ' active' : ''}">${item.label}</a></li>`;
+        }).join('');
+
         console.log('✅ Menú hamburguesa inicializado');
 
         menuToggle.addEventListener('click', () => {
