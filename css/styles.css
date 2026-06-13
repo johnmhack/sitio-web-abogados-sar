@@ -2412,6 +2412,14 @@ main {
 }
 
 /* Grid del equipo de abogados */
+.team-subsection-title {
+    color: var(--color-primary);
+    font-size: 1.75rem;
+    margin: var(--spacing-2xl) 0 var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid rgba(207, 178, 126, 0.3);
+}
+
 .lawyers-team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
