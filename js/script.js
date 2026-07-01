@@ -117,6 +117,24 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.log('❌ Elementos del menú no encontrados');
     }
+
+    // Resetear menú y header al volver con el botón atrás (bfcache)
+    window.addEventListener('pageshow', (event) => {
+        if (!event.persisted) return;
+
+        const menu = document.querySelector('.nav-menu');
+        const menuToggle = document.querySelector('#menu-toggle');
+        const header = document.querySelector('header');
+
+        if (menu) menu.classList.remove('active');
+        if (menuToggle) {
+            menuToggle.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        }
+        if (header && window.pageYOffset <= 50) {
+            header.classList.remove('scrolled');
+        }
+    });
 });
 
 // ==============================================
@@ -573,11 +591,21 @@ class SocialMediaHandler {
                 this.showProcessMessage();
             });
         });
+
+        const pendingLinks = document.querySelectorAll('.link-en-proceso');
+        pendingLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const message = link.getAttribute('data-mensaje') || '🔄 En proceso...';
+                this.showProcessMessage(message);
+            });
+        });
     }
 
-    showProcessMessage() {
+    showProcessMessage(message = '🔄 Esta red social está en proceso...') {
         if (!this.messageDiv) return;
         
+        this.messageDiv.innerHTML = message;
         // Mostrar mensaje
         this.messageDiv.style.display = 'block';
         this.messageDiv.classList.add('show');
@@ -596,8 +624,7 @@ class SocialMediaHandler {
 
 // Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
-    // Solo inicializar si existen los elementos de redes sociales
-    if (document.querySelector('.social-link')) {
+    if (document.querySelector('.social-link') || document.querySelector('.link-en-proceso')) {
         window.socialMediaHandler = new SocialMediaHandler();
     }
 });
