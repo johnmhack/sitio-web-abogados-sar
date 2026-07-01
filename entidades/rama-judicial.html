@@ -6,8 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Consultas y servicios de la Rama Judicial en Colombia.">
     <title>Rama Judicial - Servicios | SAR Consultores Integrales</title>
-    <link rel="icon" type="image/svg+xml" href="images/logos/LOGO_RUBY_RAMOS_SIMBOLO.svg">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="../images/logos/LOGO_RUBY_RAMOS_SIMBOLO.svg">
+        <style id="critical-entidades">
+        body{margin:0;padding-top:4rem;font-family:'Segoe UI',Tahoma,sans-serif;color:#2c3e50;background:#fff}
+        header{position:fixed;top:0;left:0;right:0;z-index:1000;width:100%;color:#fff;background:rgba(0,95,97,.95)}
+        .top-bar{padding:.15rem 0;font-size:.8rem}
+        .main-nav{background:rgba(26,71,79,.95);padding:1rem}
+        .nav-container{display:flex;justify-content:space-between;align-items:center;width:100%}
+        .nav-menu{display:flex;list-style:none;margin:0;padding:0;gap:.5rem;align-items:center}
+        .nav-menu a{color:#fff;text-decoration:none}
+        .logo-main{height:65px;max-width:400px}
+        .services-page{padding:6rem 0 4rem;background:#f8f9fa;min-height:60vh}
+        .container{max-width:1200px;margin:0 auto;padding:0 1rem}
+        .service-content ul{list-style:none;padding:0;margin:0}
+        @media(max-width:768px){.nav-menu{display:none}#menu-toggle{display:block!important}.services-page{padding:4rem 0 2rem}.logo-main{height:60px;max-width:240px}}
+        @media(min-width:769px){#menu-toggle{display:none}}
+    </style>
+<link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWP8GTHPK6"></script>
 </head>
@@ -40,21 +55,21 @@
         <nav class="main-nav">
             <div class="nav-container">
                 <div class="logo-container">
-                    <img src="images/logos/LOGO_RUBY_RAMOS_TEXTO.svg" alt="SAR Abogados Especializados"
+                    <img src="../images/logos/LOGO_RUBY_RAMOS_TEXTO.svg" alt="SAR Abogados Especializados"
                         class="logo-main">
                 </div>
                 <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
                     <span class="hamburger"><span></span><span></span><span></span></span>
                 </button>
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li><a href="quienes-somos.html" class="nav-link">Quiénes Somos</a></li>
-                    <li><a href="abogados.html" class="nav-link">Equipo</a></li>
-                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-                    <li><a href="blog.html" class="nav-link">Blog</a></li>
-                    <li><a href="minutas.html" class="nav-link">Recursos Jurídicos</a></li>
-                    <li><a href="Contáctanos.html" class="nav-link">Contáctanos</a></li>
-                    <li><a href="portal-clientes.html" class="nav-link">Portal de Clientes</a></li>
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="../quienes-somos.html" class="nav-link">Quiénes Somos</a></li>
+                    <li><a href="../abogados.html" class="nav-link">Equipo</a></li>
+                    <li><a href="../servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="../blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="../minutas.html" class="nav-link">Recursos Jurídicos</a></li>
+                    <li><a href="../Contáctanos.html" class="nav-link">Contáctanos</a></li>
+                    <li><a href="../portal-clientes.html" class="nav-link">Portal de Clientes</a></li>
                 </ul>
             </div>
         </nav>
@@ -146,12 +161,12 @@
                 <div class="footer-section">
                     <h3>Enlaces Rápidos</h3>
                     <ul class="quick-links">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-                        <li><a href="abogados.html">Equipo</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="minutas.html">Minutas</a></li>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../quienes-somos.html">Quiénes Somos</a></li>
+                        <li><a href="../abogados.html">Equipo</a></li>
+                        <li><a href="../servicios.html">Servicios</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../minutas.html">Minutas</a></li>
                         <li><a href="base-datos-publicas.html">Base de Datos Públicas</a></li>
                     </ul>
                 </div>
@@ -178,14 +193,14 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 SAR Consultores Integrales. Todos los derechos reservados.</p>
-                <p><a href="privacidad.html">Política de Privacidad</a></p>
+                <p><a href="../privacidad.html">Política de Privacidad</a></p>
             </div>
         </div>
     </footer>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/analytics.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/analytics.js"></script>
 </body>
 
 </html>

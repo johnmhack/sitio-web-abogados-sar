@@ -5,6 +5,13 @@
  * Fecha: 2025-11-05
  */
 
+document.documentElement.classList.add('is-loading');
+window.addEventListener('load', () => {
+    requestAnimationFrame(() => {
+        document.documentElement.classList.remove('is-loading');
+    });
+});
+
 // ==============================================
 // CONFIGURACIÓN Y DATOS
 // ==============================================
