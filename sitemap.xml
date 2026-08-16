@@ -1,137 +1,513 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
     <!-- Página principal -->
     <url>
         <loc>https://abogadossar.com/</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-    
-    <!-- Páginas principales del sitio -->
+
+    <!-- Páginas principales -->
     <url>
         <loc>https://abogadossar.com/quienes-somos.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-    
+
     <url>
         <loc>https://abogadossar.com/servicios.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/abogados.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/blog.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://abogadossar.com/minutas.html</loc>
-        <lastmod>2026-03-05</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://abogadossar.com/entidades/base-datos-publicas.html</loc>
-        <lastmod>2026-03-19</lastmod>
+        <loc>https://abogadossar.com/Cont%C3%A1ctanos.html</loc>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
+
     <url>
-        <loc>https://abogadossar.com/abogados.html</loc>
-        <lastmod>2025-11-18</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    
-    <url>
-        <loc>https://abogadossar.com/blog.html</loc>
-        <lastmod>2025-11-18</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://abogadossar.com/Contáctanos.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <loc>https://abogadossar.com/portal-clientes.html</loc>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
+
     <url>
         <loc>https://abogadossar.com/privacidad.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
-    
+
     <!-- Perfiles de abogados -->
     <url>
-        <loc>https://abogadossar.com/abogados/ruby-ramos-rojas.html</loc>
-        <lastmod>2025-11-18</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
-    <url>
         <loc>https://abogadossar.com/abogados/carlos-mario-zamudio-arias.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
-    
+
     <url>
         <loc>https://abogadossar.com/abogados/luis-alberto-ortiz-morales.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
-    
+
     <url>
         <loc>https://abogadossar.com/abogados/mary-isabel-pineda.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
-    
+
     <url>
         <loc>https://abogadossar.com/abogados/nelson-andres-losada-sanabria.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
-    
+
     <url>
         <loc>https://abogadossar.com/abogados/nilson-arturo-vega-vasquez.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
-    
+
+    <url>
+        <loc>https://abogadossar.com/abogados/ruby-ramos-rojas.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Entidades / Base de datos públicas -->
+    <url>
+        <loc>https://abogadossar.com/entidades/adres.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/base-datos-publicas.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/camara-colombiana-conciliacion.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/cancilleria-apostilla.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/cedula-venezolanos.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/colpensiones.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/contaduria.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/contraloria.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/defensoria-del-pueblo.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/dian.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/fiscalia-general-nacion.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/fuerzas-militares-colombia.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/industria-y-comercio.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/inpec-colombia.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/migracion-colombia-y-check-mig.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/policia-nacional-colombia.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/procuraduria.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/publicaciones-procesales.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/rama-judicial.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/registraduria.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/restitucion-tierras.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/rethus.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/ruaf-sispro.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/rues.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/runt.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/samai.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/sigep.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/simit.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/sisben.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/snr-notariado-y-registro.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/superintendencia-de-sociedades.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/superintendencia-financiera.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/supersalud.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/superservicios.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/supersolidaria.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/supervigilancia.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/uiaf-y-datacredito.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/unidad-victimas.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/entidades/ventanilla-social-dnp.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
     <!-- Posts del blog -->
     <url>
         <loc>https://abogadossar.com/posts/post1.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
-    
+
     <url>
         <loc>https://abogadossar.com/posts/post2.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
-    
+
     <url>
         <loc>https://abogadossar.com/posts/post3.html</loc>
-        <lastmod>2025-11-18</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
-    
+
+    <url>
+        <loc>https://abogadossar.com/posts/post4.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/posts/post5.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/posts/post6.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/posts/post7.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/posts/post8.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/posts/post9.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/posts/post10.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/posts/post11.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/posts/post12.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/posts/post13.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/posts/post14.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/posts/post15.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/posts/post16.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/posts/post17.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://abogadossar.com/posts/post18.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
 </urlset>
