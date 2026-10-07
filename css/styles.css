@@ -2430,7 +2430,7 @@ main {
 
 .lawyers-team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-lg);
     margin-bottom: var(--spacing-2xl);
 }
@@ -5128,6 +5128,52 @@ button:focus,
 
     .portal-btn {
         width: 100%;
+        text-align: center;
+    }
+}
+
+/* Minutas / Recursos Jurídicos */
+#minutas-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+#minutas-grid .minuta-card {
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+#minutas-grid .minuta-card h2 {
+    font-size: 1.15rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.minuta-category-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary);
+    background: rgba(207, 178, 126, 0.2);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    margin-bottom: var(--spacing-xs);
+}
+
+.minuta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: var(--spacing-sm);
+}
+
+.minuta-actions .btn {
+    padding: 0.55rem 1.2rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .minuta-actions .btn {
+        flex: 1 1 auto;
         text-align: center;
     }
 }
