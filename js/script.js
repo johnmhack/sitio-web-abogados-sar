@@ -881,3 +881,22 @@ document.addEventListener('DOMContentLoaded', () => {
         window.blogPagination = new BlogPagination();
     }
 });
+
+// Botón flotante de WhatsApp en todas las páginas
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.querySelector('.whatsapp-float')) return;
+
+    const whatsappLink = document.createElement('a');
+    whatsappLink.className = 'whatsapp-float';
+    whatsappLink.href = 'https://wa.me/573023567742?text=Hola%20SAR%20Abogados,%20quiero%20información%20sobre%20sus%20servicios';
+    whatsappLink.target = '_blank';
+    whatsappLink.rel = 'noopener noreferrer';
+    whatsappLink.setAttribute('aria-label', 'Escríbenos por WhatsApp');
+    whatsappLink.innerHTML = `
+        <span class="whatsapp-float-label">Escríbenos por WhatsApp</span>
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path d="M16.01 3C9.39 3 4 8.39 4 15.02c0 2.11.55 4.17 1.6 6L4 29l8.17-1.57A12.96 12.96 0 0 0 16.01 27C22.63 27 28 21.61 28 14.98 28 8.39 22.63 3 16.01 3zm0 21.82c-1.77 0-3.5-.47-5.01-1.35l-.36-.21-4.85.93.95-4.73-.23-.38A9.8 9.8 0 0 1 6.2 15.02c0-5.41 4.4-9.81 9.81-9.81 5.41 0 9.81 4.4 9.81 9.81 0 5.41-4.4 9.8-9.81 9.8zm5.38-7.35c-.29-.15-1.74-.86-2.01-.96-.27-.1-.47-.15-.67.15-.2.29-.77.96-.94 1.16-.17.2-.35.22-.64.07-.29-.15-1.23-.45-2.35-1.45-.87-.77-1.45-1.73-1.62-2.02-.17-.29-.02-.45.13-.6.13-.13.29-.35.44-.52.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.29-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.74-.71 1.99-1.4.25-.69.25-1.28.17-1.4-.07-.12-.27-.2-.56-.35z"/>
+        </svg>
+    `;
+    document.body.appendChild(whatsappLink);
+});
